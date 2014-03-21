@@ -7,6 +7,10 @@ import javax.swing.JFileChooser;
 
 // componenta care se ocupa de partea grafica a programului
 public class GUI {
+	
+	String stat_in = "Receiving";			// tip status transfer
+	String stat_out = "Sending";
+	String stat_fin = "Completed";
 
 	DefaultListModel<Info_transfer> list_transfers = new DefaultListModel<Info_transfer>();		// va fi mutata pe mediator
 	
@@ -18,8 +22,8 @@ public class GUI {
 		
 	// zona de date/actiuni GUI
 	
-	String current_user = "me";				// user pentru download
-	String crrent_file;						// fisier de download
+	String current_user = "me";					// user pentru download
+	String current_file;						// fisier de download
 	
 	DefaultListModel<String> users = new DefaultListModel<String>();	// lista utilizatorilor -> pentru JList
 	DefaultListModel<String> files = new DefaultListModel<String>();	// lista fisierelor		-> JList
@@ -32,6 +36,8 @@ public class GUI {
 	public GUI(){	
 		
 		users_files.put("me", new DefaultListModel<String>());
+		users.addElement("me");
+		files.addElement(">>> Start by selecting a folder to share!");
 		
 		tg = new Transfer_gui(this);
 		tg.frame.setVisible(true);
@@ -41,42 +47,47 @@ public class GUI {
 	
 	//=========================================================================
 	
-	public void init_gui(){						// temporar
-		users.addElement("me");
-		
-		files.addElement("fis_unu");
-		files.addElement("fis_doi");
-		files.addElement("fis_trei");
-		
-		Info_transfer it1 = new Info_transfer("de la el", "catre mine", "fisier important", "in curs de", 77);
-		add_transfer(it1);
-		
-		Info_transfer it2 = new Info_transfer("de 11la el", "catre mineq", "fisierq important", "complete", 100);
-		add_transfer(it2);
-		
-		Info_transfer it3 = new Info_transfer("de11 la el", "catreq mine", "fisier qqimportant", "in curs de", 33);
-		add_transfer(it3);
-		
-		Info_transfer it4 = new Info_transfer("de la el1", "catre mineq", "fisier importantq", "complete", 100);
-		add_transfer(it4);
-		
-		Info_transfer it5 = new Info_transfer("de la1 el", "catre mine", "fisierqqq important", "in curs de", 88);
-		add_transfer(it5);
-		
+	public void init_gui(){						// temporar	functie de test
+						
+		for(int i = 0; i < 30; i++){
+			if(i % 3 == 0){
+				Info_transfer it1 = new Info_transfer("de_la_el_" + i, "catre_mine_" + i, "fisier_important_" + i, "Completed", 100);
+				add_transfer(it1);
+			}
+			if(i % 3 == 1){
+				Info_transfer it1 = new Info_transfer("de_la_el_" + i, "catre_mine_" + i, "fisier_important_" + i, "Sending", i * 2);
+				add_transfer(it1);	
+			}
+			if(i % 3 == 2){
+				Info_transfer it1 = new Info_transfer("de_la_el_" + i, "catre_mine_" + i, "fisier_important_" + i, "Receiving", i * 3);
+				add_transfer(it1);	
+			}
+		}
+			
 		DefaultListModel<String> lp = new DefaultListModel<String>();
-		lp.addElement("p1");
-		lp.addElement("p2");
-		lp.addElement("p3");
+		for(int i = 0; i < 20; i++){
+			lp.addElement("fis_pt_" + i);
+		}
 		add_new_user("Petrut", lp);
 		
 		DefaultListModel<String> ld = new DefaultListModel<String>();
-		ld.addElement("d1");
-		ld.addElement("d2");
-		ld.addElement("d3");
+		for(int i = 0; i < 20; i++){
+			ld.addElement("fis_ds_" + i);
+		}
 		add_new_user("Dragos", ld);
 		
+		for(int i = 0; i < 30; i++){		
+			DefaultListModel<String> ll = new DefaultListModel<String>();
+			ll.addElement("file_" + (i + 1));
+			ll.addElement("file_" + (i + 2));
+			ll.addElement("file_" + (i + 3));
+			add_new_user("User_" + i, ll);
+		}
 		
-		afis_hash();
+		set_status("de_la_el_29", "catre_mine_29", "fisier_important_29", stat_out);
+		set_progress("de_la_el_29", "catre_mine_29", "fisier_important_29", 11);
+		
+		//afis_hash();
 	}
 	
 	//=========================================================================
@@ -84,8 +95,7 @@ public class GUI {
 	// afis utilizatorii si fisierele detinute
 	public void afis_hash(){
 		
-		System.out.print(">>> hash:");
-		
+		System.out.print(">>> hash:");		
 		Enumeration<String> en = users_files.keys();
 		
 		while(en.hasMoreElements()){
@@ -143,6 +153,10 @@ public class GUI {
 	// selectare fisier(DUBLU click), initializare transfer(download)
 	public void start_download(String file){
 		System.out.println(">>> Incepe descarcarea fisierului: " + file);
+		
+		Info_transfer it = new Info_transfer(current_user, "me", current_file, stat_in, 0);
+		
+		tg.tab_transfer.add_new_transfer(it);
 	}
 	
 	//=========================================================================
@@ -175,6 +189,20 @@ public class GUI {
 		}
 		
 		reset_me();
+	}
+	
+	//=========================================================================
+	
+	// seteaza valoare progress bar, transferului identificat prin sursa - destinatie -fisier
+	public void set_progress(String src, String dest, String file, int progress){
+		
+		this.tg.tab_transfer.reset_progress(src, dest, file, progress);
+	}
+	
+	// seteaza status transfer (stat_out = Sending / stat_in = Receiving / stat_fin = Completed)
+	public void set_status(String src, String dest, String file, String status){
+		
+		this.tg.tab_transfer.reset_status(src, dest, file, status);
 	}
 	
 	//=========================================================================
