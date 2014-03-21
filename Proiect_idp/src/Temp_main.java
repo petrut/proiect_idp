@@ -1,5 +1,6 @@
 import java.awt.EventQueue;
 
+// clasa temporara de test
 
 public class Temp_main {
 
@@ -8,14 +9,14 @@ public class Temp_main {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Transfer_gui window = new Transfer_gui();
-					window.frame.setVisible(true);
+					GUI gg = new GUI();
+					gg.nimic();
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
 			}
 		});
 		
-		System.out.println("> Final!");
+		System.out.println("> Final test!");
 	}
 }

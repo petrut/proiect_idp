@@ -1,18 +1,15 @@
-import java.awt.Component;
 
 import javax.swing.JProgressBar;
-import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
-import javax.swing.table.TableCellRenderer;
 
+// tabel evolutie transferuri
 
 public class Table_transfer extends DefaultTableModel{
 	
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 
+	GUI tab_gg;
+	
 	public Table_transfer(){
 		super();
 		
@@ -25,6 +22,23 @@ public class Table_transfer extends DefaultTableModel{
 		init_temp();
 	}
 	
+	public Table_transfer(GUI gg){
+		super();
+		
+		tab_gg = gg;
+		
+		this.addColumn("Source");
+		this.addColumn("Destination");
+		this.addColumn("File Name");
+		this.addColumn("Progress");
+		this.addColumn("Status");
+		
+		init_temp();
+	}
+	
+	//=========================================================================
+	// elementele tabelului nu pot fi editate
+	
 	public boolean isCellEditable(){
 		return false;		
 	}
@@ -32,6 +46,10 @@ public class Table_transfer extends DefaultTableModel{
 	public boolean isCellEditable(int x, int y){
 		return false;		
 	}
+	
+	//=========================================================================
+	
+	// initializare temporara tabel			// va fi eliminata
 	
 	public void init_temp(){
 		
@@ -48,4 +66,6 @@ public class Table_transfer extends DefaultTableModel{
 				
 		this.addRow(temp);		
 	}
+	
+	//=========================================================================
 }
