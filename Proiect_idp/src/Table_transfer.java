@@ -67,5 +67,24 @@ public class Table_transfer extends DefaultTableModel{
 		this.addRow(temp);		
 	}
 	
+	public void add_new_transfer(Info_transfer it){
+		
+		Object []temp = new Object[5];
+		JProgressBar pb = new JProgressBar();
+	
+		pb.setValue(it.progress);
+		
+		temp[0] = it.src;
+		temp[1] = it.dest;
+		temp[2] = it.file_name;
+		temp[3] = pb;
+		temp[4] = it.status;
+				
+		this.addRow(temp);		
+	}
+	
+	public void refresh_transfer_list(){
+	}
+	
 	//=========================================================================
 }

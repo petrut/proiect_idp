@@ -5,6 +5,7 @@ import javax.swing.JPanel;
 
 import java.awt.BorderLayout;
 
+import javax.swing.JFileChooser;
 import javax.swing.JScrollPane;
 import javax.swing.JList;
 import javax.swing.JButton;
@@ -17,15 +18,21 @@ import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.JLabel;
 
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
 // clasa interfata grafica
 
 public class Transfer_gui {
 
-	GUI transfer_gg;
+	static GUI transfer_gg;
 	JFrame frame;
 	private JTable table;
 	
 	JLabel label_notif;
+	Table_transfer tab_transfer;
+	final JList<String> list_users;			// lista utilizatori
+	final JList<String> list_files;			// lista fisiere utilizator selectat
 
 	/**
 	 * Launch the application.
@@ -34,7 +41,7 @@ public class Transfer_gui {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Transfer_gui window = new Transfer_gui();
+					Transfer_gui window = new Transfer_gui(transfer_gg);
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -46,12 +53,14 @@ public class Transfer_gui {
 	/**
 	 * Create the application.
 	 */
-	public Transfer_gui() {
-		initialize();
-	}
 
 	public Transfer_gui(GUI gg) {
-		this.transfer_gg = gg;
+		
+		Transfer_gui.transfer_gg = gg;
+		
+		list_users = new JList<String>(transfer_gg.users);
+		list_files = new JList<String>(transfer_gg.files);
+		
 		initialize();
 	}
 
@@ -79,9 +88,7 @@ public class Transfer_gui {
 		JPanel panel_3 = new JPanel();
 		panel_1.add(panel_3, BorderLayout.NORTH);
 		panel_3.setLayout(new BorderLayout(0, 0));
-		
-		final JList<String> list_files = new JList<String>(transfer_gg.files);
-		
+				
 		// la dublu click pe files initializeaza transfer fisiere
 		list_files.addMouseListener(new MouseAdapter() {
 			@Override
@@ -117,9 +124,9 @@ public class Transfer_gui {
 		model.addColumn("Progress");
 		model.addColumn("Status");
 				
-		Table_transfer tt = new Table_transfer(this.transfer_gg);
+		tab_transfer = new Table_transfer(Transfer_gui.transfer_gg);
 				
-		table = new JTable(tt);
+		table = new JTable(tab_transfer);
 		
 		table.getColumnModel().getColumn(3).setCellRenderer(new Progress_bar_renderer());
 		
@@ -135,12 +142,41 @@ public class Transfer_gui {
 		panel_5.setLayout(new GridLayout(1, 0, 0, 0));
 		
 		JButton btnClearSelect = new JButton("Clear select");
+		btnClearSelect.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				int sel = table.getSelectedRow();
+				if(sel != -1){
+					if(tab_transfer.getValueAt(sel, 4).toString().equals("complete")){
+						tab_transfer.removeRow(sel);
+					}
+				}
+			}
+		});
 		panel_5.add(btnClearSelect);
 		
 		JButton btnClearAllFinished = new JButton("Clear all finished");
+		btnClearAllFinished.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				for(int i = 0; i < tab_transfer.getRowCount(); i++){
+					if(tab_transfer.getValueAt(i, 4).equals("complete")){
+						tab_transfer.removeRow(i);
+					}
+				}
+			}
+		});
 		panel_5.add(btnClearAllFinished);
 		
 		JButton btnCancelTransfer = new JButton("Cancel transfer");
+		btnCancelTransfer.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				int sel = table.getSelectedRow();
+				if(sel != -1)
+					tab_transfer.removeRow(sel);
+			}
+		});
 		panel_5.add(btnCancelTransfer);
 		
 		//=====================================================================
@@ -152,10 +188,28 @@ public class Transfer_gui {
 		panel_2.setLayout(new BorderLayout(0, 0));
 		
 		JButton btnSelectMyFolder = new JButton("Select my folder");
+		btnSelectMyFolder.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				list_users.setSelectedIndex(0);
+				
+				JFileChooser fc = new JFileChooser(".");
+			    fc.setFileSelectionMode( JFileChooser.DIRECTORIES_ONLY );
+
+			    if( fc.showOpenDialog(frame) == JFileChooser.APPROVE_OPTION )
+			    {
+			    	String temp = fc.getSelectedFile().getAbsolutePath();
+			    	label_notif.setText(temp);
+			    	transfer_gg.my_folder = temp;
+			    	transfer_gg.reset_my_folder();
+			    }
+			    else{
+			    	label_notif.setText("> ERROR when select my file ...");
+			    }
+			}
+		});
 		panel_2.add(btnSelectMyFolder, BorderLayout.NORTH);
-		
-		final JList<String> list_users = new JList<String>(transfer_gg.users);
-		
+				
 		// la dublu click pe users reset lista files
 		list_users.addMouseListener(new MouseAdapter() {
 		    @Override
@@ -165,7 +219,7 @@ public class Transfer_gui {
 		           String selected_user = (list_users.getSelectedValue());
 		           
 		           transfer_gg.current_user = selected_user;
-		           transfer_gg.user_selected(selected_user);
+		           transfer_gg.switch_user(selected_user);
 		           
 		           label_notif.setText("Switch user to <<< " + selected_user + " >>>");
 		        }
