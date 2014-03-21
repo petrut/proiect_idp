@@ -25,7 +25,8 @@ public class Progress_bar_renderer extends JProgressBar implements TableCellRend
     	JProgressBar pb = (JProgressBar)value;
     	int val = pb.getValue();    	
     	setValue(val);    	
-        setBackground(Color.BLUE);
+        setBackground(Color.GRAY);
+        this.setForeground(Color.BLACK);
         
         return this;
     }

@@ -12,6 +12,7 @@ public class Mediator_test extends TestCase{
 		GUI gg = new GUI();
 		gg.nimic();
 	}
+		
 	
 	public void test_ceva() throws InterruptedException{		
 		Thread.sleep(5000);

@@ -1,3 +1,4 @@
+import java.awt.Dimension;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -20,6 +21,8 @@ import javax.swing.JLabel;
 
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+
+import javax.swing.ScrollPaneConstants;
 
 // clasa interfata grafica
 
@@ -97,7 +100,7 @@ public class Transfer_gui {
 					
 					String selected_file = (list_files.getSelectedValue());
 					
-					transfer_gg.crrent_file = selected_file;
+					transfer_gg.current_file = selected_file;
 					transfer_gg.start_download(selected_file);					
 				           				    
 				    label_notif.setText("Start download file <<< " + selected_file + " >>>");				    
@@ -131,6 +134,9 @@ public class Transfer_gui {
 		table.getColumnModel().getColumn(3).setCellRenderer(new Progress_bar_renderer());
 		
 		JScrollPane scrollPane_2 = new JScrollPane(table);
+		scrollPane_2.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);
+		scrollPane_2.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+		scrollPane_2.setPreferredSize(new Dimension(300, 290));
 		panel_4.add(scrollPane_2, BorderLayout.NORTH);
 		
 		//=====================================================================
@@ -147,7 +153,7 @@ public class Transfer_gui {
 				
 				int sel = table.getSelectedRow();
 				if(sel != -1){
-					if(tab_transfer.getValueAt(sel, 4).toString().equals("complete")){
+					if(tab_transfer.getValueAt(sel, 4).toString().equals(transfer_gg.stat_fin)){
 						tab_transfer.removeRow(sel);
 					}
 				}
@@ -160,7 +166,7 @@ public class Transfer_gui {
 			public void actionPerformed(ActionEvent e) {
 				
 				for(int i = 0; i < tab_transfer.getRowCount(); i++){
-					if(tab_transfer.getValueAt(i, 4).equals("complete")){
+					if(tab_transfer.getValueAt(i, 4).equals(transfer_gg.stat_fin)){
 						tab_transfer.removeRow(i);
 					}
 				}
@@ -241,5 +247,4 @@ public class Transfer_gui {
 		//=====================================================================
 		
 	}
-
 }
