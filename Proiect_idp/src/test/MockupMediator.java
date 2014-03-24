@@ -24,6 +24,7 @@ public class MockupMediator  {
 	{
 		new TransferuriNoi(gui,this).execute();
 		new TransferuriPachetNou(gui,this).execute();
+		new TranzitUtilizatori(gui,this).execute();
 	}
 
 	

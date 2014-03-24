@@ -101,6 +101,7 @@ public class GUI {
 		}
 		add_new_user("Dragos", ld);
 
+		/*
 		for(int i = 0; i < 30; i++){		
 			DefaultListModel<String> ll = new DefaultListModel<String>();
 			ll.addElement("file_" + (i + 1));
@@ -108,9 +109,11 @@ public class GUI {
 			ll.addElement("file_" + (i + 3));
 			add_new_user("User_" + i, ll);
 		}
+		
+		*/
 
-		set_status("de_la_el_29", "catre_mine_29", "fisier_important_29", stat_out);
-		set_progress("de_la_el_29", "catre_mine_29", "fisier_important_29", 11);
+		//set_status("de_la_el_29", "catre_mine_29", "fisier_important_29", stat_out);
+		//set_progress("de_la_el_29", "catre_mine_29", "fisier_important_29", 11);
 
 		//afis_hash();
 	}
@@ -144,6 +147,20 @@ public class GUI {
 
 		users_files.put(name, lm);
 		users.addElement(name);
+	}
+	
+	
+	public void remove_user(String name){
+
+		users_files.remove(name);
+		for(int i = 0; i < users.size(); i++)
+		{
+			if(users.get(i).equals(name))
+			{
+				users.remove(i);
+			}
+		}
+		
 	}
 
 	//=========================================================================
