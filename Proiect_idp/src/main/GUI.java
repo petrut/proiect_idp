@@ -6,6 +6,8 @@ import java.util.Hashtable;
 import javax.swing.DefaultListModel;
 import javax.swing.JFileChooser;
 
+import org.omg.PortableInterceptor.USER_EXCEPTION;
+
 import test.MockupMediator;
 
 
@@ -144,14 +146,25 @@ public class GUI {
 
 	// adauga unn nou utilizator in program / s-a realizat o noua conexiune
 	public void add_new_user(String name, DefaultListModel<String> lm){
-
-		users_files.put(name, lm);
-		users.addElement(name);
+		
+		if(users.contains(name))
+		{
+			set_notificari("Utilizator " + name + " a schimbat lista de fisiere");
+			users_files.put(name, lm);
+			
+		}
+		else
+		{
+			set_notificari("Utilizator nou " + name +" .");
+			users_files.put(name, lm);
+			users.addElement(name);
+		}
 	}
 	
 	
 	public void remove_user(String name){
 
+		set_notificari("Utilizator " + name + " a fost sters." );
 		users_files.remove(name);
 		for(int i = 0; i < users.size(); i++)
 		{
@@ -266,8 +279,19 @@ public class GUI {
 		this.tg.tab_transfer.reset_status(src, dest, file, status);
 	}
 
+	
+	// seteaza notificari
+	
+	public void set_notificari(String mesaj)
+	{
+		tg.label_notif.setText(mesaj);
+	}
+	
 	//=========================================================================
 
+	
+	
+	
 	// nimic
 	public void nimic(){}
 }
