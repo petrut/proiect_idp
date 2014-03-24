@@ -1,3 +1,5 @@
+package main;
+
 
 import javax.swing.JProgressBar;
 import javax.swing.table.DefaultTableModel;
@@ -73,6 +75,29 @@ public class Table_transfer extends DefaultTableModel{
 			}
 		}
 	}
+	
+	
+	// incrementeaza valoare progres_bar
+	public void increment_progress(String src, String dest, String file){
+			
+			for(int i = 0; i < this.getRowCount(); i++){
+				
+				if(this.getValueAt(i, 0).equals(src) && this.getValueAt(i, 1).equals(dest) 
+						&& this.getValueAt(i, 2).equals(file) ){
+									
+					JProgressBar pb = (JProgressBar)this.getValueAt(i, 3);
+					int progress = pb.getValue();
+					pb.setValue(progress+1);				
+					this.setValueAt(pb, i, 3);	
+					
+					break;
+				}
+			}
+		}
+	
+	
+	
+	
 	
 	// reseteaza status
 	public void reset_status(String src, String dest, String file, String status){

@@ -1,16 +1,24 @@
+package main;
+
 import java.awt.EventQueue;
 
-// clasa temporara de test
+import test.MockupMediator;
 
-public class Temp_main {
+
+
+public class Main {
 
 	public static void main(String []args) throws InterruptedException{
 				
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					GUI gg = new GUI();
-					gg.nimic();
+					GUI gui = new GUI();
+					
+					MockupMediator med = new MockupMediator(gui);
+					gui.setUp(med);
+					
+					med.setUp();
 				} catch (Exception e) {
 					e.printStackTrace();
 				}

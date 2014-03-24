@@ -1,14 +1,15 @@
+package main;
 
 public class Info_transfer {
 
 	int id_transfer;		// identificator transfer
 	
-	String src;				// utilizatorul sursa al transferului
-	String dest;			// utilizatorul destinatie
-	String file_name;		// numele fisierului transferat
-	String status;			// starea actuala a transferului 
+	public String src;				// utilizatorul sursa al transferului
+	public String dest;			// utilizatorul destinatie
+	public String file_name;		// numele fisierului transferat
+	public String status;			// starea actuala a transferului 
 	
-	int progress;			// valoare progress bar (in procente)
+	public int progress;			// valoare progress bar (in procente)
 	
 	public Info_transfer(){		
 	}
