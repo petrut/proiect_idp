@@ -1,4 +1,4 @@
-package main;
+package gui;
 
 import java.awt.Dimension;
 import java.awt.EventQueue;
@@ -28,25 +28,26 @@ import javax.swing.ScrollPaneConstants;
 
 // clasa interfata grafica
 
-public class Transfer_gui {
+public class GuiCore {
 
-	static GUI transfer_gg;
+	static GuiAPI transfer_gg;
 	JFrame frame;
 	private JTable table;
 	
 	JLabel label_notif;
-	Table_transfer tab_transfer;
+	FileTransfers tab_transfer;
 	final JList<String> list_users;			// lista utilizatori
 	final JList<String> list_files;			// lista fisiere utilizator selectat
 
 	/**
 	 * Launch the application.
 	 */
-	public static void main(String[] args) {
+	/*
+	public static void guiAPI(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Transfer_gui window = new Transfer_gui(transfer_gg);
+					GuiCore window = new GuiCore(transfer_gg);
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -54,14 +55,14 @@ public class Transfer_gui {
 			}
 		});
 	}
-
+	*/
 	/**
 	 * Create the application.
 	 */
 
-	public Transfer_gui(GUI gg) {
+	public GuiCore(GuiAPI gg) {
 		
-		Transfer_gui.transfer_gg = gg;
+		transfer_gg = gg;
 		
 		list_users = new JList<String>(transfer_gg.users);
 		list_files = new JList<String>(transfer_gg.files);
@@ -129,11 +130,11 @@ public class Transfer_gui {
 		model.addColumn("Progress");
 		model.addColumn("Status");
 				
-		tab_transfer = new Table_transfer(Transfer_gui.transfer_gg);
+		tab_transfer = new FileTransfers(GuiCore.transfer_gg);
 				
 		table = new JTable(tab_transfer);
 		
-		table.getColumnModel().getColumn(3).setCellRenderer(new Progress_bar_renderer());
+		table.getColumnModel().getColumn(3).setCellRenderer(new ProgressBarRenderer());
 		
 		JScrollPane scrollPane_2 = new JScrollPane(table);
 		scrollPane_2.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);
@@ -149,7 +150,7 @@ public class Transfer_gui {
 		panel_1.add(panel_5, BorderLayout.SOUTH);
 		panel_5.setLayout(new GridLayout(1, 0, 0, 0));
 		
-		JButton btnClearSelect = new JButton("Clear select");
+		JButton btnClearSelect = new JButton("Clear select completed");
 		btnClearSelect.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
@@ -174,7 +175,7 @@ public class Transfer_gui {
 				}
 			}
 		});
-		panel_5.add(btnClearAllFinished);
+		//panel_5.add(btnClearAllFinished);
 		
 		JButton btnCancelTransfer = new JButton("Cancel transfer");
 		btnCancelTransfer.addActionListener(new ActionListener() {

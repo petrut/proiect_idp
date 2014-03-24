@@ -1,4 +1,6 @@
-package main;
+package common;
+
+import gui.GuiAPI;
 
 import java.awt.EventQueue;
 
@@ -13,10 +15,10 @@ public class Main {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					GUI gui = new GUI();
+					GuiAPI guiAPI = new GuiAPI();
 					
-					MockupMediator med = new MockupMediator(gui);
-					gui.setUp(med);
+					MockupMediator med = new MockupMediator(guiAPI);
+					guiAPI.setUp(med);
 					
 					med.setUp();
 				} catch (Exception e) {

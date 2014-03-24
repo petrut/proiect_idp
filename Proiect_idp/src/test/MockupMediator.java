@@ -1,30 +1,31 @@
 package test;
-import java.util.Vector;
-import main.Info_transfer;
+import gui.GuiAPI;
 
-import main.GUI;
+import java.util.Vector;
+
+import common.InfoTransfers;
 
 
 
 
 public class MockupMediator  {
 
-	GUI gui ;
+	GuiAPI guiAPI ;
 	
-	public Vector <Info_transfer>transferuriNeterminate = new Vector<Info_transfer>();
+	public Vector <InfoTransfers>transferuriNeterminate = new Vector<InfoTransfers>();
 	
 	
 	
-	public MockupMediator(GUI gui) 
+	public MockupMediator(GuiAPI guiAPI) 
 	{
-		this.gui = gui;
+		this.guiAPI = guiAPI;
 	}
 
 	public void setUp() 
 	{
-		new TransferuriNoi(gui,this).execute();
-		new TransferuriPachetNou(gui,this).execute();
-		new TranzitUtilizatori(gui,this).execute();
+		new NewTransferWorker(guiAPI,this).execute();
+		new NewPackageWorker(guiAPI,this).execute();
+		new NewUserWorker(guiAPI,this).execute();
 	}
 
 	

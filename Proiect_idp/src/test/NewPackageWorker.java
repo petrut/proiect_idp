@@ -1,21 +1,22 @@
 package test;
 
+import gui.GuiAPI;
+
 import java.util.List;
 import java.util.Random;
 
 import javax.swing.SwingWorker;
 
-import main.GUI;
-import main.Info_transfer;
+import common.InfoTransfers;
 
-public class TransferuriPachetNou  extends SwingWorker<Integer, Info_transfer>{
+public class NewPackageWorker  extends SwingWorker<Integer, InfoTransfers>{
 
-	GUI gui ;
+	GuiAPI guiAPI ;
 	MockupMediator med;
 
-	public TransferuriPachetNou(GUI gui, MockupMediator med) 
+	public NewPackageWorker(GuiAPI guiAPI, MockupMediator med) 
 	{
-		this.gui = gui;
+		this.guiAPI = guiAPI;
 		this.med = med;
 	}
 
@@ -33,7 +34,7 @@ public class TransferuriPachetNou  extends SwingWorker<Integer, Info_transfer>{
 				if(med.transferuriNeterminate.size() > 0)
 				{
 					int index = Math.abs(x.nextInt()) %med.transferuriNeterminate.size();
-					Info_transfer it = med.transferuriNeterminate.get(index);
+					InfoTransfers it = med.transferuriNeterminate.get(index);
 					it.progress += incrementValue;
 					if(it.progress > 99)
 						med.transferuriNeterminate.remove(it); 
@@ -53,13 +54,13 @@ public class TransferuriPachetNou  extends SwingWorker<Integer, Info_transfer>{
 
 
 	@Override
-	protected void process(List<Info_transfer> chunks) {
+	protected void process(List<InfoTransfers> chunks) {
 		// TODO 3.3 - print values received
 
-		for(Info_transfer e : chunks)
+		for(InfoTransfers e : chunks)
 		{	
 
-			gui.set_progress(e);
+			guiAPI.set_progress(e);
 		}
 
 

@@ -1,18 +1,20 @@
-package main;
+package gui;
 
 
 import javax.swing.JProgressBar;
 import javax.swing.table.DefaultTableModel;
 
+import common.InfoTransfers;
+
 // tabel evolutie transferuri
 
-public class Table_transfer extends DefaultTableModel{
+public class FileTransfers extends DefaultTableModel{
 	
 	private static final long serialVersionUID = 1L;
 	
-	GUI tab_gg;			// referinta la obiectul central GUI
+	GuiAPI tab_gg;			// referinta la obiectul central GuiAPI
 		
-	public Table_transfer(GUI gg){
+	public FileTransfers(GuiAPI gg){
 		
 		super();
 		tab_gg = gg;
@@ -38,7 +40,7 @@ public class Table_transfer extends DefaultTableModel{
 	//=========================================================================
 		
 	// adauga informatiile desre noul transfer in tabel
-	public void add_new_transfer(Info_transfer it){
+	public void add_new_transfer(InfoTransfers it){
 		
 		tab_gg.list_transfers.addElement(it);
 		

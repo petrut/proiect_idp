@@ -1,22 +1,22 @@
 package test;
 
+import gui.GuiAPI;
+
 import java.util.List;
 import java.util.Random;
 
 import javax.swing.DefaultListModel;
 import javax.swing.SwingWorker;
 
-import main.GUI;
+public class NewUserWorker extends SwingWorker<Integer, Integer>{
 
-public class TranzitUtilizatori extends SwingWorker<Integer, Integer>{
-
-	GUI gui;
+	GuiAPI guiAPI;
 	MockupMediator med;
 	private Random rand = new Random();
 
-	public TranzitUtilizatori(GUI gui, MockupMediator med)
+	public NewUserWorker(GuiAPI guiAPI, MockupMediator med)
 	{
-		this.gui = gui;
+		this.guiAPI = guiAPI;
 		this.med = med;
 	}
 
@@ -40,13 +40,13 @@ public class TranzitUtilizatori extends SwingWorker<Integer, Integer>{
 			
 			if(i%3 == 0)
 			{
-				int destination  = (1 + Math.abs(rand.nextInt()))%gui.users.size();
+				int destination  = (1 + Math.abs(rand.nextInt()))%guiAPI.users.size();
 				DefaultListModel<String> ll = new DefaultListModel<String>();
 				ll.addElement("modf_file_" + (i + 1));
 				ll.addElement("modf_file_" + (i + 2));
 				ll.addElement("modf_file_" + (i + 3));
 				
-				gui.add_new_user(gui.users.elementAt(destination), ll);
+				guiAPI.add_new_user(guiAPI.users.elementAt(destination), ll);
 			}
 			else
 			if(i % 5 != 0)
@@ -55,14 +55,14 @@ public class TranzitUtilizatori extends SwingWorker<Integer, Integer>{
 				ll.addElement("file_" + (i + 1));
 				ll.addElement("file_" + (i + 2));
 				ll.addElement("file_" + (i + 3));
-				gui.add_new_user("User_" + i, ll);
+				guiAPI.add_new_user("User_" + i, ll);
 			}
 			else
 			{
-				if(gui.users.size() > 1)
+				if(guiAPI.users.size() > 1)
 				{
-					int destination  = (1 + Math.abs(rand.nextInt()))%gui.users.size();
-					gui.remove_user(gui.users.elementAt(destination));
+					int destination  = (1 + Math.abs(rand.nextInt()))%guiAPI.users.size();
+					guiAPI.remove_user(guiAPI.users.elementAt(destination));
 				}
 			}
 		}

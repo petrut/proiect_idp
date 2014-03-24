@@ -1,4 +1,4 @@
-package main;
+package gui;
 
 public class Status {
 	final static String Sending = "Sending";

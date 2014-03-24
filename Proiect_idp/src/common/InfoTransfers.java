@@ -1,6 +1,6 @@
-package main;
+package common;
 
-public class Info_transfer {
+public class InfoTransfers {
 
 	int id_transfer;		// identificator transfer
 	
@@ -11,10 +11,10 @@ public class Info_transfer {
 	
 	public int progress;			// valoare progress bar (in procente)
 	
-	public Info_transfer(){		
+	public InfoTransfers(){		
 	}
 	
-	public Info_transfer(String src, String dest, String file_name, String status, int progress){
+	public InfoTransfers(String src, String dest, String file_name, String status, int progress){
 		
 		this.src = src;
 		this.dest = dest;
@@ -24,7 +24,7 @@ public class Info_transfer {
 		this.progress = progress;
 	}
 	
-	public Info_transfer(int id_transfer, String src, String dest, String file_name, String status, int progress){
+	public InfoTransfers(int id_transfer, String src, String dest, String file_name, String status, int progress){
 		
 		this.id_transfer = id_transfer;
 		

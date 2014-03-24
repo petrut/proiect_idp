@@ -1,4 +1,4 @@
-package main;
+package gui;
 import java.io.File;
 import java.util.Enumeration;
 import java.util.Hashtable;
@@ -8,31 +8,33 @@ import javax.swing.JFileChooser;
 
 import org.omg.PortableInterceptor.USER_EXCEPTION;
 
+import common.InfoTransfers;
+
 import test.MockupMediator;
 
 
 // componenta care se ocupa de partea grafica a programului
-public class GUI {
+public class GuiAPI {
 
 	String stat_in = "Receiving";			// tip status transfer
 	String stat_out = "Sending";
 	String stat_fin = "Completed";
 
-	DefaultListModel<Info_transfer> list_transfers = new DefaultListModel<Info_transfer>();		// va fi mutata pe mediator
+	DefaultListModel<InfoTransfers> list_transfers = new DefaultListModel<InfoTransfers>();		// va fi mutata pe mediator
 
-	String my_folder = ".";				// directorul pentru upload
+	String my_folder = ".";							// directorul pentru upload
 
-	// zona grafica GUI
-	Transfer_gui tg;										// componenta de desenare
+	// zona grafica GuiAPI
+	GuiCore tg;										// componenta de desenare
 	final JFileChooser file_chooser = new JFileChooser();	// selectare director personal
 
-	// zona de date/actiuni GUI
+	// zona de date/actiuni GuiAPI
 
 	public String current_user = "me";					// user pentru download
-	String current_file;						// fisier de download
+	String current_file;								// fisier de download
 
 	public DefaultListModel<String> users = new DefaultListModel<String>();	// lista utilizatorilor -> pentru JList
-	DefaultListModel<String> files = new DefaultListModel<String>();	// lista fisierelor		-> JList
+	DefaultListModel<String> files = new DefaultListModel<String>();		// lista fisierelor		-> JList
 
 	
 	// lista de utilizatori cu propria lista de fisiere
@@ -41,7 +43,7 @@ public class GUI {
 	MockupMediator med;
 	//=========================================================================
 
-	public GUI(){	
+	public GuiAPI(){	
 
 		DefaultListModel<String> meFiles = new DefaultListModel<String>();
 		for(int i = 0; i < 20; i++){
@@ -51,7 +53,7 @@ public class GUI {
 		users.addElement("me");
 		files.addElement(">>> Start by selecting a folder to share!");
 
-		tg = new Transfer_gui(this);
+		tg = new GuiCore(this);
 		tg.frame.setVisible(true);
 
 		init_gui();
@@ -64,33 +66,11 @@ public class GUI {
 	{
 		this.med = med;
 	}
-	
-
-	
+		
 	//=========================================================================
 
 	public void init_gui(){						// temporar	functie de test
-		/*				
-		for(int i = 0; i < 30; i++){
-			if(i % 3 == 0){
-				Info_transfer it1 = new Info_transfer("de_la_el_" + i, "catre_mine_" + i, "fisier_important_" + i, "Completed", 100);
-				add_transfer(it1);
-			}
-			if(i % 3 == 1){
-				Info_transfer it1 = new Info_transfer("de_la_el_" + i, "catre_mine_" + i, "fisier_important_" + i, "Sending", i * 2);
-				add_transfer(it1);	
-			}
-			if(i % 3 == 2){
-				Info_transfer it1 = new Info_transfer("de_la_el_" + i, "catre_mine_" + i, "fisier_important_" + i, "Receiving", i * 3);
-				add_transfer(it1);	
-			}
-		}
-
-		 */
-
-		
-		
-		
+				
 		DefaultListModel<String> lp = new DefaultListModel<String>();
 		for(int i = 0; i < 20; i++){
 			lp.addElement("fis_pt_" + i);
@@ -102,22 +82,6 @@ public class GUI {
 			ld.addElement("fis_ds_" + i);
 		}
 		add_new_user("Dragos", ld);
-
-		/*
-		for(int i = 0; i < 30; i++){		
-			DefaultListModel<String> ll = new DefaultListModel<String>();
-			ll.addElement("file_" + (i + 1));
-			ll.addElement("file_" + (i + 2));
-			ll.addElement("file_" + (i + 3));
-			add_new_user("User_" + i, ll);
-		}
-		
-		*/
-
-		//set_status("de_la_el_29", "catre_mine_29", "fisier_important_29", stat_out);
-		//set_progress("de_la_el_29", "catre_mine_29", "fisier_important_29", 11);
-
-		//afis_hash();
 	}
 
 	//=========================================================================
@@ -209,7 +173,7 @@ public class GUI {
 	public void start_download(String file){
 		System.out.println(">>> Incepe descarcarea fisierului: " + file);
 
-		Info_transfer it = new Info_transfer(current_user, "me", current_file, stat_in, 0);
+		InfoTransfers it = new InfoTransfers(current_user, "me", current_file, stat_in, 0);
 		
 		med.transferuriNeterminate.add(it);
 		tg.tab_transfer.add_new_transfer(it);
@@ -218,7 +182,7 @@ public class GUI {
 	//=========================================================================
 
 	// adauga informatiile unui nou transfer initiat
-	public void add_transfer(Info_transfer it){
+	public void add_transfer(InfoTransfers it){
 
 		tg.tab_transfer.add_new_transfer(it);
 	}
@@ -255,7 +219,7 @@ public class GUI {
 		this.tg.tab_transfer.reset_progress(src, dest, file, progress);
 	}
 
-	public void set_progress(Info_transfer e){
+	public void set_progress(InfoTransfers e){
 
 		this.tg.tab_transfer.reset_progress(e.src, e.dest, e.file_name,e.progress);
 		
@@ -266,12 +230,6 @@ public class GUI {
 		}
 	}
 	
-	
-	// incrementeaza valoare progress bar, transferului identificat prin sursa - destinatie -fisier
-	public void increment_progress(String src, String dest, String file){
-
-		this.tg.tab_transfer.increment_progress(src, dest, file);
-	}
 
 	// seteaza status transfer (stat_out = Sending / stat_in = Receiving / stat_fin = Completed)
 	public void set_status(String src, String dest, String file, String status){
@@ -281,19 +239,11 @@ public class GUI {
 
 	
 	// seteaza notificari
-	
 	public void set_notificari(String mesaj)
 	{
 		tg.label_notif.setText(mesaj);
 	}
 	
-	//=========================================================================
-
-	
-	
-	
-	// nimic
-	public void nimic(){}
 }
 
 //=========================================================================

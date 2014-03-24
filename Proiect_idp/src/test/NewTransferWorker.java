@@ -1,21 +1,22 @@
 package test;
 
+import gui.GuiAPI;
+
 import java.util.List;
 import java.util.Random;
 
 import javax.swing.SwingWorker;
 
-import main.GUI;
-import main.Info_transfer;
+import common.InfoTransfers;
 
-public class TransferuriNoi  extends SwingWorker<Integer, Info_transfer>{
+public class NewTransferWorker  extends SwingWorker<Integer, InfoTransfers>{
 	
-	GUI gui ;
+	GuiAPI guiAPI ;
 	MockupMediator med;
 	
-	public TransferuriNoi(GUI gui, MockupMediator med) 
+	public NewTransferWorker(GuiAPI guiAPI, MockupMediator med) 
 	{
-		this.gui = gui;
+		this.guiAPI = guiAPI;
 		this.med = med;
 	}
 	
@@ -27,10 +28,10 @@ public class TransferuriNoi  extends SwingWorker<Integer, Info_transfer>{
 		while(true)
 		{
 			int i  = 5000+ Math.abs(x.nextInt()) %1000;
-			int destination = Math.abs(x.nextInt()) %gui.users.size();
-			int file = Math.abs(x.nextInt()) % gui.users_files.get("me").size();
+			int destination = Math.abs(x.nextInt()) %guiAPI.users.size();
+			int file = Math.abs(x.nextInt()) % guiAPI.users_files.get("me").size();
 			
-			Info_transfer it = new Info_transfer("me", gui.users.get(destination), gui.users_files.get("me").get(file), "Sending", 0);
+			InfoTransfers it = new InfoTransfers("me", guiAPI.users.get(destination), guiAPI.users_files.get("me").get(file), "Sending", 0);
 			publish(it);
 			med.transferuriNeterminate.add(it);
 			Thread.sleep(i);
@@ -41,12 +42,12 @@ public class TransferuriNoi  extends SwingWorker<Integer, Info_transfer>{
 
 
 	@Override
-	protected void process(List<Info_transfer> chunks) {
+	protected void process(List<InfoTransfers> chunks) {
 		// TODO 3.3 - print values received
 
-		for(Info_transfer e : chunks)
+		for(InfoTransfers e : chunks)
 		{	
-			gui.add_transfer(e);
+			guiAPI.add_transfer(e);
 		}
 
 

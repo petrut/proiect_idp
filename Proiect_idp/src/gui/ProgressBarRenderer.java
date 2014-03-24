@@ -1,4 +1,4 @@
-package main;
+package gui;
 
 import java.awt.Color;
 import java.awt.Component;
@@ -7,11 +7,11 @@ import javax.swing.JProgressBar;
 import javax.swing.JTable;
 import javax.swing.table.TableCellRenderer;
 
-public class Progress_bar_renderer extends JProgressBar implements TableCellRenderer{
+public class ProgressBarRenderer extends JProgressBar implements TableCellRenderer{
 	
 	private static final long serialVersionUID = 1L;
 	
-    public Progress_bar_renderer()
+    public ProgressBarRenderer()
     {
         super();
         
