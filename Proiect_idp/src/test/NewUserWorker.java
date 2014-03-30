@@ -7,7 +7,7 @@ import java.util.Random;
 
 import javax.swing.DefaultListModel;
 import javax.swing.SwingWorker;
-
+/*operatii cu lista de utilizatori si fisiere ale acestora */
 public class NewUserWorker extends SwingWorker<Integer, Integer>{
 
 	GuiAPI guiAPI;
@@ -33,11 +33,12 @@ public class NewUserWorker extends SwingWorker<Integer, Integer>{
 	}
 
 
+	/*alegere actiune si apelare api gui*/
 	@Override
 	protected void process(List<Integer> chunks) {
 		for(Integer i : chunks)
 		{
-			
+			/* modifica lista de fisiere */
 			if(i%3 == 0)
 			{
 				int destination  = (1 + Math.abs(rand.nextInt()))%guiAPI.users.size();
@@ -49,6 +50,7 @@ public class NewUserWorker extends SwingWorker<Integer, Integer>{
 				guiAPI.add_new_user(guiAPI.users.elementAt(destination), ll);
 			}
 			else
+			/* adauga un utlizator cu alte fisiere */
 			if(i % 5 != 0)
 			{
 				DefaultListModel<String> ll = new DefaultListModel<String>();
@@ -59,6 +61,7 @@ public class NewUserWorker extends SwingWorker<Integer, Integer>{
 			}
 			else
 			{
+				/* sterge un utilizator*/ 
 				if(guiAPI.users.size() > 1)
 				{
 					int destination  = (1 + Math.abs(rand.nextInt()))%guiAPI.users.size();

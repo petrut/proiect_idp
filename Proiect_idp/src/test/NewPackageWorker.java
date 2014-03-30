@@ -9,7 +9,7 @@ import java.util.Vector;
 import javax.swing.SwingWorker;
 
 import common.InfoTransfers;
-
+//Acest SwingWorker simuleaza aparatia de pachete
 public class NewPackageWorker  extends SwingWorker<Integer, InfoTransfers>{
 
 	GuiAPI guiAPI ;
@@ -21,22 +21,21 @@ public class NewPackageWorker  extends SwingWorker<Integer, InfoTransfers>{
 		this.med = med;
 	}
 
-	//
-	//Acest SwingWor
 	@Override
 	protected Integer doInBackground() throws Exception {
-		// TODO Auto-generated method stub
-
 		Random x = new Random();
 		Vector <InfoTransfers>transferuriNeterminate =(Vector <InfoTransfers>) med.getUnfinishedTransfers();
 		while(true)
 		{
+			// timp random de sleep
 			int i  = Math.abs(x.nextInt()) %1000;
 			int incrementValue  = 5 + Math.abs(x.nextInt()) %10;
 			synchronized (transferuriNeterminate) {
 
+				// daca avem transferuri neterminate
 				if(transferuriNeterminate.size() > 0)
 				{
+					// alege un transfer si va incrementa progresul
 					int index = Math.abs(x.nextInt()) %transferuriNeterminate.size();
 					InfoTransfers it = transferuriNeterminate.get(index);
 					it.progress += incrementValue;
@@ -46,11 +45,6 @@ public class NewPackageWorker  extends SwingWorker<Integer, InfoTransfers>{
 				}
 			}
 			Thread.sleep(i);
-
-
-
-
-
 		}
 
 	}
@@ -59,18 +53,10 @@ public class NewPackageWorker  extends SwingWorker<Integer, InfoTransfers>{
 
 	@Override
 	protected void process(List<InfoTransfers> chunks) {
-		// TODO 3.3 - print values received
-
 		for(InfoTransfers e : chunks)
 		{	
-
 			guiAPI.set_progress(e);
 		}
-
-
-
-		//System.out.println(chunks);
-		//System.out.println("process: " + Thread.currentThread());
 	}
 
 

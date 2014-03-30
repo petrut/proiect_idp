@@ -9,7 +9,7 @@ import common.InfoTransfers;
 
 
 
-
+//MockUp Mediator ce simuleaza aparitia de evenimente
 public class MockupMediator implements IMediator {
 
 	GuiAPI guiAPI ;
@@ -23,6 +23,7 @@ public class MockupMediator implements IMediator {
 		this.guiAPI = guiAPI;
 	}
 
+	// pornire SwingWorkeri pentru simulare evenimente
 	public void setUp() 
 	{
 		new NewTransferWorker(guiAPI,this).execute();
@@ -42,9 +43,7 @@ public class MockupMediator implements IMediator {
 
 	@Override
 	public void removeTransfer(InfoTransfers it) {
-		// TODO Auto-generated method stub
 		transferuriNeterminate.remove(it);
-		
 	}
 
 	
