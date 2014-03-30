@@ -96,10 +96,7 @@ public class FileTransfers extends DefaultTableModel{
 				}
 			}
 		}
-	
-	
-	
-	
+		
 	
 	// reseteaza status
 	public void reset_status(String src, String dest, String file, String status){

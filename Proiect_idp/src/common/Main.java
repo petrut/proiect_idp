@@ -6,7 +6,7 @@ import java.awt.EventQueue;
 
 import test.MockupMediator;
 
-
+// clasa temporara pentru testarea aplicatiei (partea grafica)
 
 public class Main {
 

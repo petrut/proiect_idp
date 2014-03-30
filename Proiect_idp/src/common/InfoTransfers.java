@@ -1,8 +1,8 @@
 package common;
 
-public class InfoTransfers {
+// informatii despre transferuri
 
-	int id_transfer;		// identificator transfer
+public class InfoTransfers {
 	
 	public String src;				// utilizatorul sursa al transferului
 	public String dest;			// utilizatorul destinatie
@@ -23,24 +23,10 @@ public class InfoTransfers {
 		
 		this.progress = progress;
 	}
-	
-	public InfoTransfers(int id_transfer, String src, String dest, String file_name, String status, int progress){
 		
-		this.id_transfer = id_transfer;
-		
-		this.src = src;
-		this.dest = dest;
-		this.file_name = file_name;
-		this.status = status;
-		
-		this.progress = progress;
-	}
-	
 	//=========================================================================
 	
-	public void set_id_transfer(int id){
-		this.id_transfer = id;
-	}
+	// setare caracteristici transfer
 	
 	public void set_src(String src){
 		this.src = src;

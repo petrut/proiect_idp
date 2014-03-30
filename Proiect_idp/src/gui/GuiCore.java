@@ -40,27 +40,6 @@ public class GuiCore {
 	final JList<String> list_users;			// lista utilizatori
 	final JList<String> list_files;			// lista fisiere utilizator selectat
 
-	/**
-	 * Launch the application.
-	 */
-	/*
-	public static void guiAPI(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					GuiCore window = new GuiCore(transfer_gg);
-					window.frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
-	*/
-	/**
-	 * Create the application.
-	 */
-
 	public GuiCore(GuiAPI gg) {
 		
 		transfer_gg = gg;
@@ -70,10 +49,11 @@ public class GuiCore {
 		
 		initialize();
 	}
+	
+	//=====================================================================
 
-	/**
-	 * Initialize the contents of the frame.
-	 */
+	// initializare componente
+	
 	private void initialize() {
 		frame = new JFrame();
 		frame.setBounds(100, 100, 1100, 500);
@@ -162,8 +142,7 @@ public class GuiCore {
 				
 				int sel = table.getSelectedRow();
 				if(sel != -1){
-					if(tab_transfer.getValueAt(sel, 4).toString().equals(transfer_gg.stat_fin)){
-						
+					if(tab_transfer.getValueAt(sel, 4).toString().equals(transfer_gg.stat_fin)){						
 						
 						for(int i = 0; i < transfer_gg.list_transfers.size(); i++){
 							

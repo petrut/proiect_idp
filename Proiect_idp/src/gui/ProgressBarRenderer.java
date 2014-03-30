@@ -7,6 +7,8 @@ import javax.swing.JProgressBar;
 import javax.swing.JTable;
 import javax.swing.table.TableCellRenderer;
 
+// caracteristici bara progres
+
 public class ProgressBarRenderer extends JProgressBar implements TableCellRenderer{
 	
 	private static final long serialVersionUID = 1L;
