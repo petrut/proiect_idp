@@ -4,6 +4,7 @@ import gui.GuiAPI;
 
 import java.util.List;
 import java.util.Random;
+import java.util.Vector;
 
 import javax.swing.SwingWorker;
 
@@ -20,24 +21,27 @@ public class NewPackageWorker  extends SwingWorker<Integer, InfoTransfers>{
 		this.med = med;
 	}
 
+	//
+	//Acest SwingWor
 	@Override
 	protected Integer doInBackground() throws Exception {
 		// TODO Auto-generated method stub
 
 		Random x = new Random();
+		Vector <InfoTransfers>transferuriNeterminate =(Vector <InfoTransfers>) med.getUnfinishedTransfers();
 		while(true)
 		{
 			int i  = Math.abs(x.nextInt()) %1000;
 			int incrementValue  = 5 + Math.abs(x.nextInt()) %10;
-			synchronized (med.transferuriNeterminate) {
+			synchronized (transferuriNeterminate) {
 
-				if(med.transferuriNeterminate.size() > 0)
+				if(transferuriNeterminate.size() > 0)
 				{
-					int index = Math.abs(x.nextInt()) %med.transferuriNeterminate.size();
-					InfoTransfers it = med.transferuriNeterminate.get(index);
+					int index = Math.abs(x.nextInt()) %transferuriNeterminate.size();
+					InfoTransfers it = transferuriNeterminate.get(index);
 					it.progress += incrementValue;
 					if(it.progress > 99)
-						med.transferuriNeterminate.remove(it); 
+						transferuriNeterminate.remove(it); 
 					publish(it);
 				}
 			}
@@ -65,8 +69,8 @@ public class NewPackageWorker  extends SwingWorker<Integer, InfoTransfers>{
 
 
 
-		System.out.println(chunks);
-		System.out.println("process: " + Thread.currentThread());
+		//System.out.println(chunks);
+		//System.out.println("process: " + Thread.currentThread());
 	}
 
 

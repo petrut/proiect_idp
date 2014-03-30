@@ -33,7 +33,7 @@ public class NewTransferWorker  extends SwingWorker<Integer, InfoTransfers>{
 			
 			InfoTransfers it = new InfoTransfers("me", guiAPI.users.get(destination), guiAPI.users_files.get("me").get(file), "Sending", 0);
 			publish(it);
-			med.transferuriNeterminate.add(it);
+			med.addTransfer(it);
 			Thread.sleep(i);
 		}
 		
@@ -52,8 +52,8 @@ public class NewTransferWorker  extends SwingWorker<Integer, InfoTransfers>{
 
 
 
-		System.out.println(chunks);
-		System.out.println("process: " + Thread.currentThread());
+		//System.out.println(chunks);
+		//System.out.println("process: " + Thread.currentThread());
 	}
 
 

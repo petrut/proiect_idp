@@ -8,6 +8,7 @@ import javax.swing.JFileChooser;
 
 import org.omg.PortableInterceptor.USER_EXCEPTION;
 
+import common.IMediator;
 import common.InfoTransfers;
 
 import test.MockupMediator;
@@ -40,7 +41,7 @@ public class GuiAPI {
 	// lista de utilizatori cu propria lista de fisiere
 	public Hashtable<String, DefaultListModel<String>> users_files = new Hashtable<String, DefaultListModel<String>>();
 
-	MockupMediator med;
+	IMediator med;
 	//=========================================================================
 
 	public GuiAPI(){	
@@ -62,7 +63,7 @@ public class GuiAPI {
 	
 	//=========================================================================
 	
-	public void setUp(MockupMediator med)
+	public void setUp(IMediator med)
 	{
 		this.med = med;
 	}
@@ -175,7 +176,8 @@ public class GuiAPI {
 
 		InfoTransfers it = new InfoTransfers(current_user, "me", current_file, stat_in, 0);
 		
-		med.transferuriNeterminate.add(it);
+		med.addTransfer(it);
+		
 		tg.tab_transfer.add_new_transfer(it);
 	}
 
