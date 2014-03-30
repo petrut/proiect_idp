@@ -163,7 +163,7 @@ public class GuiCore {
 				int sel = table.getSelectedRow();
 				if(sel != -1){
 					if(tab_transfer.getValueAt(sel, 4).toString().equals(transfer_gg.stat_fin)){
-						tab_transfer.removeRow(sel);
+						
 						
 						for(int i = 0; i < transfer_gg.list_transfers.size(); i++){
 							
@@ -177,6 +177,7 @@ public class GuiCore {
 								break;
 							}
 						}
+						tab_transfer.removeRow(sel);
 					}
 				}
 			}
