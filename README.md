@@ -2,13 +2,15 @@
 proiect_idp
 =============================
 Sandulescu Dragos	341C3
+-----------------------------
 Teris Petrut		342C3
-=============================
+-----------------------------
 
 Tema 1
+-----------------------------
 
 
-IMPLEMENTARE GUI
+	IMPLEMENTARE GUI
 
 	Pachetele "common" si "gui" ofera o structura de date si metode de 
 reprezentare a informatiei, intr-o forma grafica, ce vor fi utilizate de
@@ -16,7 +18,7 @@ componenta mediator (in viitor), momentan clasa Main va simula comportamentul
 acesteia (pe baza pachetului "test").
 
 
-COMMON
+	COMMON
 
 	IMediator ofera o interfata de comunicare cu mediatorul, pentru componenta
 grafica a programului.
@@ -26,7 +28,7 @@ transfer, cu posibilitatea modificarii acestora.
 mediatorului.
 
 
-GUI
+	GUI
 
 	FileTransfer se ocupa de organizarea datelor pentru tabelul de transferuri
 (care ofera informatii despre starea stransferurilor la momentul actual),
@@ -47,7 +49,7 @@ componenta "progress bar" in tabelul de transferuri.
 moment de timp.
 
 
-TESTARE
+	TESTARE
 
 	Pentru testare am folosit clasa MockupMediator care este un mockup pentru
 mediator. In cadrul acestei clase se creeaza 3 SwingWorkeri NewPackageWorker,
