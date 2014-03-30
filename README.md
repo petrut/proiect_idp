@@ -73,9 +73,9 @@ numar  se alege una dintre cele 3 optiuni.
 
 	ANT
 
-ant build
-ant run
-ant clean
+ant build;
+ant run;
+ant clean;
 
 =============================
 
