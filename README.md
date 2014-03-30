@@ -71,6 +71,12 @@ utilizator cu noi  fisiere, sau sterge un utilizator. Acest worker la intervale
 de timp random, public un integer, iar in functia proces in functie de acest
 numar  se alege una dintre cele 3 optiuni.
 
+	ANT
+
+ant build
+ant run
+ant clean
+
 =============================
 
 
