@@ -28,7 +28,7 @@ public class GuiAPI {
 	String my_folder = ".";							// directorul pentru upload
 
 	// zona grafica GuiAPI
-	GuiCore tg;										// componenta de desenare
+	GuiCore tg;												// componenta de desenare
 	final JFileChooser file_chooser = new JFileChooser();	// selectare director personal
 
 	// zona de date/actiuni GuiAPI

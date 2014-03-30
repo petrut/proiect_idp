@@ -101,10 +101,15 @@ public class GuiCore {
 					
 					String selected_file = (list_files.getSelectedValue());
 					
-					transfer_gg.current_file = selected_file;
-					transfer_gg.start_download(selected_file);					
-				           				    
-				    label_notif.setText("Start download file <<< " + selected_file + " >>>");				    
+					if(! transfer_gg.current_user.equals("me")){					
+						transfer_gg.current_file = selected_file;
+						transfer_gg.start_download(selected_file);					
+					           				    
+					    label_notif.setText("Start download file <<< " + selected_file + " >>>");
+					}
+					else{
+						label_notif.setText("Own file.");
+					}
 				}
 			}
 		});		
