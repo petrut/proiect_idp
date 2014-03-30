@@ -2,9 +2,8 @@
 proiect_idp
 =============================
 
-Sandulescu Dragos	341C3
-
-Teris Petrut		342C3
+	Sandulescu Dragos	341C3
+	Teris Petrut		342C3
 
 Tema 1
 -----------------------------
