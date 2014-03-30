@@ -13,18 +13,17 @@ Tema 1
 
 Pachetele "common" si "gui" ofera o structura de date si metode de 
 reprezentare a informatiei, intr-o forma grafica, ce vor fi utilizate de
-componenta mediator (in viitor), momentan clasa Main va simula comportamentul
-acesteia (pe baza pachetului "test").
+componenta mediator (in viitor).
 
 
 	COMMON
 
-IMediator ofera o interfata de comunicare cu mediatorul, pentru componenta
-grafica a programului.
-InfoTransfer ofera o structurare a datelor referitoare la un anumit
-transfer, cu posibilitatea modificarii acestora.
-Main este o clasa temporara falosita pentru rularea aplicatiei, in absenta
-mediatorului.
+IMediator ofera momentan o interfata de comunicare pentru componenta grafica
+a programului.
+InfoTransfer ofera o structurare a datelor referitoare la un anumit transfer,
+cu posibilitatea modificarii acestora.
+Main este o clasa falosita pentru rularea aplicatiei, in viitor va instantia
+componenta mediator.
 
 
 	GUI
