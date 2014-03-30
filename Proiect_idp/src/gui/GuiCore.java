@@ -1,6 +1,7 @@
 package gui;
 
 import java.awt.Dimension;
+
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
@@ -23,6 +24,8 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
 import javax.swing.ScrollPaneConstants;
+
+import common.InfoTransfers;
 
 // clasa interfata grafica
 
@@ -161,6 +164,19 @@ public class GuiCore {
 				if(sel != -1){
 					if(tab_transfer.getValueAt(sel, 4).toString().equals(transfer_gg.stat_fin)){
 						tab_transfer.removeRow(sel);
+						
+						for(int i = 0; i < transfer_gg.list_transfers.size(); i++){
+							
+							if(transfer_gg.list_transfers.elementAt(i).src.equals(tab_transfer.getValueAt(sel, 1)) &&
+									transfer_gg.list_transfers.elementAt(i).dest.equals(tab_transfer.getValueAt(sel, 2)) &&
+									transfer_gg.list_transfers.elementAt(i).file_name.equals(tab_transfer.getValueAt(sel, 3))){
+								
+								InfoTransfers  it  = transfer_gg.list_transfers.get(i);
+								transfer_gg.med.removeTransfer(it);
+								transfer_gg.list_transfers.remove(i);
+								break;
+							}
+						}
 					}
 				}
 			}

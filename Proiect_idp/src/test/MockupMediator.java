@@ -40,6 +40,13 @@ public class MockupMediator implements IMediator {
 		return transferuriNeterminate;
 	}
 
+	@Override
+	public void removeTransfer(InfoTransfers it) {
+		// TODO Auto-generated method stub
+		transferuriNeterminate.remove(it);
+		
+	}
+
 	
 	
 	
