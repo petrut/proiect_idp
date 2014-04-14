@@ -81,7 +81,8 @@ public class GuiAPI {
 		}
 		users_files.put(current_user, meFiles);
 		users.addElement(current_user);
-		files.addElement(">>> Start by selecting a folder to share!");
+		files.addElement(">>> [ " + current_user.toUpperCase() + 
+				" ] you can start by selecting a folder to share!");
 
 		tg = new GuiCore(this);
 		tg.frame.setVisible(true);

@@ -15,7 +15,8 @@ public class Main {
 	public static void main(String []args) throws InterruptedException{
 		
 		if(args.length > 0){
-			current_user = args[0];
+			if(!args[0].equals("${args}"))
+				current_user = args[0];
 		}
 		
 		System.out.println("> current user = " + current_user);

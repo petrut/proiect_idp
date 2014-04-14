@@ -79,6 +79,33 @@ ant clean;
 =============================
 
 
+Tema2
+-----------------------------
 
+
+
+	LOGARE
+log4j
+
+	TESTARE
+JUnit
+
+	RULARE
+
+	Se incarca date din structura de fisiere si directoare continuta de
+"Users_info".
+
+
+	ANT
+
+ant build;
+
+ant run					// default user = me
+ant run -Dargs=mihai;	// current user = mihai
+ant 					// default target = run_3_users(3 instante de program);
+
+ant clean;
+
+=============================
 
 
