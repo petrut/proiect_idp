@@ -6,21 +6,23 @@ import java.util.Vector;
 
 import common.IMediator;
 import common.InfoTransfers;
-
+import common.InfoUser;
 
 
 //MockUp Mediator ce simuleaza aparitia de evenimente
 public class MockupMediator implements IMediator {
 
-	GuiAPI guiAPI ;
+	GuiAPI guiAPI;
+	InfoUser infoUser;
 	
 	private Vector <InfoTransfers>transferuriNeterminate = new Vector<InfoTransfers>();
 	
 	
 	
-	public MockupMediator(GuiAPI guiAPI) 
+	public MockupMediator(GuiAPI guiAPI, InfoUser iu) 
 	{
 		this.guiAPI = guiAPI;
+		this.infoUser = iu;
 	}
 
 	// pornire SwingWorkeri pentru simulare evenimente
