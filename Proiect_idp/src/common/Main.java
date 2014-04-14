@@ -18,11 +18,14 @@ public class Main {
 			current_user = args[0];
 		}
 		
+		System.out.println("> current user = " + current_user);
+		
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					GuiAPI guiAPI = new GuiAPI();
+					
 					InfoUser iu = new InfoUser(current_user);
+					GuiAPI guiAPI = new GuiAPI(iu);
 					
 					MockupMediator med = new MockupMediator(guiAPI, iu);
 					guiAPI.setUp(med);

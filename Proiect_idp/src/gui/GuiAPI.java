@@ -1,12 +1,15 @@
 package gui;
 import java.io.File;
+import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.Hashtable;
 
 import javax.swing.DefaultListModel;
 import javax.swing.JFileChooser;
+
 import common.IMediator;
 import common.InfoTransfers;
+import common.InfoUser;
 
 
 // componenta care se ocupa de partea grafica a programului
@@ -15,6 +18,8 @@ public class GuiAPI {
 	String stat_in = "Receiving";			// tip status transfer
 	String stat_out = "Sending";
 	String stat_fin = "Completed";
+	
+	InfoUser infoUser;
 
 	DefaultListModel<InfoTransfers> list_transfers = new DefaultListModel<InfoTransfers>();		// va fi mutata pe mediator
 
@@ -27,16 +32,21 @@ public class GuiAPI {
 	// zona de date/actiuni GuiAPI
 
 	public String current_user = "me";					// user pentru download
-	String current_file;								// fisier de download
+	String current_file;						// fisier de download
 
-	public DefaultListModel<String> users = new DefaultListModel<String>();	// lista utilizatorilor -> pentru JList
-	DefaultListModel<String> files = new DefaultListModel<String>();		// lista fisierelor		-> JList
+	/* lista utilizatorilor -> pentru JList */
+	public DefaultListModel<String> users = new DefaultListModel<String>();
+	
+	/* lista fisierelor		-> JList */
+	DefaultListModel<String> files = new DefaultListModel<String>();
 
 	
-	// lista de utilizatori cu propria lista de fisiere
-	public Hashtable<String, DefaultListModel<String>> users_files = new Hashtable<String, DefaultListModel<String>>();
+	// lista de utilizatori cu propria lista de fisiere a fiecaruia
+	public Hashtable<String, DefaultListModel<String>> users_files = 
+			new Hashtable<String, DefaultListModel<String>>();
 
 	IMediator med;
+	
 	//=========================================================================
 
 	public GuiAPI(){	
@@ -54,7 +64,30 @@ public class GuiAPI {
 
 		init_gui();
 	}
+	
+	//=========================================================================
+	
+	public GuiAPI(InfoUser iu){
+		
+		this.infoUser = iu;		
+		this.current_user = iu.getUser();
+	
+		ArrayList<String> fis_names = iu.getUserFilesName();
+		
+		DefaultListModel<String> meFiles = new DefaultListModel<String>();
+		
+		for(int i = 0; i < fis_names.size(); i++){
+			meFiles.addElement(fis_names.get(i));
+		}
+		users_files.put(current_user, meFiles);
+		users.addElement(current_user);
+		files.addElement(">>> Start by selecting a folder to share!");
 
+		tg = new GuiCore(this);
+		tg.frame.setVisible(true);
+
+		init_gui();
+	}
 	
 	//=========================================================================
 	

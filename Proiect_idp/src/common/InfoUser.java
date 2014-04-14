@@ -84,8 +84,15 @@ public class InfoUser {
 	
 	/*-----------------------------------------------------------------------*/
 	
-	/* cauta lista de fisiere a utilizatorului */
-	public ArrayList<String> getUserFileList(){
+	public String getUser(){
+		
+		return user;
+	}
+	
+	/*-----------------------------------------------------------------------*/
+	
+	/* intoarce lista de fisiere a utilizatorului - calea absoluta */
+	public ArrayList<String> getUserFilesAbsolutePath(){
 		
 		ArrayList<String> fl = new ArrayList<String>();
 		
@@ -100,6 +107,22 @@ public class InfoUser {
 	
 	/*-----------------------------------------------------------------------*/
 	
+	/* intoarce lista de fisiere a utilizatorului - doar numele lor */
+	public ArrayList<String> getUserFilesName(){
+		
+		ArrayList<String> fl = new ArrayList<String>();
+		
+		File dir = new File(files_dir_name);
+		
+		for( File fis : dir.listFiles()){
+			fl.add(fis.getName());
+        }
+        
+		return fl;
+	}
+	
+	/*-----------------------------------------------------------------------*/
+	
 	public static void main(String []args) throws IOException{
 		
 		InfoUser iu = new InfoUser("radu");
@@ -107,14 +130,23 @@ public class InfoUser {
 		System.out.println("\n> User = " + iu.user + ", log_file_name = " + iu.log_file_name);
 		
 		System.out.println("> User = " + iu.user + ", IP = " + iu.getUserIP());
-		
 		System.out.println("> User = " + iu.user + ", Port = " + iu.getUserPort());
 		
-		ArrayList<String> fis = iu.getUserFileList();
+		
+		ArrayList<String> fis = iu.getUserFilesAbsolutePath();
+		
+		System.out.println("\n> lista de fisiere(calea absoluta) a utilizatorului < " + iu.user + " >\n");
+		
+		for(String path : fis){
+			System.out.println(path);
+		}
+		
+		
+		ArrayList<String> fis2 = iu.getUserFilesName();
 		
 		System.out.println("\n> lista de fisiere a utilizatorului < " + iu.user + " >\n");
 		
-		for(String path : fis){
+		for(String path : fis2){
 			System.out.println(path);
 		}
 	}
