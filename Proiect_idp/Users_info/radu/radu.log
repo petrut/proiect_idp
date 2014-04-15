@@ -1,0 +1,5 @@
+[main] DEBUG common.Main.main(Main.java:32) - Sample debug message
+[main] INFO common.Main.main(Main.java:33) - Sample info message
+[main] WARN common.Main.main(Main.java:34) - Sample warn message
+[main] ERROR common.Main.main(Main.java:35) - Sample error message
+[main] FATAL common.Main.main(Main.java:36) - Sample fatal message
