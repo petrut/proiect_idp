@@ -1,0 +1,5 @@
+[main] DEBUG common.Main.main(Main.java:32) - Test debug message
+[main] INFO common.Main.main(Main.java:33) - Test info message
+[main] WARN common.Main.main(Main.java:34) - Test warn message
+[main] ERROR common.Main.main(Main.java:35) - Test error message
+[main] FATAL common.Main.main(Main.java:36) - Test fatal message
