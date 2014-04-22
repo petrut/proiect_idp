@@ -12,14 +12,10 @@ import java.nio.channels.FileChannel.MapMode;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Vector;
-
 import javax.swing.SwingUtilities;
-
 import org.apache.log4j.Logger;
-
 import networking.INetwork;
-import networking.Network;
-import networking.SocketOperationAPI;
+
 
 public class Mediator implements IMediator{
 

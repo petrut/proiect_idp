@@ -19,6 +19,7 @@
         <pathelement location="bin"/>
         <path refid="JUnit 4.libraryclasspath"/>
         <pathelement location="log4j-1.2.17.jar"/>
+        <pathelement location="lib/junit-4.10.jar"/>
     </path>
     <target name="init">
         <mkdir dir="bin"/>

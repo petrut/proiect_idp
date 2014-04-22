@@ -1,7 +1,6 @@
 package common;
 
 import gui.GuiAPI;
-import test.MockupMediator;
 import java.awt.EventQueue;
 
 import networking.INetwork;

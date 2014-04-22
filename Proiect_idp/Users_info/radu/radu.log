@@ -2173,3 +2173,88 @@
 [AWT-EventQueue-0] DEBUG common.InfoUser.getUserFiles(InfoUser.java:129) - cere lista fisierelor (FILE) din directorul Users_info/radu/radu_files
 [AWT-EventQueue-0] DEBUG common.InfoUser.getUserPort(InfoUser.java:92) - get user port = 7855
 [Thread-3] WARN networking.Network.start_server(Network.java:43) - Start Server
+[main] DEBUG common.Main.main(Main.java:37) - Test debug message
+[main] INFO common.Main.main(Main.java:38) - Test info message
+[main] WARN common.Main.main(Main.java:39) - Test warn message
+[main] ERROR common.Main.main(Main.java:40) - Test error message
+[main] FATAL common.Main.main(Main.java:41) - Test fatal message
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUser(InfoUser.java:101) - get user = radu
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUserFilesName(InfoUser.java:147) - cere lista fisierelor (nume) din directorul Users_info/radu/radu_files
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUser(InfoUser.java:101) - get user = radu
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUser(InfoUser.java:101) - get user = radu
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUserFilesName(InfoUser.java:147) - cere lista fisierelor (nume) din directorul Users_info/gigi/gigi_files
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUser(InfoUser.java:101) - get user = gigi
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUser(InfoUser.java:101) - get user = radu
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUserFilesName(InfoUser.java:147) - cere lista fisierelor (nume) din directorul Users_info/mihai/mihai_files
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUser(InfoUser.java:101) - get user = mihai
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUserFiles(InfoUser.java:129) - cere lista fisierelor (FILE) din directorul Users_info/radu/radu_files
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUserPort(InfoUser.java:92) - get user port = 7855
+[Thread-3] WARN networking.Network.start_server(Network.java:43) - Start Server
+[main] DEBUG common.Main.main(Main.java:37) - Test debug message
+[main] INFO common.Main.main(Main.java:38) - Test info message
+[main] WARN common.Main.main(Main.java:39) - Test warn message
+[main] ERROR common.Main.main(Main.java:40) - Test error message
+[main] FATAL common.Main.main(Main.java:41) - Test fatal message
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUser(InfoUser.java:101) - get user = radu
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUserFilesName(InfoUser.java:147) - cere lista fisierelor (nume) din directorul Users_info/radu/radu_files
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUser(InfoUser.java:101) - get user = radu
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUser(InfoUser.java:101) - get user = radu
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUserFilesName(InfoUser.java:147) - cere lista fisierelor (nume) din directorul Users_info/gigi/gigi_files
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUser(InfoUser.java:101) - get user = gigi
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUser(InfoUser.java:101) - get user = radu
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUserFilesName(InfoUser.java:147) - cere lista fisierelor (nume) din directorul Users_info/mihai/mihai_files
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUser(InfoUser.java:101) - get user = mihai
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUserFiles(InfoUser.java:129) - cere lista fisierelor (FILE) din directorul Users_info/radu/radu_files
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUserPort(InfoUser.java:92) - get user port = 7855
+[Thread-3] WARN networking.Network.start_server(Network.java:43) - Start Server
+[main] DEBUG common.Main.main(Main.java:37) - Test debug message
+[main] INFO common.Main.main(Main.java:38) - Test info message
+[main] WARN common.Main.main(Main.java:39) - Test warn message
+[main] ERROR common.Main.main(Main.java:40) - Test error message
+[main] FATAL common.Main.main(Main.java:41) - Test fatal message
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUser(InfoUser.java:101) - get user = radu
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUserFilesName(InfoUser.java:147) - cere lista fisierelor (nume) din directorul Users_info/radu/radu_files
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUser(InfoUser.java:101) - get user = radu
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUser(InfoUser.java:101) - get user = radu
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUserFilesName(InfoUser.java:147) - cere lista fisierelor (nume) din directorul Users_info/gigi/gigi_files
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUser(InfoUser.java:101) - get user = gigi
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUser(InfoUser.java:101) - get user = radu
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUserFilesName(InfoUser.java:147) - cere lista fisierelor (nume) din directorul Users_info/mihai/mihai_files
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUser(InfoUser.java:101) - get user = mihai
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUserFiles(InfoUser.java:129) - cere lista fisierelor (FILE) din directorul Users_info/radu/radu_files
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUserPort(InfoUser.java:92) - get user port = 7855
+[Thread-3] WARN networking.Network.start_server(Network.java:43) - Start Server
+[main] DEBUG common.Main.main(Main.java:37) - Test debug message
+[main] INFO common.Main.main(Main.java:38) - Test info message
+[main] WARN common.Main.main(Main.java:39) - Test warn message
+[main] ERROR common.Main.main(Main.java:40) - Test error message
+[main] FATAL common.Main.main(Main.java:41) - Test fatal message
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUser(InfoUser.java:101) - get user = radu
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUserFilesName(InfoUser.java:147) - cere lista fisierelor (nume) din directorul Users_info/radu/radu_files
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUser(InfoUser.java:101) - get user = radu
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUser(InfoUser.java:101) - get user = radu
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUserFilesName(InfoUser.java:147) - cere lista fisierelor (nume) din directorul Users_info/gigi/gigi_files
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUser(InfoUser.java:101) - get user = gigi
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUser(InfoUser.java:101) - get user = radu
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUserFilesName(InfoUser.java:147) - cere lista fisierelor (nume) din directorul Users_info/mihai/mihai_files
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUser(InfoUser.java:101) - get user = mihai
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUserFiles(InfoUser.java:129) - cere lista fisierelor (FILE) din directorul Users_info/radu/radu_files
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUserPort(InfoUser.java:92) - get user port = 7855
+[Thread-3] WARN networking.Network.start_server(Network.java:43) - Start Server
+[main] DEBUG common.Main.main(Main.java:37) - Test debug message
+[main] INFO common.Main.main(Main.java:38) - Test info message
+[main] WARN common.Main.main(Main.java:39) - Test warn message
+[main] ERROR common.Main.main(Main.java:40) - Test error message
+[main] FATAL common.Main.main(Main.java:41) - Test fatal message
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUser(InfoUser.java:101) - get user = radu
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUserFilesName(InfoUser.java:147) - cere lista fisierelor (nume) din directorul Users_info/radu/radu_files
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUser(InfoUser.java:101) - get user = radu
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUser(InfoUser.java:101) - get user = radu
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUserFilesName(InfoUser.java:147) - cere lista fisierelor (nume) din directorul Users_info/gigi/gigi_files
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUser(InfoUser.java:101) - get user = gigi
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUser(InfoUser.java:101) - get user = radu
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUserFilesName(InfoUser.java:147) - cere lista fisierelor (nume) din directorul Users_info/mihai/mihai_files
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUser(InfoUser.java:101) - get user = mihai
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUserFiles(InfoUser.java:129) - cere lista fisierelor (FILE) din directorul Users_info/radu/radu_files
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUserPort(InfoUser.java:92) - get user port = 7855
+[Thread-3] WARN networking.Network.start_server(Network.java:43) - Start Server

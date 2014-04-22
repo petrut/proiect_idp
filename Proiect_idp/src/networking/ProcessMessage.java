@@ -2,11 +2,7 @@ package networking;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;
-
-import javax.swing.SwingUtilities;
-
 import org.apache.log4j.Logger;
-
 import common.IMediator;
 import common.InfoTransfers;
 import gui.*;

@@ -15,7 +15,6 @@ import networking.Network;
 import networking.ProcessMessage;
 import common.IMediator;
 import common.InfoUser;
-import common.Main;
 import common.Mediator;
 import junit.framework.TestCase;
 
