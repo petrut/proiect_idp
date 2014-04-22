@@ -13,9 +13,9 @@ public class InfoTransfers {
 	
 	public int progress;			// valoare progress bar (in procente)
 	
-	RandomAccessFile raf = null;
-	Integer chunckNr = 0;
-	Integer chunckIndex = 0;
+	public RandomAccessFile raf = null;
+	public Integer chunckNr = 0;
+	public Integer chunckIndex = 0;
 	
 	public InfoTransfers(String src, String dest, String file_name, String status, int progress){
 		

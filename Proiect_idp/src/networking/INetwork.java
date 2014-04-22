@@ -5,9 +5,10 @@ import java.io.IOException;
 import java.io.RandomAccessFile;
 
 import common.IMediator;
+import common.InfoTransfers;
 
 public interface INetwork {
-	public void retrieveFile(String filename,String ipFrom, int portFrom)
+	public void retrieveFile(InfoTransfers filename,String ipFrom, int portFrom)
 			throws IOException ;
 	public void start_server(Integer port) throws IOException;
 	public void setMediator(IMediator med);

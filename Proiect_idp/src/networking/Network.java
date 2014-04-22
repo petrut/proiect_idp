@@ -14,6 +14,7 @@ import java.util.concurrent.locks.ReentrantLock;
 import org.apache.log4j.Logger;
 
 import common.IMediator;
+import common.InfoTransfers;
 
 
 
@@ -100,10 +101,10 @@ public class Network implements INetwork {
 	}
 
 	@Override
-	public void retrieveFile(final String filename, final String ipFrom, final int portFrom)
+	public void retrieveFile(final InfoTransfers it, final String ipFrom, final int portFrom)
 			throws IOException {
 		// TODO Auto-generated method stub
-		logger.warn("Network retrieve file : " +   filename  + " "+ portFrom );
+		logger.warn("Network retrieve file : " +   it.file_name  + " "+ portFrom );
 		
 		new Thread(new Runnable() {
 			
@@ -113,7 +114,9 @@ public class Network implements INetwork {
 				try {
 					SocketOperationAPI sockAPI = new SocketOperationAPI(ipFrom, portFrom);
 					
-					ByteBuffer request = MessageToByte.requestGetChunckNumber(filename);
+					String msg= it.file_name + " " + it.src + " " + it.dest;
+					
+					ByteBuffer request = MessageToByte.requestGetChunckNumber(msg);
 					logger.warn("send request chunck number BEFORE manu*");
 					
 					selectorLock.lock();

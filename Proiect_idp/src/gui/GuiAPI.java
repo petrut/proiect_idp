@@ -215,7 +215,7 @@ public class GuiAPI {
 
 		InfoTransfers it = new InfoTransfers(current_user, "me", current_file, stat_in, 0);
 		
-		med.addTransfer(it);
+		med.addReceivingTransfer(it);
 		
 		tg.tab_transfer.add_new_transfer(it);
 	}

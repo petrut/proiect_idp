@@ -54,8 +54,14 @@ public class Mediator implements IMediator{
 		// TODO Auto-generated method stub
 		
 	}
-
-	public void addTransfer(InfoTransfers it) {
+	@Override 
+	public void addTransfer(InfoTransfers it)
+	{
+		transferuriNeterminate.add(it);
+	}
+	
+	@Override
+	public void addReceivingTransfer(InfoTransfers it) {
 		logger.warn("Add transfer + it.dest = " + it.src);
 		
 		File file = new File(it.file_name+"_received_"+it.src);
@@ -65,7 +71,7 @@ public class Mediator implements IMediator{
 			transferuriNeterminate.add(it);
 			InfoUser uiTemp = new InfoUser(it.src);
 			try {
-				network.retrieveFile(it.file_name,  uiTemp.getUserIP(), Integer.parseInt(uiTemp.getUserPort()));
+				network.retrieveFile(it,  uiTemp.getUserIP(), Integer.parseInt(uiTemp.getUserPort()));
 			} catch (NumberFormatException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -118,7 +124,45 @@ public class Mediator implements IMediator{
 		return nameBuffer.get(fileName).asReadOnlyBuffer();
 	}
 	
-	public Integer addChunck(String filename,byte[] chunck)
+	@Override
+	public boolean addChunckSending(InfoTransfers tempIt)
+	{
+
+		boolean ret = false;
+		for(InfoTransfers e : transferuriNeterminate)
+		{
+			if(e.file_name.equals(tempIt.file_name) && e.src.equals(tempIt.src) && e.dest.equals(tempIt.dest))
+			{
+				
+			
+					e.chunckIndex++;
+					if(e.chunckIndex < e.chunckNr )
+						ret = true;
+					else
+						ret = false;
+					
+					e.progress = 100*e.chunckIndex/e.chunckNr;
+					logger.warn("progress = " + e.progress + "e.chunkNr = " + e.chunckNr);
+					final InfoTransfers constInfo = e;
+					SwingUtilities.invokeLater(new Runnable() {
+						
+						@Override
+						public void run() {
+							// TODO Auto-generated method stub
+							guiAPI.set_progress(constInfo);	
+						}
+					});
+				
+			}
+			
+		}
+		return ret;
+	}
+	
+	
+	
+	@Override
+	public Integer addChunckReceveing(String filename,byte[] chunck)
 	{
 		Integer ret  = null;
 		for(InfoTransfers e : transferuriNeterminate)
@@ -187,6 +231,23 @@ public class Mediator implements IMediator{
 				}
 			}
 		}).start();
+	}
+
+	
+	@Override
+	public void addSendingTransfer(final InfoTransfers it) {
+		// TODO Auto-generated method stub
+		
+		transferuriNeterminate.add(it);
+		
+		SwingUtilities.invokeLater(new Runnable() {
+			
+			@Override
+			public void run() {
+				// TODO Auto-generated method stub
+				guiAPI.add_transfer(it);	
+			}
+		});
 	}
 	
 	
