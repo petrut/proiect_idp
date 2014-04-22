@@ -64,7 +64,9 @@ public class SocketOperationAPI {
 		
 		while (byteBuffer.hasRemaining()) {
 
-			sockChannel.write(byteBuffer);
+			int ret = sockChannel.write(byteBuffer);
+			if(ret < 1)
+				throw new IOException("Write has problemes");
 		}
 	}
 	
@@ -73,6 +75,7 @@ public class SocketOperationAPI {
 	// operatia de read
 	public ByteBuffer read() throws IOException
 	{
+				// se citeste dimensiunea
 				ByteBuffer info = ByteBuffer.allocate(4);
 				int remainingBytes = 4;
 				int bytesRead = -1;
@@ -104,7 +107,7 @@ public class SocketOperationAPI {
 				info = ByteBuffer.allocate(remainingBytes);
 				info.clear();
 				
-				
+				// se citeste restul continutului
 				do
 				{
 					bytesRead = sockChannel.read(info);

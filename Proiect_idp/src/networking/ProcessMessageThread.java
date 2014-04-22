@@ -22,14 +22,15 @@ public class ProcessMessageThread {
 		super();
 		this.sockOP = sockOP;
 		this.med = med;
-		run();
+		
 	}
 
 	//Sunt doua tipuri de mesaje pentru obtinerea numarului de chunckuri 
 	// si pentru obitinerea unui chunck
 	// Acestea se mai impart  inca o data in Requesturi si Response 
+	// if the connection needs to be close this function will return true
 	
-	public void run() 
+	public boolean proccesMessage() 
 	{
 		try {
 			
@@ -65,12 +66,16 @@ public class ProcessMessageThread {
 				bb.get(chunckData,0,length);
 				bb.flip();
 				
+				
+				
+				// trimitere chunck la sursa
+				sockOP.send(MessageToByte.responseChunck(chunckID, msgDataString, chunckData));
+				
 				InfoTransfers tempIt= new InfoTransfers(data[1], data[2],data[0],Status.Sending,0);
 				
 				// apelare med pentru actulizare interfata grafica si structuri proprii de evidenta
-				med.addChunckSending(tempIt);
-				// trimitere chunck la sursa
-				sockOP.send(MessageToByte.responseChunck(chunckID, msgDataString, chunckData));
+				if(med.addChunckSending(tempIt) == true)
+					return true;
 
 			}
 
@@ -146,6 +151,10 @@ public class ProcessMessageThread {
 					ByteBuffer byteBufferRequestChunck  = MessageToByte.requestChunck(nextChunck, msgDataString);
 					sockOP.send(byteBufferRequestChunck);
 				}
+				else 
+					return true;
+				
+				
 				
 			}
 			break;
@@ -159,7 +168,7 @@ public class ProcessMessageThread {
 			e.printStackTrace();
 		}
 
-
+		return false;
 	}
 
 }

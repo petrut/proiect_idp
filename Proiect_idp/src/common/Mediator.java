@@ -141,9 +141,9 @@ public class Mediator implements IMediator{
 			
 					e.chunckIndex++;
 					if(e.chunckIndex < e.chunckNr )
-						ret = true;
-					else
 						ret = false;
+					else 
+						ret = true;
 					
 					e.progress = 100*e.chunckIndex/e.chunckNr;
 					logger.warn("progress = " + e.progress + "e.chunkNr = " + e.chunckNr);

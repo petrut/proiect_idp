@@ -73,9 +73,14 @@ public class Network implements INetwork {
 					{
 						
 						SocketChannel clientChannel = (SocketChannel) key.channel();
-					//	key.cancel();
+					//	
 						logger.warn("SERVER: sosesc date ");
-						new ProcessMessageThread(new  SocketOperationAPI(clientChannel), med);
+						boolean finnish = new ProcessMessageThread(new  SocketOperationAPI(clientChannel), med).proccesMessage();
+						if(finnish == true)
+						{
+							key.cancel();
+							clientChannel.close();
+						}
 						
 					}
 				}
