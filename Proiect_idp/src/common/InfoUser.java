@@ -7,6 +7,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
+import org.apache.log4j.Logger;
+
 public class InfoUser {
 	
 	private String user = "me";			/* nume utilizator curent */
@@ -16,6 +18,8 @@ public class InfoUser {
 	private String config_file_name;	/* cale fisier configurare */
 	private String log_file_name;		/* cale fisier logare */
 	private String files_dir_name;		/* cale director fisiere de transfer */
+	
+	static Logger logger = Logger.getLogger(InfoUser.class);
 	
 	public InfoUser(){
 		
@@ -71,7 +75,11 @@ public class InfoUser {
 	/* cauta adresa utilizatorului curent */
 	public String getUserIP() throws IOException{
 		
-		return getArgumentValue("ip");
+		String rez = getArgumentValue("ip");
+		
+		logger.debug("get user ip = " + rez);
+		
+		return rez;
 	}
 
 	/*-----------------------------------------------------------------------*/
@@ -79,12 +87,18 @@ public class InfoUser {
 	/* cauta portul utilizatorului curent */
 	public String getUserPort() throws IOException{
 		
-		return getArgumentValue("port");
+		String rez = getArgumentValue("port");
+		
+		logger.debug("get user port = " + rez);
+		
+		return rez;
 	}
 	
 	/*-----------------------------------------------------------------------*/
 	
 	public String getUser(){
+				
+		logger.debug("get user = " + user);
 		
 		return user;
 	}
@@ -101,23 +115,21 @@ public class InfoUser {
 		for( File fis : dir.listFiles()){
 			fl.add(fis.getAbsolutePath());
         }
+		
+		logger.debug("cere calea absoluta a fisierelor din directorul " + files_dir_name);
         
 		return fl;
 	}
 	
 	/* intoarce lista de fisiere a utilizatorului - list fisire*/
 	public File[] getUserFiles(){
-		
-		ArrayList<String> fl = new ArrayList<String>();
-		
+				
 		File dir = new File(files_dir_name);
 		
+		logger.debug("cere lista fisierelor (FILE) din directorul " + files_dir_name);
+		
 		return dir.listFiles();
-	}
-
-	
-	
-	
+	}	
 	
 	/*-----------------------------------------------------------------------*/
 	
@@ -131,6 +143,8 @@ public class InfoUser {
 		for( File fis : dir.listFiles()){
 			fl.add(fis.getName());
         }
+		
+		logger.debug("cere lista fisierelor (nume) din directorul " + files_dir_name);
         
 		return fl;
 	}

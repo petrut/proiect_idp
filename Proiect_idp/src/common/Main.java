@@ -23,8 +23,10 @@ public class Main {
 		
 		String log_path;
 		
+		System.out.println("> args = " + args[0]);
+		
 		if(args.length > 0){
-			if(!args[0].equals("${args}"))
+			if(!args[0].equals("${args}") && !args[0].equals("${arg0}"))
 				current_user = args[0];
 		}
 		
@@ -47,7 +49,7 @@ public class Main {
 					InfoUser iu = new InfoUser(current_user);
 					GuiAPI guiAPI = new GuiAPI(iu);
 					INetwork network = new Network(new ProcessMessage());
-					IMediator med = new Mediator(guiAPI, iu,network);
+					IMediator med = new Mediator(guiAPI, iu, network);
 					guiAPI.setUp(med);
 					med.setUp();
 					med.startServer();

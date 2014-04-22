@@ -60,8 +60,4 @@ public abstract class MockupMediator implements IMediator {
 		// TODO Auto-generated method stub
 		
 	}
-
-	
-	
-	
 }

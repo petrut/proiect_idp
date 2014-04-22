@@ -31,8 +31,8 @@ public class GuiAPI {
 
 	// zona de date/actiuni GuiAPI
 
-	public String current_user = "me";					// user pentru download
-	String current_file;						// fisier de download
+	public String current_user = "me";			// user pentru download
+	public String current_file;						// fisier de download
 
 	/* lista utilizatorilor -> pentru JList */
 	public DefaultListModel<String> users = new DefaultListModel<String>();
@@ -102,25 +102,35 @@ public class GuiAPI {
 	public void init_gui(){						// temporar	functie de test
 		
 		
-		if(infoUser.getUser().equals("me"))
-		{
-			InfoUser tempInfo = new InfoUser("gigi");
-			DefaultListModel<String> lp = new DefaultListModel<String>();
-			ArrayList<String> fis_names = tempInfo.getUserFilesName();
-			for(String fis : fis_names){
-				lp.addElement(fis);
+		InfoUser info1 = new InfoUser("radu");
+		InfoUser info2 = new InfoUser("gigi");
+		InfoUser info3 = new InfoUser("mihai");
+		
+		if(!infoUser.getUser().equals("radu")){
+			DefaultListModel<String> lp1 = new DefaultListModel<String>();
+			ArrayList<String> fis_names1 = info1.getUserFilesName();
+			for(String fis : fis_names1){
+				lp1.addElement(fis);
 			}
-			add_new_user(tempInfo.getUser(), lp);
+			add_new_user(info1.getUser(), lp1);
 		}
-		if(infoUser.getUser().equals("gigi"))
-		{
-			InfoUser tempInfo = new InfoUser("me");
-			DefaultListModel<String> lp = new DefaultListModel<String>();
-			ArrayList<String> fis_names = tempInfo.getUserFilesName();
-			for(String fis : fis_names){
-				lp.addElement(fis);
+		
+		if(!infoUser.getUser().equals("gigi")){
+			DefaultListModel<String> lp2 = new DefaultListModel<String>();
+			ArrayList<String> fis_names2 = info2.getUserFilesName();
+			for(String fis : fis_names2){
+				lp2.addElement(fis);
 			}
-			add_new_user(tempInfo.getUser(), lp);
+			add_new_user(info2.getUser(), lp2);
+		}
+		
+		if(!infoUser.getUser().equals("mihai")){
+			DefaultListModel<String> lp3 = new DefaultListModel<String>();
+			ArrayList<String> fis_names3 = info3.getUserFilesName();
+			for(String fis : fis_names3){
+				lp3.addElement(fis);
+			}
+			add_new_user(info3.getUser(), lp3);
 		}
 	}
 
@@ -213,7 +223,8 @@ public class GuiAPI {
 	public void start_download(String file){
 		System.out.println(">>> Incepe descarcarea fisierului: " + file);
 
-		InfoTransfers it = new InfoTransfers(current_user, "me", current_file, stat_in, 0);
+		InfoTransfers it = new InfoTransfers(current_user, infoUser.getUser(),
+				current_file, stat_in, 0);
 		
 		med.addReceivingTransfer(it);
 		

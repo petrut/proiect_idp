@@ -3,3 +3,318 @@
 [main] WARN common.Main.main(Main.java:34) - Test warn message
 [main] ERROR common.Main.main(Main.java:35) - Test error message
 [main] FATAL common.Main.main(Main.java:36) - Test fatal message
+[main] DEBUG common.Main.main(Main.java:36) - Test debug message
+[main] INFO common.Main.main(Main.java:37) - Test info message
+[main] WARN common.Main.main(Main.java:38) - Test warn message
+[main] ERROR common.Main.main(Main.java:39) - Test error message
+[main] FATAL common.Main.main(Main.java:40) - Test fatal message
+[Thread-3] WARN networking.Network.start_server(Network.java:44) - Start Server
+[AWT-EventQueue-0] WARN gui.GuiCore$1.mouseClicked(GuiCore.java:92) - transfer_gg = me
+[AWT-EventQueue-0] WARN common.Mediator.addReceivingTransfer(Mediator.java:67) - Add transfer + it.dest = gigi
+[AWT-EventQueue-0] WARN networking.Network.retrieveFile(Network.java:122) - Network retrieve file : gigi_fis1.txt 7822
+[Thread-4] WARN networking.SocketOperationAPI.<init>(SocketOperationAPI.java:24) - SOCKET OP : connect localhost 7822
+[Thread-4] WARN networking.Network$1.run(Network.java:135) - send request chunck number BEFORE manu*
+[AWT-EventQueue-0] WARN gui.GuiCore$1.mouseClicked(GuiCore.java:92) - transfer_gg = me
+[AWT-EventQueue-0] WARN gui.GuiCore$1.mouseClicked(GuiCore.java:92) - transfer_gg = me
+[AWT-EventQueue-0] WARN common.Mediator.addReceivingTransfer(Mediator.java:67) - Add transfer + it.dest = gigi
+[AWT-EventQueue-0] WARN networking.Network.retrieveFile(Network.java:122) - Network retrieve file : gigi_fis2.txt 7822
+[Thread-5] WARN networking.SocketOperationAPI.<init>(SocketOperationAPI.java:24) - SOCKET OP : connect localhost 7822
+[Thread-5] WARN networking.Network$1.run(Network.java:135) - send request chunck number BEFORE manu*
+[Thread-5] WARN networking.Network$1.run(Network.java:147) - send request chunck number BEFORE
+[main] DEBUG common.Main.main(Main.java:36) - Test debug message
+[main] INFO common.Main.main(Main.java:37) - Test info message
+[main] WARN common.Main.main(Main.java:38) - Test warn message
+[main] ERROR common.Main.main(Main.java:39) - Test error message
+[main] FATAL common.Main.main(Main.java:40) - Test fatal message
+[Thread-3] WARN networking.Network.start_server(Network.java:44) - Start Server
+[AWT-EventQueue-0] WARN gui.GuiCore$1.mouseClicked(GuiCore.java:92) - transfer_gg = me
+[AWT-EventQueue-0] WARN common.Mediator.addReceivingTransfer(Mediator.java:67) - Add transfer + it.dest = gigi
+[AWT-EventQueue-0] WARN networking.Network.retrieveFile(Network.java:122) - Network retrieve file : gigi_fis1.txt 7822
+[Thread-4] WARN networking.SocketOperationAPI.<init>(SocketOperationAPI.java:24) - SOCKET OP : connect localhost 7822
+[Thread-4] WARN networking.Network$1.run(Network.java:135) - send request chunck number BEFORE manu*
+[Thread-4] WARN networking.Network$1.run(Network.java:147) - send request chunck number BEFORE
+[main] DEBUG common.Main.main(Main.java:36) - Test debug message
+[main] INFO common.Main.main(Main.java:37) - Test info message
+[main] WARN common.Main.main(Main.java:38) - Test warn message
+[main] ERROR common.Main.main(Main.java:39) - Test error message
+[main] FATAL common.Main.main(Main.java:40) - Test fatal message
+[Thread-3] WARN networking.Network.start_server(Network.java:44) - Start Server
+[AWT-EventQueue-0] WARN gui.GuiCore$1.mouseClicked(GuiCore.java:92) - transfer_gg = me
+[AWT-EventQueue-0] WARN common.Mediator.addReceivingTransfer(Mediator.java:67) - Add transfer + it.dest = gigi
+[AWT-EventQueue-0] WARN networking.Network.retrieveFile(Network.java:122) - Network retrieve file : gigi_fis1.txt 7822
+[Thread-4] WARN networking.SocketOperationAPI.<init>(SocketOperationAPI.java:24) - SOCKET OP : connect localhost 7822
+[Thread-4] WARN networking.Network$1.run(Network.java:135) - send request chunck number BEFORE manu*
+[Thread-4] WARN networking.Network$1.run(Network.java:147) - send request chunck number BEFORE
+[main] DEBUG common.Main.main(Main.java:36) - Test debug message
+[main] INFO common.Main.main(Main.java:37) - Test info message
+[main] WARN common.Main.main(Main.java:38) - Test warn message
+[main] ERROR common.Main.main(Main.java:39) - Test error message
+[main] FATAL common.Main.main(Main.java:40) - Test fatal message
+[Thread-3] WARN networking.Network.start_server(Network.java:44) - Start Server
+[AWT-EventQueue-0] WARN gui.GuiCore$1.mouseClicked(GuiCore.java:92) - transfer_gg = me
+[AWT-EventQueue-0] WARN common.Mediator.addReceivingTransfer(Mediator.java:67) - Add transfer + it.dest = gigi
+[AWT-EventQueue-0] WARN networking.Network.retrieveFile(Network.java:122) - Network retrieve file : gigi_fis1.txt 7822
+[Thread-4] WARN networking.SocketOperationAPI.<init>(SocketOperationAPI.java:24) - SOCKET OP : connect localhost 7822
+[Thread-4] WARN networking.Network$1.run(Network.java:135) - send request chunck number BEFORE manu*
+[Thread-4] WARN networking.Network$1.run(Network.java:147) - send request chunck number BEFORE
+[main] DEBUG common.Main.main(Main.java:36) - Test debug message
+[main] INFO common.Main.main(Main.java:37) - Test info message
+[main] WARN common.Main.main(Main.java:38) - Test warn message
+[main] ERROR common.Main.main(Main.java:39) - Test error message
+[main] FATAL common.Main.main(Main.java:40) - Test fatal message
+[Thread-3] WARN networking.Network.start_server(Network.java:44) - Start Server
+[main] DEBUG common.Main.main(Main.java:36) - Test debug message
+[main] INFO common.Main.main(Main.java:37) - Test info message
+[main] WARN common.Main.main(Main.java:38) - Test warn message
+[main] ERROR common.Main.main(Main.java:39) - Test error message
+[main] FATAL common.Main.main(Main.java:40) - Test fatal message
+[Thread-3] WARN networking.Network.start_server(Network.java:44) - Start Server
+[main] DEBUG common.Main.main(Main.java:36) - Test debug message
+[main] INFO common.Main.main(Main.java:37) - Test info message
+[main] WARN common.Main.main(Main.java:38) - Test warn message
+[main] ERROR common.Main.main(Main.java:39) - Test error message
+[main] FATAL common.Main.main(Main.java:40) - Test fatal message
+[Thread-3] WARN networking.Network.start_server(Network.java:44) - Start Server
+[main] DEBUG common.Main.main(Main.java:36) - Test debug message
+[main] INFO common.Main.main(Main.java:37) - Test info message
+[main] WARN common.Main.main(Main.java:38) - Test warn message
+[main] ERROR common.Main.main(Main.java:39) - Test error message
+[main] FATAL common.Main.main(Main.java:40) - Test fatal message
+[Thread-3] WARN networking.Network.start_server(Network.java:44) - Start Server
+[main] DEBUG common.Main.main(Main.java:36) - Test debug message
+[main] INFO common.Main.main(Main.java:37) - Test info message
+[main] WARN common.Main.main(Main.java:38) - Test warn message
+[main] ERROR common.Main.main(Main.java:39) - Test error message
+[main] FATAL common.Main.main(Main.java:40) - Test fatal message
+[Thread-3] WARN networking.Network.start_server(Network.java:44) - Start Server
+[AWT-EventQueue-0] WARN gui.GuiCore$1.mouseClicked(GuiCore.java:92) - transfer_gg = me
+[AWT-EventQueue-0] WARN common.Mediator.addReceivingTransfer(Mediator.java:67) - Add transfer + it.dest = gigi
+[AWT-EventQueue-0] WARN networking.Network.retrieveFile(Network.java:122) - Network retrieve file : gigi_fis1.txt 7822
+[Thread-4] WARN networking.SocketOperationAPI.<init>(SocketOperationAPI.java:24) - SOCKET OP : connect localhost 7822
+[Thread-4] WARN networking.Network$1.run(Network.java:135) - send request chunck number BEFORE manu*
+[AWT-EventQueue-0] WARN gui.GuiCore$1.mouseClicked(GuiCore.java:92) - transfer_gg = me
+[AWT-EventQueue-0] WARN common.Mediator.addReceivingTransfer(Mediator.java:67) - Add transfer + it.dest = gigi
+[AWT-EventQueue-0] WARN networking.Network.retrieveFile(Network.java:122) - Network retrieve file : gigi_fis2.txt 7822
+[Thread-5] WARN networking.SocketOperationAPI.<init>(SocketOperationAPI.java:24) - SOCKET OP : connect localhost 7822
+[Thread-5] WARN networking.Network$1.run(Network.java:135) - send request chunck number BEFORE manu*
+[AWT-EventQueue-0] WARN gui.GuiCore$1.mouseClicked(GuiCore.java:92) - transfer_gg = me
+[AWT-EventQueue-0] WARN common.Mediator.addReceivingTransfer(Mediator.java:67) - Add transfer + it.dest = gigi
+[AWT-EventQueue-0] WARN networking.Network.retrieveFile(Network.java:122) - Network retrieve file : gigi_fis2.txt 7822
+[Thread-4] WARN networking.SocketOperationAPI.<init>(SocketOperationAPI.java:24) - SOCKET OP : connect localhost 7822
+[Thread-4] WARN networking.Network$1.run(Network.java:135) - send request chunck number BEFORE manu*
+[main] DEBUG common.Main.main(Main.java:36) - Test debug message
+[main] INFO common.Main.main(Main.java:37) - Test info message
+[main] WARN common.Main.main(Main.java:38) - Test warn message
+[main] ERROR common.Main.main(Main.java:39) - Test error message
+[main] FATAL common.Main.main(Main.java:40) - Test fatal message
+[Thread-3] WARN networking.Network.start_server(Network.java:44) - Start Server
+[main] DEBUG common.Main.main(Main.java:36) - Test debug message
+[main] INFO common.Main.main(Main.java:37) - Test info message
+[main] WARN common.Main.main(Main.java:38) - Test warn message
+[main] ERROR common.Main.main(Main.java:39) - Test error message
+[main] FATAL common.Main.main(Main.java:40) - Test fatal message
+[Thread-3] WARN networking.Network.start_server(Network.java:44) - Start Server
+[AWT-EventQueue-0] WARN gui.GuiCore$1.mouseClicked(GuiCore.java:92) - transfer_gg = me
+[AWT-EventQueue-0] WARN common.Mediator.addReceivingTransfer(Mediator.java:67) - Add transfer + it.dest = gigi
+[AWT-EventQueue-0] WARN networking.Network.retrieveFile(Network.java:122) - Network retrieve file : gigi_fis1.txt 7822
+[Thread-4] WARN networking.SocketOperationAPI.<init>(SocketOperationAPI.java:24) - SOCKET OP : connect localhost 7822
+[Thread-4] WARN networking.Network$1.run(Network.java:135) - send request chunck number BEFORE manu*
+[main] DEBUG common.Main.main(Main.java:36) - Test debug message
+[main] INFO common.Main.main(Main.java:37) - Test info message
+[main] WARN common.Main.main(Main.java:38) - Test warn message
+[main] ERROR common.Main.main(Main.java:39) - Test error message
+[main] FATAL common.Main.main(Main.java:40) - Test fatal message
+[Thread-3] WARN networking.Network.start_server(Network.java:44) - Start Server
+[main] DEBUG common.Main.main(Main.java:36) - Test debug message
+[main] INFO common.Main.main(Main.java:37) - Test info message
+[main] WARN common.Main.main(Main.java:38) - Test warn message
+[main] ERROR common.Main.main(Main.java:39) - Test error message
+[main] FATAL common.Main.main(Main.java:40) - Test fatal message
+[Thread-3] WARN networking.Network.start_server(Network.java:44) - Start Server
+[AWT-EventQueue-0] WARN gui.GuiCore$1.mouseClicked(GuiCore.java:92) - transfer_gg = me
+[AWT-EventQueue-0] WARN common.Mediator.addReceivingTransfer(Mediator.java:67) - Add transfer + it.dest = gigi
+[AWT-EventQueue-0] WARN networking.Network.retrieveFile(Network.java:122) - Network retrieve file : gigi_fis1.txt 7822
+[Thread-4] WARN networking.SocketOperationAPI.<init>(SocketOperationAPI.java:24) - SOCKET OP : connect localhost 7822
+[Thread-4] WARN networking.Network$1.run(Network.java:135) - send request chunck number BEFORE manu*
+[main] DEBUG common.Main.main(Main.java:36) - Test debug message
+[main] INFO common.Main.main(Main.java:37) - Test info message
+[main] WARN common.Main.main(Main.java:38) - Test warn message
+[main] ERROR common.Main.main(Main.java:39) - Test error message
+[main] FATAL common.Main.main(Main.java:40) - Test fatal message
+[Thread-3] WARN networking.Network.start_server(Network.java:44) - Start Server
+[main] DEBUG common.Main.main(Main.java:36) - Test debug message
+[main] INFO common.Main.main(Main.java:37) - Test info message
+[main] WARN common.Main.main(Main.java:38) - Test warn message
+[main] ERROR common.Main.main(Main.java:39) - Test error message
+[main] FATAL common.Main.main(Main.java:40) - Test fatal message
+[Thread-3] WARN networking.Network.start_server(Network.java:44) - Start Server
+[main] DEBUG common.Main.main(Main.java:36) - Test debug message
+[main] INFO common.Main.main(Main.java:37) - Test info message
+[main] WARN common.Main.main(Main.java:38) - Test warn message
+[main] ERROR common.Main.main(Main.java:39) - Test error message
+[main] FATAL common.Main.main(Main.java:40) - Test fatal message
+[Thread-3] WARN networking.Network.start_server(Network.java:44) - Start Server
+[main] DEBUG common.Main.main(Main.java:36) - Test debug message
+[main] INFO common.Main.main(Main.java:37) - Test info message
+[main] WARN common.Main.main(Main.java:38) - Test warn message
+[main] ERROR common.Main.main(Main.java:39) - Test error message
+[main] FATAL common.Main.main(Main.java:40) - Test fatal message
+[Thread-3] WARN networking.Network.start_server(Network.java:44) - Start Server
+[AWT-EventQueue-0] WARN gui.GuiCore$1.mouseClicked(GuiCore.java:92) - transfer_gg = me
+[AWT-EventQueue-0] WARN common.Mediator.addReceivingTransfer(Mediator.java:67) - Add transfer + it.dest = gigi
+[AWT-EventQueue-0] WARN networking.Network.retrieveFile(Network.java:122) - Network retrieve file : gigi_fis1.txt 7823
+[Thread-4] WARN networking.SocketOperationAPI.<init>(SocketOperationAPI.java:24) - SOCKET OP : connect localhost 7823
+[Thread-4] WARN networking.Network$1.run(Network.java:135) - send request chunck number BEFORE manu*
+[Thread-4] WARN networking.Network$1.run(Network.java:147) - send request chunck number BEFORE
+[main] DEBUG common.Main.main(Main.java:36) - Test debug message
+[main] INFO common.Main.main(Main.java:37) - Test info message
+[main] WARN common.Main.main(Main.java:38) - Test warn message
+[main] ERROR common.Main.main(Main.java:39) - Test error message
+[main] FATAL common.Main.main(Main.java:40) - Test fatal message
+[Thread-3] WARN networking.Network.start_server(Network.java:44) - Start Server
+[main] DEBUG common.Main.main(Main.java:36) - Test debug message
+[main] INFO common.Main.main(Main.java:37) - Test info message
+[main] WARN common.Main.main(Main.java:38) - Test warn message
+[main] ERROR common.Main.main(Main.java:39) - Test error message
+[main] FATAL common.Main.main(Main.java:40) - Test fatal message
+[Thread-3] WARN networking.Network.start_server(Network.java:44) - Start Server
+[main] DEBUG common.Main.main(Main.java:36) - Test debug message
+[main] INFO common.Main.main(Main.java:37) - Test info message
+[main] WARN common.Main.main(Main.java:38) - Test warn message
+[main] ERROR common.Main.main(Main.java:39) - Test error message
+[main] FATAL common.Main.main(Main.java:40) - Test fatal message
+[Thread-3] WARN networking.Network.start_server(Network.java:44) - Start Server
+[main] DEBUG common.Main.main(Main.java:36) - Test debug message
+[main] INFO common.Main.main(Main.java:37) - Test info message
+[main] WARN common.Main.main(Main.java:38) - Test warn message
+[main] ERROR common.Main.main(Main.java:39) - Test error message
+[main] FATAL common.Main.main(Main.java:40) - Test fatal message
+[Thread-3] WARN networking.Network.start_server(Network.java:44) - Start Server
+[main] DEBUG common.Main.main(Main.java:36) - Test debug message
+[main] INFO common.Main.main(Main.java:37) - Test info message
+[main] WARN common.Main.main(Main.java:38) - Test warn message
+[main] ERROR common.Main.main(Main.java:39) - Test error message
+[main] FATAL common.Main.main(Main.java:40) - Test fatal message
+[Thread-3] WARN networking.Network.start_server(Network.java:44) - Start Server
+[main] DEBUG common.Main.main(Main.java:36) - Test debug message
+[main] INFO common.Main.main(Main.java:37) - Test info message
+[main] WARN common.Main.main(Main.java:38) - Test warn message
+[main] ERROR common.Main.main(Main.java:39) - Test error message
+[main] FATAL common.Main.main(Main.java:40) - Test fatal message
+[Thread-3] WARN networking.Network.start_server(Network.java:44) - Start Server
+[main] DEBUG common.Main.main(Main.java:36) - Test debug message
+[main] INFO common.Main.main(Main.java:37) - Test info message
+[main] WARN common.Main.main(Main.java:38) - Test warn message
+[main] ERROR common.Main.main(Main.java:39) - Test error message
+[main] FATAL common.Main.main(Main.java:40) - Test fatal message
+[Thread-3] WARN networking.Network.start_server(Network.java:44) - Start Server
+[main] DEBUG common.Main.main(Main.java:36) - Test debug message
+[main] INFO common.Main.main(Main.java:37) - Test info message
+[main] WARN common.Main.main(Main.java:38) - Test warn message
+[main] ERROR common.Main.main(Main.java:39) - Test error message
+[main] FATAL common.Main.main(Main.java:40) - Test fatal message
+[Thread-3] WARN networking.Network.start_server(Network.java:44) - Start Server
+[main] DEBUG common.Main.main(Main.java:38) - Test debug message
+[main] INFO common.Main.main(Main.java:39) - Test info message
+[main] WARN common.Main.main(Main.java:40) - Test warn message
+[main] ERROR common.Main.main(Main.java:41) - Test error message
+[main] FATAL common.Main.main(Main.java:42) - Test fatal message
+[Thread-3] WARN networking.Network.start_server(Network.java:44) - Start Server
+[main] DEBUG common.Main.main(Main.java:38) - Test debug message
+[main] INFO common.Main.main(Main.java:39) - Test info message
+[main] WARN common.Main.main(Main.java:40) - Test warn message
+[main] ERROR common.Main.main(Main.java:41) - Test error message
+[main] FATAL common.Main.main(Main.java:42) - Test fatal message
+[Thread-3] WARN networking.Network.start_server(Network.java:44) - Start Server
+[main] DEBUG common.Main.main(Main.java:38) - Test debug message
+[main] INFO common.Main.main(Main.java:39) - Test info message
+[main] WARN common.Main.main(Main.java:40) - Test warn message
+[main] ERROR common.Main.main(Main.java:41) - Test error message
+[main] FATAL common.Main.main(Main.java:42) - Test fatal message
+[Thread-3] WARN networking.Network.start_server(Network.java:44) - Start Server
+[AWT-EventQueue-0] WARN gui.GuiCore$1.mouseClicked(GuiCore.java:92) - transfer_gg = me
+[AWT-EventQueue-0] WARN common.Mediator.addReceivingTransfer(Mediator.java:67) - Add transfer + it.dest = gigi
+[AWT-EventQueue-0] WARN networking.Network.retrieveFile(Network.java:122) - Network retrieve file : gigi_fis1.txt 7823
+[Thread-4] WARN networking.SocketOperationAPI.<init>(SocketOperationAPI.java:24) - SOCKET OP : connect localhost 7823
+[Thread-4] WARN networking.Network$1.run(Network.java:135) - send request chunck number BEFORE manu*
+[Thread-4] WARN networking.Network$1.run(Network.java:147) - send request chunck number BEFORE
+[Thread-4] WARN networking.Network$1.run(Network.java:149) - send request chunck number DONE
+[Thread-3] WARN networking.Network.start_server(Network.java:86) - SERVER: sosesc date 
+[Thread-3] WARN networking.SocketOperationAPI.read(SocketOperationAPI.java:84) - message read
+[Thread-3] WARN networking.SocketOperationAPI.read(SocketOperationAPI.java:89) - message read bread = 4
+[Thread-3] WARN networking.SocketOperationAPI.read(SocketOperationAPI.java:106) - message length :29
+[Thread-3] FATAL networking.ProcessMessage.proccesMessage(ProcessMessage.java:40) - Process Msg type = 4
+[Thread-3] FATAL networking.ProcessMessage.proccesMessage(ProcessMessage.java:108) - message type = ResponseGetChunckNumber
+[Thread-3] FATAL networking.ProcessMessage.proccesMessage(ProcessMessage.java:120) - message type = ResponseGetChunckNumber filename = gigi_fis1.txt
+[Thread-3] WARN networking.Network.start_server(Network.java:86) - SERVER: sosesc date 
+[Thread-3] WARN networking.SocketOperationAPI.read(SocketOperationAPI.java:84) - message read
+[Thread-3] WARN networking.SocketOperationAPI.read(SocketOperationAPI.java:89) - message read bread = 4
+[Thread-3] WARN networking.SocketOperationAPI.read(SocketOperationAPI.java:106) - message length :4029
+[Thread-3] FATAL networking.ProcessMessage.proccesMessage(ProcessMessage.java:40) - Process Msg type = 5
+[Thread-3] FATAL networking.ProcessMessage.proccesMessage(ProcessMessage.java:132) - message type = ResponseGetChunckData
+[Thread-3] WARN common.Mediator.addChunckReceveing(Mediator.java:185) - progress = 11e.chunkNr = 9
+[Thread-3] FATAL networking.ProcessMessage.proccesMessage(ProcessMessage.java:145) - nextChunck = 1
+[Thread-3] WARN networking.Network.start_server(Network.java:86) - SERVER: sosesc date 
+[Thread-3] WARN networking.SocketOperationAPI.read(SocketOperationAPI.java:84) - message read
+[Thread-3] WARN networking.SocketOperationAPI.read(SocketOperationAPI.java:89) - message read bread = 4
+[Thread-3] WARN networking.SocketOperationAPI.read(SocketOperationAPI.java:106) - message length :4029
+[Thread-3] FATAL networking.ProcessMessage.proccesMessage(ProcessMessage.java:40) - Process Msg type = 5
+[Thread-3] FATAL networking.ProcessMessage.proccesMessage(ProcessMessage.java:132) - message type = ResponseGetChunckData
+[Thread-3] WARN common.Mediator.addChunckReceveing(Mediator.java:185) - progress = 22e.chunkNr = 9
+[Thread-3] FATAL networking.ProcessMessage.proccesMessage(ProcessMessage.java:145) - nextChunck = 2
+[Thread-3] WARN networking.Network.start_server(Network.java:86) - SERVER: sosesc date 
+[Thread-3] WARN networking.SocketOperationAPI.read(SocketOperationAPI.java:84) - message read
+[Thread-3] WARN networking.SocketOperationAPI.read(SocketOperationAPI.java:89) - message read bread = 4
+[Thread-3] WARN networking.SocketOperationAPI.read(SocketOperationAPI.java:106) - message length :4029
+[Thread-3] FATAL networking.ProcessMessage.proccesMessage(ProcessMessage.java:40) - Process Msg type = 5
+[Thread-3] FATAL networking.ProcessMessage.proccesMessage(ProcessMessage.java:132) - message type = ResponseGetChunckData
+[Thread-3] WARN common.Mediator.addChunckReceveing(Mediator.java:185) - progress = 33e.chunkNr = 9
+[Thread-3] FATAL networking.ProcessMessage.proccesMessage(ProcessMessage.java:145) - nextChunck = 3
+[Thread-3] WARN networking.Network.start_server(Network.java:86) - SERVER: sosesc date 
+[Thread-3] WARN networking.SocketOperationAPI.read(SocketOperationAPI.java:84) - message read
+[Thread-3] WARN networking.SocketOperationAPI.read(SocketOperationAPI.java:89) - message read bread = 4
+[Thread-3] WARN networking.SocketOperationAPI.read(SocketOperationAPI.java:106) - message length :4029
+[Thread-3] FATAL networking.ProcessMessage.proccesMessage(ProcessMessage.java:40) - Process Msg type = 5
+[Thread-3] FATAL networking.ProcessMessage.proccesMessage(ProcessMessage.java:132) - message type = ResponseGetChunckData
+[Thread-3] WARN common.Mediator.addChunckReceveing(Mediator.java:185) - progress = 44e.chunkNr = 9
+[Thread-3] FATAL networking.ProcessMessage.proccesMessage(ProcessMessage.java:145) - nextChunck = 4
+[Thread-3] WARN networking.Network.start_server(Network.java:86) - SERVER: sosesc date 
+[Thread-3] WARN networking.SocketOperationAPI.read(SocketOperationAPI.java:84) - message read
+[Thread-3] WARN networking.SocketOperationAPI.read(SocketOperationAPI.java:89) - message read bread = 4
+[Thread-3] WARN networking.SocketOperationAPI.read(SocketOperationAPI.java:106) - message length :4029
+[Thread-3] FATAL networking.ProcessMessage.proccesMessage(ProcessMessage.java:40) - Process Msg type = 5
+[Thread-3] FATAL networking.ProcessMessage.proccesMessage(ProcessMessage.java:132) - message type = ResponseGetChunckData
+[Thread-3] WARN common.Mediator.addChunckReceveing(Mediator.java:185) - progress = 55e.chunkNr = 9
+[Thread-3] FATAL networking.ProcessMessage.proccesMessage(ProcessMessage.java:145) - nextChunck = 5
+[Thread-3] WARN networking.Network.start_server(Network.java:86) - SERVER: sosesc date 
+[Thread-3] WARN networking.SocketOperationAPI.read(SocketOperationAPI.java:84) - message read
+[Thread-3] WARN networking.SocketOperationAPI.read(SocketOperationAPI.java:89) - message read bread = 4
+[Thread-3] WARN networking.SocketOperationAPI.read(SocketOperationAPI.java:106) - message length :4029
+[Thread-3] FATAL networking.ProcessMessage.proccesMessage(ProcessMessage.java:40) - Process Msg type = 5
+[Thread-3] FATAL networking.ProcessMessage.proccesMessage(ProcessMessage.java:132) - message type = ResponseGetChunckData
+[Thread-3] WARN common.Mediator.addChunckReceveing(Mediator.java:185) - progress = 66e.chunkNr = 9
+[Thread-3] FATAL networking.ProcessMessage.proccesMessage(ProcessMessage.java:145) - nextChunck = 6
+[Thread-3] WARN networking.Network.start_server(Network.java:86) - SERVER: sosesc date 
+[Thread-3] WARN networking.SocketOperationAPI.read(SocketOperationAPI.java:84) - message read
+[Thread-3] WARN networking.SocketOperationAPI.read(SocketOperationAPI.java:89) - message read bread = 4
+[Thread-3] WARN networking.SocketOperationAPI.read(SocketOperationAPI.java:106) - message length :4029
+[Thread-3] FATAL networking.ProcessMessage.proccesMessage(ProcessMessage.java:40) - Process Msg type = 5
+[Thread-3] FATAL networking.ProcessMessage.proccesMessage(ProcessMessage.java:132) - message type = ResponseGetChunckData
+[Thread-3] WARN common.Mediator.addChunckReceveing(Mediator.java:185) - progress = 77e.chunkNr = 9
+[Thread-3] FATAL networking.ProcessMessage.proccesMessage(ProcessMessage.java:145) - nextChunck = 7
+[Thread-3] WARN networking.Network.start_server(Network.java:86) - SERVER: sosesc date 
+[Thread-3] WARN networking.SocketOperationAPI.read(SocketOperationAPI.java:84) - message read
+[Thread-3] WARN networking.SocketOperationAPI.read(SocketOperationAPI.java:89) - message read bread = 4
+[Thread-3] WARN networking.SocketOperationAPI.read(SocketOperationAPI.java:106) - message length :4029
+[Thread-3] FATAL networking.ProcessMessage.proccesMessage(ProcessMessage.java:40) - Process Msg type = 5
+[Thread-3] FATAL networking.ProcessMessage.proccesMessage(ProcessMessage.java:132) - message type = ResponseGetChunckData
+[Thread-3] WARN common.Mediator.addChunckReceveing(Mediator.java:185) - progress = 88e.chunkNr = 9
+[Thread-3] FATAL networking.ProcessMessage.proccesMessage(ProcessMessage.java:145) - nextChunck = 8
+[Thread-3] WARN networking.Network.start_server(Network.java:86) - SERVER: sosesc date 
+[Thread-3] WARN networking.SocketOperationAPI.read(SocketOperationAPI.java:84) - message read
+[Thread-3] WARN networking.SocketOperationAPI.read(SocketOperationAPI.java:89) - message read bread = 4
+[Thread-3] WARN networking.SocketOperationAPI.read(SocketOperationAPI.java:106) - message length :455
+[Thread-3] FATAL networking.ProcessMessage.proccesMessage(ProcessMessage.java:40) - Process Msg type = 5
+[Thread-3] FATAL networking.ProcessMessage.proccesMessage(ProcessMessage.java:132) - message type = ResponseGetChunckData
+[Thread-3] WARN common.Mediator.addChunckReceveing(Mediator.java:185) - progress = 100e.chunkNr = 9
+[Thread-3] FATAL networking.ProcessMessage.proccesMessage(ProcessMessage.java:145) - nextChunck = null

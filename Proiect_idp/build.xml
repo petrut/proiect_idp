@@ -3,21 +3,22 @@
               Any modifications will be overwritten.
               To include a user specific buildfile here, simply create one in the same
               directory with the processing instruction <?eclipse.ant.import?>
-              as the first entry and export the buildfile again. --><project basedir="." default="build" name="Proiect_idp">
+              as the first entry and export the buildfile again. -->
+<project basedir="." default="run_3_users" name="Proiect_idp">
     <property environment="env"/>
-    <property name="ECLIPSE_HOME" value="../../../../../../../usr/lib/eclipse"/>
+    <property name="ECLIPSE_HOME" value="../../../../Desktop/eclipse-standard-kepler-SR1-win32/eclipse"/>
+    <property name="junit.output.dir" value="junit"/>
     <property name="debuglevel" value="source,lines,vars"/>
     <property name="target" value="1.7"/>
     <property name="source" value="1.7"/>
     <path id="JUnit 4.libraryclasspath">
-        <pathelement location="../../../../../../../usr/share/eclipse/dropins/jdt/plugins/org.junit_4.8.2.dist/junit.jar"/>
-        <pathelement location="../../../../../../../usr/share/eclipse/dropins/jdt/plugins/org.hamcrest.core_1.3.0.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.junit_4.11.0.v201303080030/junit.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.hamcrest.core_1.3.0.v201303031735.jar"/>
     </path>
     <path id="Proiect_idp.classpath">
         <pathelement location="bin"/>
         <path refid="JUnit 4.libraryclasspath"/>
         <pathelement location="log4j-1.2.17.jar"/>
-
     </path>
     <target name="init">
         <mkdir dir="bin"/>
@@ -55,15 +56,79 @@
         <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
         <antcall target="build"/>
     </target>
-    <target name="Transfer_gui">
-        <java classname="main.Transfer_gui" failonerror="true" fork="yes">
+    <target name="InfoUser">
+        <java classname="common.InfoUser" failonerror="true" fork="yes">
             <classpath refid="Proiect_idp.classpath"/>
         </java>
     </target>
-    <target name="Main">
+    <target name="run">
         <java classname="common.Main" failonerror="true" fork="yes">
-			<classpath refid="Proiect_idp.classpath"/>
-			<arg value="${args}"/>
+            <arg line="${args}"/>
+            <classpath refid="Proiect_idp.classpath"/>
         </java>
+    </target>
+     <target name="run_3_users">
+        <parallel threadCount="3">
+           	 <sleep seconds="2"/>
+	        <java classname="common.Main" failonerror="true" fork="yes">
+	            <arg line="radu"/>
+	            <classpath refid="Proiect_idp.classpath"/>
+	        </java>
+	        <sleep seconds="2"/>
+	        <java classname="common.Main" failonerror="true" fork="yes">
+	            <arg line="gigi"/>
+	            <classpath refid="Proiect_idp.classpath"/>
+	        </java>
+	        <sleep seconds="2"/>
+	        <java classname="common.Main" failonerror="true" fork="yes">
+	            <arg line="mihai"/>
+	            <classpath refid="Proiect_idp.classpath"/>
+	        </java>
+		</parallel>     
+    </target>
+    <target name="Mediator_test">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="Mediator_test" todir="${junit.output.dir}"/>
+            <classpath refid="Proiect_idp.classpath"/>
+        </junit>
+    </target>
+    <target name="Temp_main">
+        <java classname="Temp_main" failonerror="true" fork="yes">
+            <classpath refid="Proiect_idp.classpath"/>
+        </java>
+    </target>
+    <target name="TestNetwork">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="test.TestNetwork" todir="${junit.output.dir}"/>
+            <classpath refid="Proiect_idp.classpath"/>
+        </junit>
+    </target>
+    <target name="TestCommon">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="test.TestCommon" todir="${junit.output.dir}"/>
+            <classpath refid="Proiect_idp.classpath"/>
+        </junit>
+    </target>
+    <target name="TestGui">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="test.TestGui" todir="${junit.output.dir}"/>
+            <classpath refid="Proiect_idp.classpath"/>
+        </junit>
+    </target>
+    <target name="junitreport">
+        <junitreport todir="${junit.output.dir}">
+            <fileset dir="${junit.output.dir}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="frames" todir="${junit.output.dir}"/>
+        </junitreport>
     </target>
 </project>

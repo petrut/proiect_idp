@@ -66,7 +66,7 @@ public class Mediator implements IMediator{
 	public void addReceivingTransfer(InfoTransfers it) {
 		logger.warn("Add transfer + it.dest = " + it.src);
 		
-		File file = new File(it.file_name+"_received_"+it.src);
+		File file = new File(it.file_name+"_received_"+it.dest);
 		try {
 			RandomAccessFile raf  = new RandomAccessFile(file, "rw");
 			it.raf = raf;

@@ -2,9 +2,13 @@ package common;
 
 import java.io.RandomAccessFile;
 
+import org.apache.log4j.Logger;
+
 // informatii despre transferuri
 
 public class InfoTransfers {
+	
+	static Logger logger = Logger.getLogger(InfoTransfers.class);
 	
 	public String src;				// utilizatorul sursa al transferului
 	public String dest;			// utilizatorul destinatie
@@ -33,18 +37,22 @@ public class InfoTransfers {
 	
 	public void set_src(String src){
 		this.src = src;
+		logger.debug("set src -> " + src);
 	}
 	
 	public void set_dest(String dest){
 		this.dest = dest;
+		logger.debug("set dest -> " + dest);
 	}
 	
 	public void set_file_name(String file_name){
-		this.file_name = file_name;		
+		this.file_name = file_name;
+		logger.debug("set file name -> " + file_name);
 	}
 	
 	public void set_status(String status){
 		this.status = status;
+		logger.debug("set status -> " + status);
 	}
 	
 	public void set_progress(int progress){

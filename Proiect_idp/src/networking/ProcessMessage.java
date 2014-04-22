@@ -56,13 +56,13 @@ public class ProcessMessage implements IProcessMessage {
 				logger.fatal("message type = RequestChunckType chunkID= "  + chunckID + "bb.limit = " + bb.limit() );
 				
 
-				int length = bb.limit() > (chunckID+1)* ServerConstants.BufferSize ? ServerConstants.BufferSize:bb.limit() - chunckID* ServerConstants.BufferSize;
+				int length = bb.limit() > (chunckID+1) * ServerConstants.BufferSize ? ServerConstants.BufferSize:bb.limit() - chunckID* ServerConstants.BufferSize;
 				byte chunckData[] = new byte[length];
 				logger.fatal("message type = RequestChunckType chunkID= "  + chunckID + "bb.limit = " + bb.limit() 
 						+ "length = " + length  + "start = "+ chunckID*ServerConstants.BufferSize);
 				
 				bb.position(chunckID*ServerConstants.BufferSize);
-				bb.get(chunckData,0,length);
+				bb.get(chunckData, 0, length);
 				bb.flip();
 				
 				
@@ -70,7 +70,7 @@ public class ProcessMessage implements IProcessMessage {
 				// trimitere chunck la sursa
 				sockOP.send(MessageToByte.responseChunck(chunckID, msgDataString, chunckData));
 				
-				InfoTransfers tempIt= new InfoTransfers(data[1], data[2],data[0],Status.Sending,0);
+				InfoTransfers tempIt= new InfoTransfers(data[1], data[2], data[0], Status.Sending, 0);
 				
 				// apelare med pentru actulizare interfata grafica si structuri proprii de evidenta
 				if(med.addChunckSending(tempIt) == true)
