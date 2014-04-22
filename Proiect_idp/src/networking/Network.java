@@ -18,7 +18,7 @@ import common.InfoTransfers;
 
 
 
-
+//clasa ce ofera API pentru modulul de network
 public class Network implements INetwork {
 
 	public IMediator med;
@@ -32,7 +32,7 @@ public class Network implements INetwork {
 		this.med = med;
 	}
 
-	//serverul va asocia pentru fiecare client nou cate 
+	// pornire server
 	public void start_server(Integer port) throws IOException
 	{
 		logger.warn("Start Server");
@@ -100,6 +100,7 @@ public class Network implements INetwork {
 
 	}
 
+	// obitinere fisier de la destinatie
 	@Override
 	public void retrieveFile(final InfoTransfers it, final String ipFrom, final int portFrom)
 			throws IOException {

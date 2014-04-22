@@ -54,12 +54,14 @@ public class Mediator implements IMediator{
 		// TODO Auto-generated method stub
 		
 	}
+	
 	@Override 
 	public void addTransfer(InfoTransfers it)
 	{
 		transferuriNeterminate.add(it);
 	}
 	
+	// functie care adauga transfer de tip Receving
 	@Override
 	public void addReceivingTransfer(InfoTransfers it) {
 		logger.warn("Add transfer + it.dest = " + it.src);
@@ -91,7 +93,7 @@ public class Mediator implements IMediator{
 		
 	}
 
-	
+	// functie care intoarce portul utilizatorului curent
 	@Override
 	public Integer getPort() {
 		try {
@@ -118,12 +120,14 @@ public class Mediator implements IMediator{
 		transferuriNeterminate.remove(it);
 	}
 
-
+	// functie care intoarce un mapped byte buffer pentru read
+	@Override
 	public ByteBuffer getFileBuffer(String fileName)
 	{
 		return nameBuffer.get(fileName).asReadOnlyBuffer();
 	}
 	
+	// functie care actulizeaza progresul in GUI  pentru Sending
 	@Override
 	public boolean addChunckSending(InfoTransfers tempIt)
 	{
@@ -160,7 +164,7 @@ public class Mediator implements IMediator{
 	}
 	
 	
-	
+	// functie care doar actualizeaza in GUI nr chunckuri
 	@Override
 	public Integer addChunckReceveing(String filename,byte[] chunck)
 	{
@@ -198,7 +202,7 @@ public class Mediator implements IMediator{
 		return ret;
 	}
 	
-	
+	// functie care seteaza numarul de chunckuri pentru un fisier
 	public void setChunckNr(String filename,int chunckNr)
 	{
 		for(InfoTransfers e : transferuriNeterminate)
@@ -212,7 +216,7 @@ public class Mediator implements IMediator{
 	}
 
 	
-	
+	// functie care porneste serverul pe portul curent
 	@Override
 	public void startServer() {
 		// TODO Auto-generated method stub
@@ -233,7 +237,7 @@ public class Mediator implements IMediator{
 		}).start();
 	}
 
-	
+	// functie care adauga transfer de tip sending si actualizeaza si GUI
 	@Override
 	public void addSendingTransfer(final InfoTransfers it) {
 		// TODO Auto-generated method stub

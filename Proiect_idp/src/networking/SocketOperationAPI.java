@@ -10,12 +10,14 @@ import java.nio.channels.SocketChannel;
 import org.apache.log4j.Logger;
 
 
-
+// clasa ce expune un api de interfata cu socketul
 public class SocketOperationAPI {
 	
 	static Logger logger = Logger.getLogger(SocketOperationAPI.class);
 	SocketChannel sockChannel = null;
 	
+	
+	// in constructor se face operatia connect
 	public SocketOperationAPI(String IP, int port) throws IOException
 	{
 		
@@ -55,7 +57,7 @@ public class SocketOperationAPI {
 		this.sockChannel = socketChannel;
 	}
 	
-	
+	// operatii de send
 	public void send(ByteBuffer byteBuffer) throws IOException
 	{
 		
@@ -68,7 +70,7 @@ public class SocketOperationAPI {
 	
 	
 	
-	
+	// operatia de read
 	public ByteBuffer read() throws IOException
 	{
 				ByteBuffer info = ByteBuffer.allocate(4);

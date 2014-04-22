@@ -11,6 +11,8 @@ import common.IMediator;
 import common.InfoTransfers;
 import gui.*;
 
+
+// clasa in se proceseaza mesajale
 public class ProcessMessageThread {
 
 	SocketOperationAPI sockOP = null;
@@ -23,6 +25,10 @@ public class ProcessMessageThread {
 		run();
 	}
 
+	//Sunt doua tipuri de mesaje pentru obtinerea numarului de chunckuri 
+	// si pentru obitinerea unui chunck
+	// Acestea se mai impart  inca o data in Requesturi si Response 
+	
 	public void run() 
 	{
 		try {
@@ -60,8 +66,10 @@ public class ProcessMessageThread {
 				bb.flip();
 				
 				InfoTransfers tempIt= new InfoTransfers(data[1], data[2],data[0],Status.Sending,0);
-				med.addChunckSending(tempIt);
 				
+				// apelare med pentru actulizare interfata grafica si structuri proprii de evidenta
+				med.addChunckSending(tempIt);
+				// trimitere chunck la sursa
 				sockOP.send(MessageToByte.responseChunck(chunckID, msgDataString, chunckData));
 
 			}
@@ -84,12 +92,9 @@ public class ProcessMessageThread {
 				
 				InfoTransfers it = new InfoTransfers(data[1], data[2], data[0],Status.Sending , 0);
 				it.chunckNr = chunckNumber;
-				med.addSendingTransfer(it);
-				
-				
-				
-				
-				
+				// apelare pentru actualizare interfata grafica si evidenta transferurilor
+				med.addSendingTransfer(it);		
+				// trimitere raspuns
 				sockOP.send(MessageToByte.responseGetChunckNumber(msgDataString, chunckNumber));
 				
 			}
@@ -105,13 +110,13 @@ public class ProcessMessageThread {
 				
 				String data[] = msgDataString.split("\\s+");
 				String fileNameString = data[0];
-				
+				//se actualizeaza numarul de chunckuri primit ca raspuns
 				med.setChunckNr(fileNameString, chunckNumber);
+				
 				logger.fatal("message type = ResponseGetChunckNumber filename = " + fileNameString);
 				
-				
+				// se trimite request pentru primul chunck
 				ByteBuffer byteBufferRequestChunck  = MessageToByte.requestChunck(0, msgDataString);
-				
 				sockOP.send(byteBufferRequestChunck);
 				
 				
@@ -131,8 +136,11 @@ public class ProcessMessageThread {
 				String data[] = msgDataString.split("\\s+");
 				String fileNameString = data[0];
 				
+				// se foloseste mediatorul pentru actuliza structuri proprii si interfata grafica
 				Integer nextChunck = med.addChunckReceveing(fileNameString, chunckData);
 				logger.fatal("nextChunck = " + nextChunck);
+				
+				// daca adika mai avem nevoie de chuckuri se mai trimite un request
 				if(nextChunck != null)
 				{
 					ByteBuffer byteBufferRequestChunck  = MessageToByte.requestChunck(nextChunck, msgDataString);

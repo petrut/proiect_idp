@@ -2,6 +2,7 @@ package networking;
 
 import java.nio.ByteBuffer;
 
+// clasa care transforma mesajele in ByteBuffere
 public class MessageToByte {
 
 	static public ByteBuffer requestChunck(int chunckID,String filename)
