@@ -13,24 +13,23 @@ import gui.*;
 
 
 // clasa in se proceseaza mesajale
-public class ProcessMessageThread {
+public class ProcessMessage implements IProcessMessage {
 
-	SocketOperationAPI sockOP = null;
+	
 	IMediator med = null;
 	static Logger logger = Logger.getLogger(Process.class);
-	public ProcessMessageThread(SocketOperationAPI sockOP, IMediator med) {
-		super();
-		this.sockOP = sockOP;
+	@Override
+	public void setMediator(IMediator med)
+	{
 		this.med = med;
-		
 	}
 
 	//Sunt doua tipuri de mesaje pentru obtinerea numarului de chunckuri 
 	// si pentru obitinerea unui chunck
 	// Acestea se mai impart  inca o data in Requesturi si Response 
 	// if the connection needs to be close this function will return true
-	
-	public boolean proccesMessage() 
+	@Override
+	public boolean proccesMessage(SocketOperationAPI sockOP) 
 	{
 		try {
 			

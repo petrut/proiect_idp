@@ -26,10 +26,16 @@ public class Network implements INetwork {
 	ServerSocketChannel server = null;
 	static Logger logger = Logger.getLogger(Network.class);
 	final ReentrantLock selectorLock = new ReentrantLock();
-
+	IProcessMessage procMessage;
+	
+	public Network(IProcessMessage procMessage)
+	{
+		this.procMessage = procMessage;
+	}
 	public void setMediator(IMediator med)
 	{
 		this.med = med;
+		procMessage.setMediator(med);
 	}
 
 	// pornire server
@@ -48,6 +54,7 @@ public class Network implements INetwork {
 			while (true) {
 				selectorLock.lock();
 				selectorLock.unlock();
+				
 				selector.select(400);
 				for (Iterator<SelectionKey> i = selector.selectedKeys().iterator(); i.hasNext();) { 
 					SelectionKey key = i.next(); 
@@ -56,8 +63,10 @@ public class Network implements INetwork {
 						System.out.println("CONECT");
 						((SocketChannel)key.channel()).finishConnect(); 
 					} 
+					
+					// daca trebuuie sa acceptam conexiuni
 					if (key.isAcceptable()) { 
-						// accept connection 
+						
 						
 						logger.warn("SERVER: ACCEPT client ");
 						SocketChannel client = server.accept(); 
@@ -68,14 +77,14 @@ public class Network implements INetwork {
 						
 				
 					} 
-					// vom asocia pentru fiecare client cate un tread
+					// in functie de tipul mesajului il vom procesa
 					if (key.isReadable()) 
 					{
 						
 						SocketChannel clientChannel = (SocketChannel) key.channel();
-					//	
+				
 						logger.warn("SERVER: sosesc date ");
-						boolean finnish = new ProcessMessageThread(new  SocketOperationAPI(clientChannel), med).proccesMessage();
+						boolean finnish = procMessage.proccesMessage(new SocketOperationAPI(clientChannel));
 						if(finnish == true)
 						{
 							key.cancel();
@@ -128,7 +137,7 @@ public class Network implements INetwork {
 					selectorLock.lock();
 					try {
 					    selector.wakeup();
-
+					    
 					    sockAPI.sockChannel.register(selector, SelectionKey.OP_READ);
 					} finally {
 					    selectorLock.unlock();

@@ -6,6 +6,7 @@ import java.awt.EventQueue;
 
 import networking.INetwork;
 import networking.Network;
+import networking.ProcessMessage;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -45,7 +46,7 @@ public class Main {
 					
 					InfoUser iu = new InfoUser(current_user);
 					GuiAPI guiAPI = new GuiAPI(iu);
-					INetwork network = new Network();
+					INetwork network = new Network(new ProcessMessage());
 					IMediator med = new Mediator(guiAPI, iu,network);
 					guiAPI.setUp(med);
 					med.setUp();
