@@ -25,7 +25,10 @@ import java.awt.event.ActionEvent;
 
 import javax.swing.ScrollPaneConstants;
 
+import org.apache.log4j.Logger;
+
 import common.InfoTransfers;
+import common.Main;
 
 // clasa interfata grafica
 
@@ -40,6 +43,8 @@ public class GuiCore {
 	final JList<String> list_users;			// lista utilizatori
 	final JList<String> list_files;			// lista fisiere utilizator selectat
 
+	static Logger logger = Logger.getLogger(Main.class);
+	
 	public GuiCore(GuiAPI gg) {
 		
 		transfer_gg = gg;
@@ -84,7 +89,10 @@ public class GuiCore {
 					
 					String selected_file = (list_files.getSelectedValue());
 					
-					if(! transfer_gg.current_user.equals("me")){					
+					logger.warn("transfer_gg = " +  transfer_gg.infoUser.getUser());
+					
+					if(! transfer_gg.current_user.equals(transfer_gg.infoUser.getUser())){
+
 						transfer_gg.current_file = selected_file;
 						transfer_gg.start_download(selected_file);					
 					           				    

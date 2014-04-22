@@ -100,18 +100,28 @@ public class GuiAPI {
 	//=========================================================================
 
 	public void init_gui(){						// temporar	functie de test
-				
-		DefaultListModel<String> lp = new DefaultListModel<String>();
-		for(int i = 0; i < 20; i++){
-			lp.addElement("fis_pt_" + i);
+		
+		
+		if(infoUser.getUser().equals("me"))
+		{
+			InfoUser tempInfo = new InfoUser("gigi");
+			DefaultListModel<String> lp = new DefaultListModel<String>();
+			ArrayList<String> fis_names = tempInfo.getUserFilesName();
+			for(String fis : fis_names){
+				lp.addElement(fis);
+			}
+			add_new_user(tempInfo.getUser(), lp);
 		}
-		add_new_user("Petrut", lp);
-
-		DefaultListModel<String> ld = new DefaultListModel<String>();
-		for(int i = 0; i < 20; i++){
-			ld.addElement("fis_ds_" + i);
+		if(infoUser.getUser().equals("gigi"))
+		{
+			InfoUser tempInfo = new InfoUser("me");
+			DefaultListModel<String> lp = new DefaultListModel<String>();
+			ArrayList<String> fis_names = tempInfo.getUserFilesName();
+			for(String fis : fis_names){
+				lp.addElement(fis);
+			}
+			add_new_user(tempInfo.getUser(), lp);
 		}
-		add_new_user("Dragos", ld);
 	}
 
 	//=========================================================================

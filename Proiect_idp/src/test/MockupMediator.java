@@ -1,6 +1,7 @@
 package test;
 import gui.GuiAPI;
 
+import java.nio.ByteBuffer;
 import java.util.List;
 import java.util.Vector;
 
@@ -10,7 +11,7 @@ import common.InfoUser;
 
 
 //MockUp Mediator ce simuleaza aparitia de evenimente
-public class MockupMediator implements IMediator {
+public abstract class MockupMediator implements IMediator {
 
 	GuiAPI guiAPI;
 	InfoUser infoUser;
@@ -46,6 +47,18 @@ public class MockupMediator implements IMediator {
 	@Override
 	public void removeTransfer(InfoTransfers it) {
 		transferuriNeterminate.remove(it);
+	}
+
+	@Override
+	public ByteBuffer getFileBuffer(String fileName) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void startServer() {
+		// TODO Auto-generated method stub
+		
 	}
 
 	

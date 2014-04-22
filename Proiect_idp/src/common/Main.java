@@ -4,6 +4,9 @@ import gui.GuiAPI;
 import test.MockupMediator;
 import java.awt.EventQueue;
 
+import networking.INetwork;
+import networking.Network;
+
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
@@ -42,11 +45,11 @@ public class Main {
 					
 					InfoUser iu = new InfoUser(current_user);
 					GuiAPI guiAPI = new GuiAPI(iu);
-					
-					MockupMediator med = new MockupMediator(guiAPI, iu);
+					INetwork network = new Network();
+					IMediator med = new Mediator(guiAPI, iu,network);
 					guiAPI.setUp(med);
-					
 					med.setUp();
+					med.startServer();
 				} catch (Exception e) {
 					e.printStackTrace();
 				}

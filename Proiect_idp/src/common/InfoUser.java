@@ -105,6 +105,20 @@ public class InfoUser {
 		return fl;
 	}
 	
+	/* intoarce lista de fisiere a utilizatorului - list fisire*/
+	public File[] getUserFiles(){
+		
+		ArrayList<String> fl = new ArrayList<String>();
+		
+		File dir = new File(files_dir_name);
+		
+		return dir.listFiles();
+	}
+
+	
+	
+	
+	
 	/*-----------------------------------------------------------------------*/
 	
 	/* intoarce lista de fisiere a utilizatorului - doar numele lor */
