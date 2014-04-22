@@ -109,3 +109,40 @@ ant clean;
 =============================
 
 
+
+Modul Networking
+
+Api : oferit mediatorului  
+	start_server
+		aceasta functie va porni un server pe un anumit port
+		si in functie va insarcina classei ProccesMessage cu procesarea mesajelor
+		mediator si procesarea mesajelor este decuplata de networking si pentru acest lucru am folosit interfete pentru clasele aferente
+	- retrieve_file  functie ce declanseaza seria de mesaje
+	pentru obtinerea unui fisier. Mesajul declansator
+	este primul din succesiunea de mai jos.
+	Aceste mesaje au urmatoare succesiune. Se trimite un
+	un mesaj pentru aflarea numarului de chunckuri. Se primeste un raspuns. Iar apoi pt fiecare chunck  se trimite un request pt date si se primeste un response cu datele aferente.
+
+clasa ProcessMessage
+	Aceasta clasa verifica ce mesaj a sosit apoi in functie 
+de acesta trimite de acesta trimite un request astfel ca acel
+flow sa fie respectat.
+	Fiecare din cele 4 mesaje care sunt transformate in binar de clasa MessageToByte.
+	Informatie care se regasteste in fiecare mesaje este
+	sursa,  destinatia si fisierul.
+	Legatura dintre mediator si clasa Proccess Message este 
+necesara pentru ca doar mediatorul cunoaste interfata grafica
+si functiile apelate din mediator au rol doar  de actuliza 
+o structura ce tine evidenta  transferurilor in mediator
+si apoi de a apela o functie din api-ul interfatei grafice
+ca sa actulizeze progresul transferului sau sa adauge un alt
+transfer.
+
+	
+
+
+		
+
+
+
+

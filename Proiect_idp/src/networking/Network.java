@@ -114,7 +114,7 @@ public class Network implements INetwork {
 
 	}
 
-	// obitinere fisier de la destinatie
+	// obtinere fisier de la destinatie
 	@Override
 	public void retrieveFile(final InfoTransfers it, final String ipFrom, final int portFrom)
 			throws IOException {
