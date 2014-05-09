@@ -72,7 +72,8 @@ public class Mediator implements IMediator{
 		
 		logger.warn("Add transfer + it.dest = " + it.src);
 		
-		File file = new File(it.file_name + "_received_" + it.dest);
+		File file = new File("Users_info/" + it.dest + "/" + it.dest + "_files/" + it.file_name);
+		
 		try {
 			RandomAccessFile raf  = new RandomAccessFile(file, "rw");
 			it.raf = raf;
@@ -139,15 +140,14 @@ public class Mediator implements IMediator{
 		{
 			if(e.file_name.equals(tempIt.file_name) && e.src.equals(tempIt.src) && e.dest.equals(tempIt.dest))
 			{
-				
-			
+							
 					e.chunckIndex++;
 					if(e.chunckIndex < e.chunckNr )
 						ret = false;
 					else 
 						ret = true;
 					
-					e.progress = 100*e.chunckIndex/e.chunckNr;
+					e.progress = 100 * e.chunckIndex / e.chunckNr;
 					logger.warn("progress = " + e.progress + "e.chunkNr = " + e.chunckNr);
 					final InfoTransfers constInfo = e;
 					SwingUtilities.invokeLater(new Runnable() {
@@ -155,7 +155,12 @@ public class Mediator implements IMediator{
 						@Override
 						public void run() {
 							// TODO Auto-generated method stub
-							guiAPI.set_progress(constInfo);	
+							try {
+								guiAPI.set_progress(constInfo);
+							} catch (IOException e) {
+								// TODO Auto-generated catch block
+								e.printStackTrace();
+							}	
 						}
 					});
 				
@@ -183,7 +188,7 @@ public class Mediator implements IMediator{
 					else
 						e.raf.close();
 					
-					e.progress = 100*e.chunckIndex/e.chunckNr;
+					e.progress = 100 * e.chunckIndex/e.chunckNr;
 					logger.warn("progress = " + e.progress + "e.chunkNr = " + e.chunckNr);
 					final InfoTransfers constInfo = e;
 					SwingUtilities.invokeLater(new Runnable() {
@@ -191,15 +196,19 @@ public class Mediator implements IMediator{
 						@Override
 						public void run() {
 							// TODO Auto-generated method stub
-							guiAPI.set_progress(constInfo);	
+							try {
+								guiAPI.set_progress(constInfo);
+							} catch (IOException e) {
+								// TODO Auto-generated catch block
+								e.printStackTrace();
+							}	
 						}
 					});
 				} catch (IOException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
-			}
-			
+			}			
 		}
 		return ret;
 	}
@@ -212,8 +221,7 @@ public class Mediator implements IMediator{
 			if(e.file_name.equals(filename))
 			{
 					e.chunckNr = chunckNr;
-			}
-			
+			}			
 		}
 	}
 

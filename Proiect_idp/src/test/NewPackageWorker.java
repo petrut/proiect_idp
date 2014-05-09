@@ -2,6 +2,7 @@ package test;
 
 import gui.GuiAPI;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.Random;
 import java.util.Vector;
@@ -55,7 +56,12 @@ public class NewPackageWorker  extends SwingWorker<Integer, InfoTransfers>{
 	protected void process(List<InfoTransfers> chunks) {
 		for(InfoTransfers e : chunks)
 		{	
-			guiAPI.set_progress(e);
+			try {
+				guiAPI.set_progress(e);
+			} catch (IOException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
 		}
 	}
 

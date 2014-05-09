@@ -55,14 +55,7 @@ public class Main {
 					guiAPI.setUp(med);
 					med.setUp();
 					med.startServer();
-					
-					Thread.sleep(500);
-					/*
-					network.retrieveFile(new InfoTransfers("ceva_secret"),
-							new InfoUser("web_server").getUserIP(),
-							Integer.parseInt(new InfoUser("web_server").getUserPort()));
-					*/
-					
+										
 					String identitate = current_user + " " + iu.getUserIP() + " " + iu.getUserPort();
 					ArrayList <String> tempf = iu.getUserFilesName();
 					

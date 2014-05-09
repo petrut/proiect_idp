@@ -1,5 +1,6 @@
 package gui;
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.Hashtable;
@@ -10,6 +11,7 @@ import javax.swing.JFileChooser;
 import common.IMediator;
 import common.InfoTransfers;
 import common.InfoUser;
+import common.Mediator;
 
 
 // componenta care se ocupa de partea grafica a programului
@@ -273,7 +275,7 @@ public class GuiAPI {
 		this.tg.tab_transfer.reset_progress(src, dest, file, progress);
 	}
 
-	public void set_progress(InfoTransfers e){
+	public void set_progress(InfoTransfers e) throws IOException{
 
 		this.tg.tab_transfer.reset_progress(e.src, e.dest, e.file_name,e.progress);
 		
@@ -281,6 +283,20 @@ public class GuiAPI {
 		{
 			e.status = Status.Completed;
 			set_status(e.src, e.dest, e.file_name,Status.Completed);
+		
+			/* notifica serverul de aparitia unui nou fisier */
+			
+			String identitate = infoUser.getUser() + " " + infoUser.getUserIP() + " " + infoUser.getUserPort();
+			ArrayList <String> tempf = infoUser.getUserFilesName();
+			
+			for(int i = 0; i < tempf.size(); i++){
+				identitate = identitate + " " + tempf.get(i);
+			}
+			
+			((Mediator)med).network.retrieveInfo(0, identitate,
+					new InfoUser("web_server").getUserIP(),
+					Integer.parseInt(new InfoUser("web_server").getUserPort()));
+			
 		}
 	}
 	

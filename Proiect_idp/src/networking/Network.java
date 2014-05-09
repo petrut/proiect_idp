@@ -205,7 +205,7 @@ public class Network implements INetwork {
 							
 							logger.warn("send request INFO BEFORE manu***# ");
 							
-							
+							/*
 							selectorLock.lock();
 							try {
 							    selector.wakeup();
@@ -214,7 +214,7 @@ public class Network implements INetwork {
 							} finally {
 							    selectorLock.unlock();
 							}
-							
+							*/
 							
 							logger.warn("send request info BEFORE");
 							sockAPI.send(request);
