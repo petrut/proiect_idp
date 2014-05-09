@@ -12,6 +12,8 @@ import java.util.concurrent.locks.ReentrantLock;
 
 import org.apache.log4j.Logger;
 
+import web.WebMessageToByte;
+import web.WebSocketOperationAPI;
 import common.IMediator;
 import common.InfoTransfers;
 
@@ -128,9 +130,18 @@ public class Network implements INetwork {
 				try {
 					SocketOperationAPI sockAPI = new SocketOperationAPI(ipFrom, portFrom);
 					
-					String msg= it.file_name + " " + it.src + " " + it.dest;
+					String msg;
+					ByteBuffer request;
 					
-					ByteBuffer request = MessageToByte.requestGetChunckNumber(msg);
+					if(it.private_data.equals("@#$")){
+						msg = it.file_name + " " + it.src + " " + it.dest;
+						request = MessageToByte.requestGetChunckNumber(msg);
+					}
+					else{
+						msg = it.private_data + " " + it.src + " " + it.dest;
+						request = MessageToByte.requestInfoEncode(msg);
+					}
+					
 					logger.warn("send request chunck number BEFORE manu*");
 					
 					selectorLock.lock();
@@ -160,11 +171,74 @@ public class Network implements INetwork {
 				}	
 				
 			}
-		}).start();
-		
-		
-		
+		}).start();		
 		
 	}
-
+	
+	// obtinere informatii de la Web server
+			@Override
+			public void retrieveInfo(final int tip, final String info_req, final String ipFrom, final int portFrom)
+					throws IOException {
+				// TODO Auto-generated method stub
+				logger.warn("Client retrieve info : " +   info_req  + " "+ portFrom );
+				
+				new Thread(new Runnable() {
+					
+					@Override
+					public void run() {
+						// TODO Auto-generated method stub
+						try {
+							SocketOperationAPI sockAPI = new SocketOperationAPI(ipFrom, portFrom);
+							
+							ByteBuffer request;							
+							
+							if(tip == 9){							
+								request = MessageToByte.requestExit(info_req);
+								
+								System.out.println("\n\n> Network SigKill 9 \n\n");								
+							}
+							else{
+								request = MessageToByte.requestInfoEncode(info_req);
+								
+								System.out.println("\n\n> Network info \n\n");	
+							}
+							
+							logger.warn("send request INFO BEFORE manu***# ");
+							
+							
+							selectorLock.lock();
+							try {
+							    selector.wakeup();
+							    
+							    sockAPI.sockChannel.register(selector, SelectionKey.OP_READ);
+							} finally {
+							    selectorLock.unlock();
+							}
+							
+							
+							logger.warn("send request info BEFORE");
+							sockAPI.send(request);
+							
+							sockAPI.close();
+							
+							logger.warn("send request info DONE");							
+							
+							//ByteBuffer response =sockAPI.read();
+							
+						} catch (IOException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+							System.out.println(e.getLocalizedMessage());
+							System.out.println(e.getMessage());
+							System.out.println(e.getCause());
+							
+						}	
+						
+					}
+				}).start();
+				
+			}
+			
+			
+	
 }

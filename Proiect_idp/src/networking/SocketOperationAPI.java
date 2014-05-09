@@ -129,4 +129,13 @@ public class SocketOperationAPI {
 				return info;
 
 	}
+	
+	public void close() throws IOException{
+		
+		if(sockChannel != null){
+			
+			sockChannel.close();
+		}
+	}
+
 }

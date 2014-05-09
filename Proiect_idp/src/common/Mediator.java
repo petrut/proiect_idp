@@ -12,24 +12,33 @@ import java.nio.channels.FileChannel.MapMode;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Vector;
+
 import javax.swing.SwingUtilities;
-import org.apache.log4j.Logger;
+
 import networking.INetwork;
+
+import org.apache.log4j.Logger;
+
 
 
 public class Mediator implements IMediator{
 
-	GuiAPI guiAPI;
-	InfoUser infoUser ;
+	public GuiAPI guiAPI;
+	public InfoUser infoUser ;
+	
+	
+	public HashMap <String, String> ip_addr = new HashMap<String, String>();
+	public HashMap <String, String> port_addr = new HashMap<String, String>();
+	
 
-	HashMap <String, MappedByteBuffer> nameBuffer = new HashMap<String, MappedByteBuffer>();
-	INetwork network;
+	public HashMap <String, MappedByteBuffer> nameBuffer = new HashMap<String, MappedByteBuffer>();
+	public INetwork network;
 	
 	private Vector <InfoTransfers>transferuriNeterminate = new Vector<InfoTransfers>();
 	static Logger logger = Logger.getLogger(Mediator.class);
 	
 	
-	public Mediator(GuiAPI guiAPI, InfoUser iu,INetwork network) throws IOException 
+	public Mediator(GuiAPI guiAPI, InfoUser iu, INetwork network) throws IOException 
 	{
 		this.guiAPI = guiAPI;
 		this.infoUser = iu;
@@ -60,9 +69,10 @@ public class Mediator implements IMediator{
 	// functie care adauga transfer de tip Receving
 	@Override
 	public void addReceivingTransfer(InfoTransfers it) {
+		
 		logger.warn("Add transfer + it.dest = " + it.src);
 		
-		File file = new File(it.file_name+"_received_"+it.dest);
+		File file = new File(it.file_name + "_received_" + it.dest);
 		try {
 			RandomAccessFile raf  = new RandomAccessFile(file, "rw");
 			it.raf = raf;
@@ -77,15 +87,11 @@ public class Mediator implements IMediator{
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-				
-			
 			
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}
-		
-		
+		}		
 		
 	}
 
@@ -249,6 +255,5 @@ public class Mediator implements IMediator{
 			}
 		});
 	}
-	
 	
 }

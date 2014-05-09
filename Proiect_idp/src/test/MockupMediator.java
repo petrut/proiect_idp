@@ -11,7 +11,7 @@ import common.InfoUser;
 
 
 //MockUp Mediator ce simuleaza aparitia de evenimente
-public abstract class MockupMediator implements IMediator {
+public class MockupMediator implements IMediator {
 
 	GuiAPI guiAPI;
 	InfoUser infoUser;
@@ -57,6 +57,42 @@ public abstract class MockupMediator implements IMediator {
 
 	@Override
 	public void startServer() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void addReceivingTransfer(InfoTransfers it) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void addSendingTransfer(InfoTransfers it) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Integer getPort() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Integer addChunckReceveing(String filename, byte[] chunck) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean addChunckSending(InfoTransfers tempIt) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void setChunckNr(String filename, int chunckNr) {
 		// TODO Auto-generated method stub
 		
 	}

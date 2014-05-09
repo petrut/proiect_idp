@@ -13,14 +13,32 @@ public class InfoTransfers {
 	public String src;				// utilizatorul sursa al transferului
 	public String dest;			// utilizatorul destinatie
 	public String file_name;		// numele fisierului transferat
-	public String status;			// starea actuala a transferului 
+	public String status;			// starea actuala a transferului
 	
+	public String private_data;		// camp comunicare cu Server Web
+		
 	public int progress;			// valoare progress bar (in procente)
 	
 	public RandomAccessFile raf = null;
 	public Integer chunckNr = 0;
 	public Integer chunckIndex = 0;
 	
+	public InfoTransfers(){
+		
+		this.private_data = "@#$";
+	};
+	
+	public InfoTransfers(String data){
+		
+		this.private_data = data;
+		
+		this.src = "ceva";
+		this.dest = "ceva";
+		this.file_name = "ceva";
+		this.status = "ceva";		
+		this.progress = 1;
+	};
+			
 	public InfoTransfers(String src, String dest, String file_name, String status, int progress){
 		
 		this.src = src;
@@ -29,6 +47,8 @@ public class InfoTransfers {
 		this.status = status;
 		
 		this.progress = progress;
+		
+		this.private_data = "@#$";
 	}
 		
 	//=========================================================================

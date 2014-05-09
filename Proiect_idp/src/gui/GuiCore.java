@@ -15,6 +15,8 @@ import javax.swing.JButton;
 import java.awt.GridLayout;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
@@ -22,13 +24,16 @@ import javax.swing.JLabel;
 
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.io.IOException;
 
 import javax.swing.ScrollPaneConstants;
 
 import org.apache.log4j.Logger;
 
 import common.InfoTransfers;
+import common.InfoUser;
 import common.Main;
+import common.Mediator;
 
 // clasa interfata grafica
 
@@ -57,6 +62,22 @@ public class GuiCore {
 	
 	//=====================================================================
 
+	public static void do_on_exit() throws NumberFormatException, IOException{
+		
+		System.out.println("\n> Aplicatia se inchide!\n");
+		
+		InfoUser info_web = new InfoUser("web_server");
+		
+		String name = ((Mediator)(transfer_gg.med)).guiAPI.current_user;
+		
+		String ip = info_web.getUserIP();
+		int port = Integer.parseInt(info_web.getUserPort());
+		
+		((Mediator)(transfer_gg.med)).network.retrieveInfo(9, name, ip, port);
+		
+		System.exit(0);
+	}
+	
 	// initializare componente
 	
 	private void initialize() {
@@ -64,6 +85,18 @@ public class GuiCore {
 		frame.setBounds(100, 100, 1100, 500);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setTitle("Intense traffic ...");
+		
+		frame.addWindowListener(new WindowAdapter() {
+	        @Override
+	        public void windowClosing(WindowEvent event) {
+	            try {
+					do_on_exit();
+				} catch (NumberFormatException | IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+	        }
+	    });
 		
 		JPanel panel = new JPanel();
 		frame.getContentPane().add(panel, BorderLayout.CENTER);

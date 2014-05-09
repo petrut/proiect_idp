@@ -2,9 +2,16 @@ package networking;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;
+
+import javax.swing.DefaultListModel;
+
 import org.apache.log4j.Logger;
+
+import web.WebMessageToByte;
 import common.IMediator;
 import common.InfoTransfers;
+import common.Mediator;
+import common.ServerConstants;
 import gui.*;
 
 
@@ -36,6 +43,45 @@ public class ProcessMessage implements IProcessMessage {
 			logger.fatal("Process Msg type = " + type);
 			switch(type)
 			{
+			
+			case ServerConstants.Sigkill:
+			{
+				byte msgDataByte[] = new byte[byteBuf.remaining()];
+				byteBuf.get(msgDataByte);
+				String user_name = new String(msgDataByte);
+								
+				System.out.println("> utilizatorul notifica inchiderea: " + user_name);
+								
+				((Mediator) med).guiAPI.remove_user(user_name);
+				
+				return true;
+			}
+			//break;
+			
+			case ServerConstants.ResponseInfo:
+			{
+				byte msgDataByte[] = new byte[byteBuf.remaining()];
+				byteBuf.get(msgDataByte);
+				String msgDataString = new String(msgDataByte);
+				String data[] = msgDataString.split("\\s+");
+				
+				System.out.println(">>> Mesaj primit de la WEB Server: " + msgDataString);
+				
+				((Mediator) med).ip_addr.put(data[0], data[1]);			/* salvare ip */
+				((Mediator) med).port_addr.put(data[0], data[2]);		/* salvare port */
+								
+				DefaultListModel <String> lm = new DefaultListModel<String>();
+				
+				for(int i = 3; i < data.length; i++){
+					lm.addElement(data[i]);
+				}
+				
+				((Mediator) med).guiAPI.add_new_user(data[0], lm);
+				
+				return true;
+			}
+			//break;
+						
 			case ServerConstants.RequestChunckType:
 			{
 			

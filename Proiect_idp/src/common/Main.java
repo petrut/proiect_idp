@@ -1,7 +1,9 @@
 package common;
 
 import gui.GuiAPI;
+
 import java.awt.EventQueue;
+import java.util.ArrayList;
 
 import networking.INetwork;
 import networking.Network;
@@ -9,6 +11,7 @@ import networking.ProcessMessage;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
+
 
 
 // clasa temporara pentru testarea aplicatiei (partea grafica)
@@ -52,12 +55,40 @@ public class Main {
 					guiAPI.setUp(med);
 					med.setUp();
 					med.startServer();
+					
+					Thread.sleep(500);
+					/*
+					network.retrieveFile(new InfoTransfers("ceva_secret"),
+							new InfoUser("web_server").getUserIP(),
+							Integer.parseInt(new InfoUser("web_server").getUserPort()));
+					*/
+					
+					String identitate = current_user + " " + iu.getUserIP() + " " + iu.getUserPort();
+					ArrayList <String> tempf = iu.getUserFilesName();
+					
+					for(int i = 0; i < tempf.size(); i++){
+						identitate = identitate + " " + tempf.get(i);
+					}
+					
+					network.retrieveInfo(0, identitate,
+							new InfoUser("web_server").getUserIP(),
+							Integer.parseInt(new InfoUser("web_server").getUserPort()));
+					
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
 			}
 		});
 		
+		new Thread(new Runnable() {
+			
+			@Override
+			public void run() {
+				
+								
+			}
+		
+		});
 		
 	}
 }

@@ -6,13 +6,14 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+import networking.INetwork;
+import networking.Network;
+import networking.ProcessMessage;
+
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
 import gui.GuiAPI;
-import networking.INetwork;
-import networking.Network;
-import networking.ProcessMessage;
 import common.IMediator;
 import common.InfoUser;
 import common.Mediator;
@@ -79,6 +80,8 @@ public class TestNetwork extends TestCase {
 					
 			}
 		});
+		
+		Thread.sleep(2000);
 		
 		String line;
 		FileInputStream fin =  new FileInputStream("Users_info/gigi/gigi_files/gigi_fis1.txt");

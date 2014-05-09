@@ -21,7 +21,7 @@ public class GuiAPI {
 	
 	InfoUser infoUser;
 
-	DefaultListModel<InfoTransfers> list_transfers = new DefaultListModel<InfoTransfers>();		// va fi mutata pe mediator
+	DefaultListModel<InfoTransfers> list_transfers = new DefaultListModel<InfoTransfers>();
 
 	String my_folder = ".";							// directorul pentru upload
 
@@ -31,7 +31,7 @@ public class GuiAPI {
 
 	// zona de date/actiuni GuiAPI
 
-	public String current_user = "me";			// user pentru download
+	public String current_user = "me";				// user pentru download
 	public String current_file;						// fisier de download
 
 	/* lista utilizatorilor -> pentru JList */
@@ -62,7 +62,7 @@ public class GuiAPI {
 		tg = new GuiCore(this);
 		tg.frame.setVisible(true);
 
-		init_gui();
+		//init_gui();		/* simulare 3 utilizatori */
 	}
 	
 	//=========================================================================
@@ -87,7 +87,7 @@ public class GuiAPI {
 		tg = new GuiCore(this);
 		tg.frame.setVisible(true);
 
-		init_gui();
+		//init_gui();		/* simulare 3 utilizatori */
 	}
 	
 	//=========================================================================
@@ -179,7 +179,9 @@ public class GuiAPI {
 	public void remove_user(String name){
 
 		set_notificari("Utilizator " + name + " a fost sters." );
+		
 		users_files.remove(name);
+		
 		for(int i = 0; i < users.size(); i++)
 		{
 			if(users.get(i).equals(name))
@@ -218,8 +220,8 @@ public class GuiAPI {
 	}
 
 	//=========================================================================
-
 	// selectare fisier(DUBLU click), initializare transfer(download)
+	
 	public void start_download(String file){
 		System.out.println(">>> Incepe descarcarea fisierului: " + file);
 

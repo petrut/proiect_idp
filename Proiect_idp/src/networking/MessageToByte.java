@@ -2,6 +2,10 @@ package networking;
 
 import java.nio.ByteBuffer;
 
+import common.ServerConstants;
+
+import common.ServerConstants;
+
 // clasa care transforma mesajele in ByteBuffere
 public class MessageToByte {
 
@@ -60,6 +64,32 @@ public class MessageToByte {
 		return ret;
 	}
 	
+	static public ByteBuffer requestInfoEncode(String filename)
+	{
+		
+		byte filenameByte[] = filename.getBytes();
+		ByteBuffer ret = ByteBuffer.allocate(8+filenameByte.length);
+		ret.clear();
+		ret.putInt(filenameByte.length+4);
+		ret.putInt(ServerConstants.RequestInfo);
+		ret.put(filenameByte);
+		
+		ret.flip();
+		return ret;
+	}
 	
+	static public ByteBuffer requestExit(String filename)
+	{
+		
+		byte filenameByte[] = filename.getBytes();
+		ByteBuffer ret = ByteBuffer.allocate(8+filenameByte.length);
+		ret.clear();
+		ret.putInt(filenameByte.length+4);
+		ret.putInt(ServerConstants.Sigkill);
+		ret.put(filenameByte);
+		
+		ret.flip();
+		return ret;
+	}
 	
 }
