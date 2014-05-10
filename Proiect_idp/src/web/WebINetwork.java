@@ -1,8 +1,6 @@
 package web;
 
 import java.io.IOException;
-
-import common.IMediator;
 import common.InfoTransfers;
 
 public interface WebINetwork {

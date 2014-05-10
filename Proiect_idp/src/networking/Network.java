@@ -12,8 +12,6 @@ import java.util.concurrent.locks.ReentrantLock;
 
 import org.apache.log4j.Logger;
 
-import web.WebMessageToByte;
-import web.WebSocketOperationAPI;
 import common.IMediator;
 import common.InfoTransfers;
 

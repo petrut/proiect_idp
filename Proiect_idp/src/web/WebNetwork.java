@@ -3,28 +3,21 @@ package web;
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
+import java.nio.channels.NotYetConnectedException;
 import java.nio.channels.SelectionKey;
 import java.nio.channels.Selector;
 import java.nio.channels.ServerSocketChannel;
 import java.nio.channels.SocketChannel;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.concurrent.locks.ReentrantLock;
-
-import javax.swing.DefaultListModel;
-
-import networking.MessageToByte;
-
 import org.apache.log4j.Logger;
-
 import common.IMediator;
 import common.InfoTransfers;
 
 
-
 //clasa ce ofera API pentru modulul de network
+
 public class WebNetwork implements WebINetwork {
 
 	public IMediator med;
@@ -193,30 +186,22 @@ public class WebNetwork implements WebINetwork {
 						if(tip == 9){
 							request = WebMessageToByte.requestExit(info_req);
 							
-							System.out.println("\n\n> < WEB > Network SigKill 9 \n\n");
+							logger.warn("< WEB > Network SigKill 9");
 						}
 						else{
 							request = WebMessageToByte.responseInfoEncode(info_req);
 						}
-						
-						logger.warn("send request INFO BEFORE manu***# ");
-						/*
-						selectorLock.lock();
-						try {
-						    selector.wakeup();
-						    
-						    sockAPI.sockChannel.register(selector, SelectionKey.OP_READ);
-						} finally {
-						    selectorLock.unlock();
-						}
-						*/
-						
-						
+																		
 						logger.warn("send request info BEFORE");
+						
+						try{
 						sockAPI.send(request);
 						
 						sockAPI.close();				
-						
+						}
+						catch (NotYetConnectedException e){
+							
+						}
 						logger.warn("send request info DONE");
 												
 					} catch (IOException e) {
@@ -271,9 +256,18 @@ public class WebNetwork implements WebINetwork {
 				info_base.put(new_nume, mesaj_brut);
 			}
 			
+			if(exista && tip == 0){
+				info_base.remove(new_nume);
+				info_base.put(new_nume, mesaj_brut);
+			}
+			
 			if(exista && tip == 9){
 				info_base.remove(new_nume);
 			}
 		}
 
+	public void remove_user(String user){
+		
+		info_base.remove(user);
+	}
 }

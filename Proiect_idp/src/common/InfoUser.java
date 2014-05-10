@@ -150,6 +150,14 @@ public class InfoUser {
 	}
 	
 	/*-----------------------------------------------------------------------*/
+	/* intoarce directorul de fisiere transfer */
+	
+	public String getFilesDirName(){
+		
+		return files_dir_name;
+	}
+	
+	/*-----------------------------------------------------------------------*/
 	
 	public static void main(String []args) throws IOException{
 		

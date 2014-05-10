@@ -1,19 +1,12 @@
 package web;
 
-import gui.GuiAPI;
-
 import java.awt.EventQueue;
-
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
-
-import networking.INetwork;
-import networking.Network;
-import networking.ProcessMessage;
-import common.IMediator;
 import common.InfoUser;
-import common.Main;
-import common.Mediator;
+
+
+/* server Web ce va comunica informatii utilizatorilor conectati */
 
 public class WebMain {
 	

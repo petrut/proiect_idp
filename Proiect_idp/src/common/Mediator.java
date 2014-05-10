@@ -48,11 +48,26 @@ public class Mediator implements IMediator{
 		
 		for(File file : infoUser.getUserFiles())
 		{
+				@SuppressWarnings("resource")
 				RandomAccessFile raf = new RandomAccessFile(file, "r");
 				MappedByteBuffer mappedBuffer = raf.getChannel().map(MapMode.READ_ONLY, 0, file.length());
 				nameBuffer.put(file.getName(), mappedBuffer);	
 		}
 	}
+	
+	public void resetNameBuffer() throws IOException{
+		
+		nameBuffer.clear();
+		
+		for(File file : infoUser.getUserFiles())
+		{
+				@SuppressWarnings("resource")
+				RandomAccessFile raf = new RandomAccessFile(file, "r");
+				MappedByteBuffer mappedBuffer = raf.getChannel().map(MapMode.READ_ONLY, 0, file.length());
+				nameBuffer.put(file.getName(), mappedBuffer);	
+		}
+	}
+	
 	
 	@Override
 	public void setUp() {
@@ -72,9 +87,10 @@ public class Mediator implements IMediator{
 		
 		logger.warn("Add transfer + it.dest = " + it.src);
 		
-		File file = new File("Users_info/" + it.dest + "/" + it.dest + "_files/" + it.file_name);
+		File file = new File("Users_info/" + it.dest + "/" + it.dest + "_files/" + it.dest + "_" + it.file_name);
 		
 		try {
+			@SuppressWarnings("resource")
 			RandomAccessFile raf  = new RandomAccessFile(file, "rw");
 			it.raf = raf;
 			transferuriNeterminate.add(it);
@@ -127,6 +143,8 @@ public class Mediator implements IMediator{
 	@Override
 	public ByteBuffer getFileBuffer(String fileName)
 	{
+		System.out.println("\n> get file buffer pentru: " + fileName + "\n");
+		
 		return nameBuffer.get(fileName).asReadOnlyBuffer();
 	}
 	

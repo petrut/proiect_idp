@@ -7,7 +7,6 @@ import javax.swing.DefaultListModel;
 
 import org.apache.log4j.Logger;
 
-import web.WebMessageToByte;
 import common.IMediator;
 import common.InfoTransfers;
 import common.Mediator;
@@ -77,6 +76,7 @@ public class ProcessMessage implements IProcessMessage {
 				}
 				
 				((Mediator) med).guiAPI.add_new_user(data[0], lm);
+				((Mediator) med).guiAPI.reset_me();
 				
 				return true;
 			}
@@ -98,7 +98,7 @@ public class ProcessMessage implements IProcessMessage {
 				logger.fatal("message type = RequestChunckType chunkID= "  + chunckID + "bb.limit = " + bb.limit() );
 				
 
-				int length = bb.limit() > (chunckID+1) * ServerConstants.BufferSize ? ServerConstants.BufferSize:bb.limit() - chunckID* ServerConstants.BufferSize;
+				int length = bb.limit() > (chunckID + 1) * ServerConstants.BufferSize ? ServerConstants.BufferSize:bb.limit() - chunckID* ServerConstants.BufferSize;
 				byte chunckData[] = new byte[length];
 				logger.fatal("message type = RequestChunckType chunkID= "  + chunckID + "bb.limit = " + bb.limit() 
 						+ "length = " + length  + "start = "+ chunckID*ServerConstants.BufferSize);
@@ -112,7 +112,7 @@ public class ProcessMessage implements IProcessMessage {
 				// trimitere chunck la sursa
 				sockOP.send(MessageToByte.responseChunck(chunckID, msgDataString, chunckData));
 				
-				InfoTransfers tempIt= new InfoTransfers(data[1], data[2], data[0], Status.Sending, 0);
+				InfoTransfers tempIt = new InfoTransfers(data[1], data[2], data[0], Status.Sending, 0);
 				
 				// apelare med pentru actulizare interfata grafica si structuri proprii de evidenta
 				if(med.addChunckSending(tempIt) == true)
@@ -132,8 +132,8 @@ public class ProcessMessage implements IProcessMessage {
 				String fileNameString = data[0];
 				ByteBuffer bb = med.getFileBuffer(fileNameString);
 				
-				int chunckNumber = bb.limit()/ServerConstants.BufferSize;
-				if(bb.limit()%ServerConstants.BufferSize != 0)
+				int chunckNumber = bb.limit() / ServerConstants.BufferSize;
+				if(bb.limit() % ServerConstants.BufferSize != 0)
 					chunckNumber++;
 				
 				InfoTransfers it = new InfoTransfers(data[1], data[2], data[0],Status.Sending , 0);
@@ -192,10 +192,18 @@ public class ProcessMessage implements IProcessMessage {
 					ByteBuffer byteBufferRequestChunck  = MessageToByte.requestChunck(nextChunck, msgDataString);
 					sockOP.send(byteBufferRequestChunck);
 				}
-				else 
+				else{
+					
+					System.out.println("\n> PROCESS current user: " +
+					((Mediator)med).guiAPI.current_user + "; user din MED info = " +
+							((Mediator)med).infoUser.getUser());
+					
+					((Mediator)med).guiAPI.reset_files_user();
+					((Mediator)med).guiAPI.print_hash_user();
+					((Mediator)med).guiAPI.print_hash();
+					
 					return true;
-				
-				
+				}				
 				
 			}
 			break;

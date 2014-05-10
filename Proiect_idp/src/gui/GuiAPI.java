@@ -33,7 +33,17 @@ public class GuiAPI {
 
 	// zona de date/actiuni GuiAPI
 
+	
+	/* NOTA!
+	 * Foarte important!
+	 * <<< current_user >>>		NU este utilizatorul curent al aplicatiei
+	 * ci este utilizatorul curent selectat, de unde se pot descarca fisiere!
+	 * */
+		
 	public String current_user = "me";				// user pentru download
+	
+	
+	
 	public String current_file;						// fisier de download
 
 	/* lista utilizatorilor -> pentru JList */
@@ -44,13 +54,13 @@ public class GuiAPI {
 
 	
 	// lista de utilizatori cu propria lista de fisiere a fiecaruia
-	public Hashtable<String, DefaultListModel<String>> users_files = 
+	public static Hashtable<String, DefaultListModel<String>> users_files = 
 			new Hashtable<String, DefaultListModel<String>>();
 
 	IMediator med;
 	
 	//=========================================================================
-
+	
 	public GuiAPI(){	
 
 		DefaultListModel<String> meFiles = new DefaultListModel<String>();
@@ -64,7 +74,7 @@ public class GuiAPI {
 		tg = new GuiCore(this);
 		tg.frame.setVisible(true);
 
-		//init_gui();		/* simulare 3 utilizatori */
+		//init_gui();		// simulare 3 utilizatori
 	}
 	
 	//=========================================================================
@@ -88,8 +98,12 @@ public class GuiAPI {
 
 		tg = new GuiCore(this);
 		tg.frame.setVisible(true);
+		
+		this.my_folder = iu.getFilesDirName();
 
 		//init_gui();		/* simulare 3 utilizatori */
+		
+		reset_me();
 	}
 	
 	//=========================================================================
@@ -166,12 +180,13 @@ public class GuiAPI {
 		if(users.contains(name))
 		{
 			set_notificari("Utilizator " + name + " a schimbat lista de fisiere");
-			users_files.put(name, lm);
-			
+			users_files.remove(name);
+			users_files.put(name, lm);						
 		}
 		else
 		{
 			set_notificari("Utilizator nou " + name +" .");
+			users_files.remove(name);
 			users_files.put(name, lm);
 			users.addElement(name);
 		}
@@ -201,7 +216,7 @@ public class GuiAPI {
 
 		files.clear();
 
-		DefaultListModel<String> lm = users_files.get("me");
+		DefaultListModel<String> lm = users_files.get(current_user);
 
 		for(int i = 0; i < lm.size(); i++){
 			files.addElement(lm.elementAt(i));			
@@ -213,12 +228,17 @@ public class GuiAPI {
 	// la selectarea unui nou utilizator(DUBLU click) resetare lista fisiere
 	public void switch_user(String user){
 
+		System.out.println("\n> switch users");
 		files.clear();
 		DefaultListModel<String> lm = users_files.get(user);
 
 		for(int i = 0; i < lm.size(); i++){
 			files.addElement(lm.elementAt(i));
+			
+			System.out.println("> switch val = " + lm.elementAt(i));
 		}
+		
+		print_hash();
 	}
 
 	//=========================================================================
@@ -248,23 +268,26 @@ public class GuiAPI {
 	// resetare folder personal, utilizat pentru upload
 	public void reset_my_folder(){
 
+		System.out.println("\n\n> reset my folder \n\n");
+		
 		String name;
 
 		File dir = new File(this.my_folder);
 		File[] list_files = dir.listFiles();
 
-		users_files.get("me").clear();
+		users_files.get(infoUser.getUser()).clear();
 
 		for (File file : list_files) {
+			
 			if (file.isFile()) {
+			
 				name = file.getName();
-				System.out.println(name);
 
-				users_files.get("me").addElement(name);		        
+				users_files.get(infoUser.getUser()).addElement(name);		        
 			}
 		}
 
-		reset_me();
+		//reset_me();
 	}
 
 	//=========================================================================
@@ -275,6 +298,8 @@ public class GuiAPI {
 		this.tg.tab_transfer.reset_progress(src, dest, file, progress);
 	}
 
+	/*-----------------------------------------------------------------------*/
+	
 	public void set_progress(InfoTransfers e) throws IOException{
 
 		this.tg.tab_transfer.reset_progress(e.src, e.dest, e.file_name,e.progress);
@@ -283,30 +308,94 @@ public class GuiAPI {
 		{
 			e.status = Status.Completed;
 			set_status(e.src, e.dest, e.file_name,Status.Completed);
-		
-			/* notifica serverul de aparitia unui nou fisier */
 			
-			String identitate = infoUser.getUser() + " " + infoUser.getUserIP() + " " + infoUser.getUserPort();
-			ArrayList <String> tempf = infoUser.getUserFilesName();
-			
-			for(int i = 0; i < tempf.size(); i++){
-				identitate = identitate + " " + tempf.get(i);
-			}
-			
-			((Mediator)med).network.retrieveInfo(0, identitate,
-					new InfoUser("web_server").getUserIP(),
-					Integer.parseInt(new InfoUser("web_server").getUserPort()));
-			
+			((Mediator)med).resetNameBuffer();
 		}
 	}
 	
+	/*-----------------------------------------------------------------------*/
+	/* notifica serverul de aparitia unui nou fisier sau de shimbarea lor */
+	
+	public void reset_files_user() throws IOException{
+		
+		System.out.println("> reset file user, pentru " + current_user + ", info user = " + infoUser.getUser());
+		
+		print_hash();
+		
+		String identitate = infoUser.getUser() + " " + infoUser.getUserIP() + " " + infoUser.getUserPort();
+		ArrayList <String> tempf = infoUser.getUserFilesName();
+		
+		DefaultListModel<String> lm = new DefaultListModel<String>();
+		
+		users_files.remove(infoUser.getUser());
+				
+		for(int i = 0; i < tempf.size(); i++){
+			
+			identitate = identitate + " " + tempf.get(i);
+			
+			lm.addElement(tempf.get(i));
+			
+			System.out.println("> reset file = " + tempf.get(i));
+		}
+		
+		users_files.put(infoUser.getUser(), lm);
+		
+		System.out.println("\n> reset identitate = " + identitate + "\n\n");
+		
+		((Mediator)med).network.retrieveInfo(0, identitate,
+				new InfoUser("web_server").getUserIP(),
+				Integer.parseInt(new InfoUser("web_server").getUserPort()));
+		
+		reset_me();
+		
+		print_hash();
+	}
 
+	/*-----------------------------------------------------------------------*/
+	
+	public void print_hash_user(){
+		
+		DefaultListModel<String> lm = users_files.get(infoUser.getUser());
+		
+		System.out.println("\n> hash pentru user = " + infoUser.getUser());
+		
+		for(int i = 0; i < lm.size(); i++){
+			
+			System.out.println("> val " + i + " = " + lm.get(i));
+		}
+		System.out.println();
+	}
+	
+	/*-----------------------------------------------------------------------*/
+	
+	public void print_hash(){
+		
+		System.out.println("\n> hash users files:");
+		
+		for(String name : users_files.keySet()){
+			
+			System.out.print("> user = " + name + " : ");
+			
+			DefaultListModel <String> lm = users_files.get(name);
+			
+			for(int j = 0; j < lm.size(); j++){
+				
+				System.out.print(lm.get(j) + ", ");
+			}
+			
+			System.out.println();
+		}
+	}
+	
+	/*-----------------------------------------------------------------------*/
 	// seteaza status transfer (stat_out = Sending / stat_in = Receiving / stat_fin = Completed)
+	
 	public void set_status(String src, String dest, String file, String status){
 
 		this.tg.tab_transfer.reset_status(src, dest, file, status);
 	}
 
+	/*-----------------------------------------------------------------------*/
 	
 	// seteaza notificari
 	public void set_notificari(String mesaj)

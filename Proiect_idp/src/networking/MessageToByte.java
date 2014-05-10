@@ -4,8 +4,6 @@ import java.nio.ByteBuffer;
 
 import common.ServerConstants;
 
-import common.ServerConstants;
-
 // clasa care transforma mesajele in ByteBuffere
 public class MessageToByte {
 

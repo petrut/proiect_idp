@@ -2,16 +2,8 @@ package web;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;
-import java.util.ArrayList;
-import java.util.Arrays;
-
 import org.apache.log4j.Logger;
-
-import common.IMediator;
-import common.InfoTransfers;
 import common.ServerConstants;
-import gui.*;
-
 
 // clasa in se proceseaza mesajale
 public class WebProcessMessage implements WebIProcessMessage {
@@ -57,12 +49,11 @@ public class WebProcessMessage implements WebIProcessMessage {
 					
 					wnet.procesare_mesaj_info(9, user_name);
 					
-					wnet.info_base.remove(user_name);
+					wnet.remove_user(user_name);
 				
 					return true;
 				}
-				//break;
-							
+											
 				case ServerConstants.RequestInfo:
 				{
 					byte msgDataByte[] = new byte[byteBuf.remaining()];
@@ -83,17 +74,13 @@ public class WebProcessMessage implements WebIProcessMessage {
 					System.out.println("> nume = " + nume);
 					System.out.println("> ip = " + ip);
 					System.out.println("> port = " + port);
-					
-					String responseString = "ceva_si_mai_secret";
-									
+														
 					System.out.println("> Web a trimis raspunsul de info");
 					
 					return true;					
 				}
-				//break;
+				
 			}
-
-			
 
 		} catch (IOException e) {
 			// TODO Auto-generated catch block

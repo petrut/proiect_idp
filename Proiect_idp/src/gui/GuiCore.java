@@ -1,39 +1,30 @@
 package gui;
 
 import java.awt.Dimension;
-
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-
 import java.awt.BorderLayout;
-
-import javax.swing.JFileChooser;
 import javax.swing.JScrollPane;
 import javax.swing.JList;
 import javax.swing.JButton;
-
 import java.awt.GridLayout;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.JLabel;
-
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.io.IOException;
-
 import javax.swing.ScrollPaneConstants;
-
 import org.apache.log4j.Logger;
-
 import common.InfoTransfers;
 import common.InfoUser;
 import common.Main;
 import common.Mediator;
+
 
 // clasa interfata grafica
 
@@ -236,25 +227,32 @@ public class GuiCore {
 		panel.add(panel_2, BorderLayout.EAST);
 		panel_2.setLayout(new BorderLayout(0, 0));
 		
-		JButton btnSelectMyFolder = new JButton("Select my folder");
+		JButton btnSelectMyFolder = new JButton("Refresh my folder");
 		btnSelectMyFolder.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
-				list_users.setSelectedIndex(0);
+				//list_users.setSelectedIndex(0);
 				
-				JFileChooser fc = new JFileChooser(".");
-			    fc.setFileSelectionMode( JFileChooser.DIRECTORIES_ONLY );
-
-			    if( fc.showOpenDialog(frame) == JFileChooser.APPROVE_OPTION )
-			    {
-			    	String temp = fc.getSelectedFile().getAbsolutePath();
-			    	label_notif.setText(temp);
-			    	transfer_gg.my_folder = temp;
-			    	transfer_gg.reset_my_folder();
-			    }
-			    else{
-			    	label_notif.setText("> ERROR when select my file ...");
-			    }
+				String temp = "Refresh files folder ...";
+			    label_notif.setText(temp);
+			    
+			    transfer_gg.my_folder = temp;
+			    	
+			    try {
+					transfer_gg.reset_files_user();
+				} catch (IOException e2) {
+					// TODO Auto-generated catch block
+					e2.printStackTrace();
+				}
+			    				    	
+			    Mediator sel_med = (Mediator) transfer_gg.med;
+			    try {
+					sel_med.resetNameBuffer();
+				} catch (IOException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+			    
 			}
 		});
 		panel_2.add(btnSelectMyFolder, BorderLayout.NORTH);

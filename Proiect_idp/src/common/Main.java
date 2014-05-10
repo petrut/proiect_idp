@@ -13,14 +13,11 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
 
-
-// clasa temporara pentru testarea aplicatiei (partea grafica)
-
 public class Main {
 	
-	static String current_user = "me";	
+	static String current_user = "me";
 	static Logger logger = Logger.getLogger(Main.class);
-
+	
 	public static void main(String []args) throws InterruptedException{
 		
 		String log_path;
@@ -71,17 +68,6 @@ public class Main {
 					e.printStackTrace();
 				}
 			}
-		});
-		
-		new Thread(new Runnable() {
-			
-			@Override
-			public void run() {
-				
-								
-			}
-		
-		});
-		
+		});		
 	}
 }
