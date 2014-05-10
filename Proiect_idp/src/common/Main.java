@@ -22,17 +22,17 @@ public class Main {
 		
 		String log_path;
 		
-		System.out.println("> args = " + args[0]);
+		log_path = "Users_info/" + current_user + "/log4j.properties";		
+		PropertyConfigurator.configure(log_path);
+		
+		logger.warn("> args = " + args[0]);
 		
 		if(args.length > 0){
 			if(!args[0].equals("${args}") && !args[0].equals("${arg0}"))
 				current_user = args[0];
 		}
 		
-		System.out.println("> current user = " + current_user);
-		
-		log_path = "Users_info/" + current_user + "/log4j.properties";		
-		PropertyConfigurator.configure(log_path);
+		logger.warn("> current user = " + current_user);
 				
 		logger.debug("Test debug message");
 		logger.info("Test info message");

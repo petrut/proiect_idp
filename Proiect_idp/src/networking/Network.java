@@ -71,9 +71,7 @@ public class Network implements INetwork {
 						SocketChannel client = server.accept(); 
 						client.configureBlocking(false); 
 						//	client.socket().setTcpNoDelay(true); 
-						client.register(selector, SelectionKey.OP_READ);
-						
-						
+						client.register(selector, SelectionKey.OP_READ);						
 				
 					} 
 					// in functie de tipul mesajului il vom procesa
@@ -94,9 +92,8 @@ public class Network implements INetwork {
 				}
 			}
 		}
-
-
-
+		
+		
 		catch (Throwable e) { 
 			e.printStackTrace();
 			throw new RuntimeException("Server failure: "+e.getMessage()  + " \n" );
@@ -177,7 +174,7 @@ public class Network implements INetwork {
 			@Override
 			public void retrieveInfo(final int tip, final String info_req, final String ipFrom, final int portFrom)
 					throws IOException {
-				// TODO Auto-generated method stub
+				
 				logger.warn("Client retrieve info : " +   info_req  + " "+ portFrom );
 				
 				new Thread(new Runnable() {
@@ -193,36 +190,21 @@ public class Network implements INetwork {
 							if(tip == 9){							
 								request = MessageToByte.requestExit(info_req);
 								
-								System.out.println("\n\n> Network SigKill 9 \n\n");								
+								logger.fatal("\n> Network SigKill 9 \n");								
 							}
 							else{
 								request = MessageToByte.requestInfoEncode(info_req);
 								
-								System.out.println("\n\n> Network info \n\n");	
+								logger.fatal("\n> Network info \n");	
 							}
-							
-							logger.warn("send request INFO BEFORE manu***# ");
-							
-							/*
-							selectorLock.lock();
-							try {
-							    selector.wakeup();
-							    
-							    sockAPI.sockChannel.register(selector, SelectionKey.OP_READ);
-							} finally {
-							    selectorLock.unlock();
-							}
-							*/
-							
+														
 							logger.warn("send request info BEFORE");
 							sockAPI.send(request);
 							
 							sockAPI.close();
 							
 							logger.warn("send request info DONE");							
-							
-							//ByteBuffer response =sockAPI.read();
-							
+														
 						} catch (IOException e) {
 							// TODO Auto-generated catch block
 							e.printStackTrace();
@@ -235,8 +217,5 @@ public class Network implements INetwork {
 					}
 				}).start();
 				
-			}
-			
-			
-	
+			}	
 }

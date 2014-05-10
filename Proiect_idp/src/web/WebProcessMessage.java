@@ -2,15 +2,16 @@ package web;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;
+
 import org.apache.log4j.Logger;
+
 import common.ServerConstants;
 
 // clasa in se proceseaza mesajale
 public class WebProcessMessage implements WebIProcessMessage {
 
-	
-	//IMediator med = null;
-	static Logger logger = Logger.getLogger(Process.class);
+		
+	static Logger logger = Logger.getLogger(WebMain.class);
 	
 	public WebNetwork wnet;
 	
@@ -45,7 +46,7 @@ public class WebProcessMessage implements WebIProcessMessage {
 					byteBuf.get(msgDataByte);
 					String user_name = new String(msgDataByte);
 					
-					System.out.println("\n\n\n> Utilizatorul " + user_name + " a iesit din sistem!\n\n\n");
+					logger.warn("> Utilizatorul " + user_name + " a iesit din sistem!");
 					
 					wnet.procesare_mesaj_info(9, user_name);
 					
@@ -59,23 +60,11 @@ public class WebProcessMessage implements WebIProcessMessage {
 					byte msgDataByte[] = new byte[byteBuf.remaining()];
 					byteBuf.get(msgDataByte);
 					String msgDataString = new String(msgDataByte);
-					
-					String data[] = msgDataString.split("\\s+");
-					
-					String nume = data[0];
-					String ip = data[1];
-					String port = data[2];
-					
+										
 					wnet.procesare_mesaj_info(0, msgDataString);
-					
-					
-					System.out.println(">>> Mesaj primit de WEB Server de la un client: " + msgDataString);
-					
-					System.out.println("> nume = " + nume);
-					System.out.println("> ip = " + ip);
-					System.out.println("> port = " + port);
-														
-					System.out.println("> Web a trimis raspunsul de info");
+										
+					logger.warn(">>> Mesaj primit de WEB Server de la un client: " + msgDataString);																			
+					logger.warn("> Web a trimis raspunsul de info");
 					
 					return true;					
 				}

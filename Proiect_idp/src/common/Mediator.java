@@ -1,7 +1,6 @@
 package common;
 
 import gui.GuiAPI;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -12,14 +11,12 @@ import java.nio.channels.FileChannel.MapMode;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Vector;
-
 import javax.swing.SwingUtilities;
-
 import networking.INetwork;
-
 import org.apache.log4j.Logger;
 
 
+/* face legatura intre componentele aplicatiei */
 
 public class Mediator implements IMediator{
 
@@ -43,6 +40,9 @@ public class Mediator implements IMediator{
 		this.guiAPI = guiAPI;
 		this.infoUser = iu;
 		this.network = network;
+		
+		ip_addr.put(iu.getUser(), iu.getUserIP());
+		port_addr.put(iu.getUser(), iu.getUserPort());
 		
 		this.network.setMediator(this);
 		
@@ -94,9 +94,9 @@ public class Mediator implements IMediator{
 			RandomAccessFile raf  = new RandomAccessFile(file, "rw");
 			it.raf = raf;
 			transferuriNeterminate.add(it);
-			InfoUser uiTemp = new InfoUser(it.src);
+			
 			try {
-				network.retrieveFile(it,  uiTemp.getUserIP(), Integer.parseInt(uiTemp.getUserPort()));
+				network.retrieveFile(it,  ip_addr.get(it.src), Integer.parseInt(port_addr.get(it.src)));
 			} catch (NumberFormatException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -143,7 +143,7 @@ public class Mediator implements IMediator{
 	@Override
 	public ByteBuffer getFileBuffer(String fileName)
 	{
-		System.out.println("\n> get file buffer pentru: " + fileName + "\n");
+		logger.warn("\n> get file buffer pentru: " + fileName + "\n");
 		
 		return nameBuffer.get(fileName).asReadOnlyBuffer();
 	}
@@ -180,8 +180,8 @@ public class Mediator implements IMediator{
 								e.printStackTrace();
 							}	
 						}
-					});
-				
+					});					
+					
 			}
 			
 		}

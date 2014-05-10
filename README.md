@@ -113,21 +113,26 @@ ant clean;
 Modul Networking
 
 Api : oferit mediatorului  
-	start_server
-		aceasta functie va porni un server pe un anumit port
-		si in functie va insarcina classei ProccesMessage cu procesarea mesajelor
-		mediator si procesarea mesajelor este decuplata de networking si pentru acest lucru am folosit interfete pentru clasele aferente
-	- retrieve_file  functie ce declanseaza seria de mesaje
+	> start_server
+		>aceasta functie va porni un server pe un anumit port
+		si in functie va insarcina classei ProccesMessage cu procesarea mesajelor;
+		>mediator si procesarea mesajelor este decuplata de networking si 
+		pentru acest lucru am folosit interfete pentru clasele aferente
+	> retrieve_file  functie ce declanseaza seria de mesaje
 	pentru obtinerea unui fisier. Mesajul declansator
 	este primul din succesiunea de mai jos.
+	
 	Aceste mesaje au urmatoare succesiune. Se trimite un
-	un mesaj pentru aflarea numarului de chunckuri. Se primeste un raspuns. Iar apoi pt fiecare chunck  se trimite un request pt date si se primeste un response cu datele aferente.
+	un mesaj pentru aflarea numarului de chunckuri. Se primeste un raspuns. 
+	Iar apoi pt fiecare chunck  se trimite un request pt date si se primeste
+	un response cu datele aferente.
 
 clasa ProcessMessage
 	Aceasta clasa verifica ce mesaj a sosit apoi in functie 
 de acesta trimite de acesta trimite un request astfel ca acel
 flow sa fie respectat.
-	Fiecare din cele 4 mesaje care sunt transformate in binar de clasa MessageToByte.
+	Fiecare din cele 4 mesaje care sunt transformate in binar de clasa 
+	MessageToByte.
 	Informatie care se regasteste in fiecare mesaje este
 	sursa,  destinatia si fisierul.
 	Legatura dintre mediator si clasa Proccess Message este 
@@ -140,9 +145,56 @@ transfer.
 
 	
 
+=============================
 
+
+Tema3
+-----------------------------
+
+WebServer
+
+
+Serverul Web se ocupa de transferul de informatii depre clientii din retea catre 
+utilizatorii activi la un anumit moment de timp.
+
+Cazuri principale de notificarei:
+
+1. Un nou utilizator a intrat in retea:
+	> acesta va notifica webServerul;
+	> webServerul salveaza informatiile noului utilizator si notifica
+	restul retelei;
+	> ceilalti utilizatori vor primi un pachet de notificare de la 
+	WebServer si vor face shimbarile necesare;
 		
+2. Un utilizator a iesit din retea:
+	> acesta notifica webServerul de plecarea sa;
+	> WebServerul notifica restul utilizatorilor depre plecare si apoi strege datele acestuia;
+	> utilizatorii logati primesc mesajul de la WebServer si reseteaza lista de informatii;
+		
+3. Utilizatorul a terminat de descarcat un fisier:
+	> notifica werServerul despre noua structura de fisiere;
+	> webServerul notifica restul utilizatorilor;
+	
+4. Utilizatorul adauga fisiere noi in directorul de download:
+	> notifica webServerul de schimbari;
+	> webServerul notifica restul retelei despre noile modificari;
 
 
+	
+=============================
+	
+	
+	ANT
+
+ant build;
+
+ant web					// pornire server web
+
+ant run					// default user = me
+ant run -Dargs=mihai;	// current user = mihai
+ant 					// default target = run_3_users(3 instante de program);
+
+ant clean;
 
 
+=============================

@@ -23,7 +23,7 @@ public class WebNetwork implements WebINetwork {
 	public IMediator med;
 	Selector selector = null;
 	ServerSocketChannel server = null;
-	static Logger logger = Logger.getLogger(WebNetwork.class);
+	static Logger logger = Logger.getLogger(WebMain.class);
 	final ReentrantLock selectorLock = new ReentrantLock();
 	WebIProcessMessage procMessage;
 	
@@ -146,9 +146,7 @@ public class WebNetwork implements WebINetwork {
 					logger.warn("send request chunck number BEFORE");
 					sockAPI.send(request);
 					logger.warn("send request chunck number DONE");
-					
-					
-					//ByteBuffer response =sockAPI.read();
+									
 					
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
@@ -223,7 +221,7 @@ public class WebNetwork implements WebINetwork {
 			Boolean exista = false;
 			String data[] = mesaj_brut.split("\\s+");
 			
-			System.out.println("> 172 " + mesaj_brut);
+			logger.warn("> 172 [ " + mesaj_brut + " ]");
 			
 			String new_nume	= data[0];
 			String new_ip = "";

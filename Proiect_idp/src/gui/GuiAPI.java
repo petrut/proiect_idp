@@ -8,9 +8,12 @@ import java.util.Hashtable;
 import javax.swing.DefaultListModel;
 import javax.swing.JFileChooser;
 
+import org.apache.log4j.Logger;
+
 import common.IMediator;
 import common.InfoTransfers;
 import common.InfoUser;
+import common.Main;
 import common.Mediator;
 
 
@@ -22,6 +25,8 @@ public class GuiAPI {
 	String stat_fin = "Completed";
 	
 	InfoUser infoUser;
+	
+	static Logger logger = Logger.getLogger(Main.class);
 
 	DefaultListModel<InfoTransfers> list_transfers = new DefaultListModel<InfoTransfers>();
 
@@ -199,14 +204,7 @@ public class GuiAPI {
 		
 		users_files.remove(name);
 		
-		for(int i = 0; i < users.size(); i++)
-		{
-			if(users.get(i).equals(name))
-			{
-				users.remove(i);
-			}
-		}
-		
+		users.removeElement(name);		
 	}
 
 	//=========================================================================
@@ -228,24 +226,26 @@ public class GuiAPI {
 	// la selectarea unui nou utilizator(DUBLU click) resetare lista fisiere
 	public void switch_user(String user){
 
-		System.out.println("\n> switch users");
+		logger.warn("\n> switch users");
+		
 		files.clear();
 		DefaultListModel<String> lm = users_files.get(user);
 
 		for(int i = 0; i < lm.size(); i++){
 			files.addElement(lm.elementAt(i));
 			
-			System.out.println("> switch val = " + lm.elementAt(i));
+			//System.out.println("> switch val = " + lm.elementAt(i));
 		}
 		
-		print_hash();
+		//print_hash();
 	}
 
 	//=========================================================================
 	// selectare fisier(DUBLU click), initializare transfer(download)
 	
 	public void start_download(String file){
-		System.out.println(">>> Incepe descarcarea fisierului: " + file);
+		
+		logger.warn(">>> Incepe descarcarea fisierului: " + file);
 
 		InfoTransfers it = new InfoTransfers(current_user, infoUser.getUser(),
 				current_file, stat_in, 0);
@@ -318,9 +318,9 @@ public class GuiAPI {
 	
 	public void reset_files_user() throws IOException{
 		
-		System.out.println("> reset file user, pentru " + current_user + ", info user = " + infoUser.getUser());
+		logger.warn("> reset file user, pentru " + current_user + ", info user = " + infoUser.getUser());
 		
-		print_hash();
+		//print_hash();
 		
 		String identitate = infoUser.getUser() + " " + infoUser.getUserIP() + " " + infoUser.getUserPort();
 		ArrayList <String> tempf = infoUser.getUserFilesName();
@@ -335,12 +335,12 @@ public class GuiAPI {
 			
 			lm.addElement(tempf.get(i));
 			
-			System.out.println("> reset file = " + tempf.get(i));
+			//System.out.println("> reset file = " + tempf.get(i));
 		}
 		
 		users_files.put(infoUser.getUser(), lm);
 		
-		System.out.println("\n> reset identitate = " + identitate + "\n\n");
+		logger.warn("\n> reset identitate = " + identitate + "\n\n");
 		
 		((Mediator)med).network.retrieveInfo(0, identitate,
 				new InfoUser("web_server").getUserIP(),
@@ -348,7 +348,7 @@ public class GuiAPI {
 		
 		reset_me();
 		
-		print_hash();
+		//print_hash();
 	}
 
 	/*-----------------------------------------------------------------------*/

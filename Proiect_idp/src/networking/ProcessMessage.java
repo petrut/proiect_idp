@@ -49,7 +49,7 @@ public class ProcessMessage implements IProcessMessage {
 				byteBuf.get(msgDataByte);
 				String user_name = new String(msgDataByte);
 								
-				System.out.println("> utilizatorul notifica inchiderea: " + user_name);
+				logger.warn("> utilizatorul notifica inchiderea: " + user_name);
 								
 				((Mediator) med).guiAPI.remove_user(user_name);
 				
@@ -64,7 +64,7 @@ public class ProcessMessage implements IProcessMessage {
 				String msgDataString = new String(msgDataByte);
 				String data[] = msgDataString.split("\\s+");
 				
-				System.out.println(">>> Mesaj primit de la WEB Server: " + msgDataString);
+				logger.warn(">>> Mesaj primit de la WEB Server: " + msgDataString);
 				
 				((Mediator) med).ip_addr.put(data[0], data[1]);			/* salvare ip */
 				((Mediator) med).port_addr.put(data[0], data[2]);		/* salvare port */
@@ -98,12 +98,13 @@ public class ProcessMessage implements IProcessMessage {
 				logger.fatal("message type = RequestChunckType chunkID= "  + chunckID + "bb.limit = " + bb.limit() );
 				
 
-				int length = bb.limit() > (chunckID + 1) * ServerConstants.BufferSize ? ServerConstants.BufferSize:bb.limit() - chunckID* ServerConstants.BufferSize;
+				int length = bb.limit() > (chunckID + 1) * ServerConstants.BufferSize ? 
+						ServerConstants.BufferSize:bb.limit() - chunckID *  ServerConstants.BufferSize;
 				byte chunckData[] = new byte[length];
 				logger.fatal("message type = RequestChunckType chunkID= "  + chunckID + "bb.limit = " + bb.limit() 
-						+ "length = " + length  + "start = "+ chunckID*ServerConstants.BufferSize);
+						+ "length = " + length  + "start = "+ chunckID * ServerConstants.BufferSize);
 				
-				bb.position(chunckID*ServerConstants.BufferSize);
+				bb.position(chunckID * ServerConstants.BufferSize);
 				bb.get(chunckData, 0, length);
 				bb.flip();
 				
@@ -199,9 +200,7 @@ public class ProcessMessage implements IProcessMessage {
 							((Mediator)med).infoUser.getUser());
 					
 					((Mediator)med).guiAPI.reset_files_user();
-					((Mediator)med).guiAPI.print_hash_user();
-					((Mediator)med).guiAPI.print_hash();
-					
+										
 					return true;
 				}				
 				

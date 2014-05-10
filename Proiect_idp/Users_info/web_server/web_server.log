@@ -1,0 +1,907 @@
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUserPort(InfoUser.java:92) - get user port = 7878
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:45) - Start Server
+[main] DEBUG web.WebMain.main(WebMain.java:22) - Test debug message
+[main] INFO web.WebMain.main(WebMain.java:23) - Test info message
+[main] WARN web.WebMain.main(WebMain.java:24) - Test warn message
+[main] ERROR web.WebMain.main(WebMain.java:25) - Test error message
+[main] FATAL web.WebMain.main(WebMain.java:26) - Test fatal message
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUserPort(InfoUser.java:92) - get user port = 7878
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:45) - Start Server
+[main] DEBUG web.WebMain.main(WebMain.java:22) - Test debug message
+[main] INFO web.WebMain.main(WebMain.java:23) - Test info message
+[main] WARN web.WebMain.main(WebMain.java:24) - Test warn message
+[main] ERROR web.WebMain.main(WebMain.java:25) - Test error message
+[main] FATAL web.WebMain.main(WebMain.java:26) - Test fatal message
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUserPort(InfoUser.java:92) - get user port = 7878
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:45) - Start Server
+[main] DEBUG web.WebMain.main(WebMain.java:22) - Test debug message
+[main] INFO web.WebMain.main(WebMain.java:23) - Test info message
+[main] WARN web.WebMain.main(WebMain.java:24) - Test warn message
+[main] ERROR web.WebMain.main(WebMain.java:25) - Test error message
+[main] FATAL web.WebMain.main(WebMain.java:26) - Test fatal message
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUserPort(InfoUser.java:92) - get user port = 7878
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:45) - Start Server
+[main] DEBUG web.WebMain.main(WebMain.java:22) - Test debug message
+[main] INFO web.WebMain.main(WebMain.java:23) - Test info message
+[main] WARN web.WebMain.main(WebMain.java:24) - Test warn message
+[main] ERROR web.WebMain.main(WebMain.java:25) - Test error message
+[main] FATAL web.WebMain.main(WebMain.java:26) - Test fatal message
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUserPort(InfoUser.java:92) - get user port = 7878
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:45) - Start Server
+[main] DEBUG web.WebMain.main(WebMain.java:22) - Test debug message
+[main] INFO web.WebMain.main(WebMain.java:23) - Test info message
+[main] WARN web.WebMain.main(WebMain.java:24) - Test warn message
+[main] ERROR web.WebMain.main(WebMain.java:25) - Test error message
+[main] FATAL web.WebMain.main(WebMain.java:26) - Test fatal message
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUserPort(InfoUser.java:92) - get user port = 7878
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:45) - Start Server
+[main] WARN web.WebMain.main(WebMain.java:20) - > Main WEB Server
+[main] DEBUG web.WebMain.main(WebMain.java:22) - Test debug message
+[main] INFO web.WebMain.main(WebMain.java:23) - Test info message
+[main] WARN web.WebMain.main(WebMain.java:24) - Test warn message
+[main] ERROR web.WebMain.main(WebMain.java:25) - Test error message
+[main] FATAL web.WebMain.main(WebMain.java:26) - Test fatal message
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUserPort(InfoUser.java:92) - get user port = 7878
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:45) - Start Server
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :69
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :65
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt 7844
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : mihai localhost 7844 mihai_fis1.txt mihai_fis2.txt mihai_fis3.txt 7823
+[Thread-1] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7844
+[Thread-2] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7823
+[Thread-1] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-2] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-1] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[Thread-2] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :89
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : mihai localhost 7844 mihai_fis1.txt mihai_fis2.txt mihai_fis3.txt mihai_gigi_fis1.txt 7823
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt 7844
+[Thread-3] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7823
+[Thread-4] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7844
+[Thread-3] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-3] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[Thread-4] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-4] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :8
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : gigi 7844
+[Thread-5] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7844
+[Thread-5] WARN web.WebNetwork$2.run(WebNetwork.java:187) - < WEB > Network SigKill 9
+[Thread-5] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-5] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :9
+[main] WARN web.WebMain.main(WebMain.java:20) - > Main WEB Server
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUserPort(InfoUser.java:92) - get user port = 7878
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:45) - Start Server
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :65
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt ]
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :89
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ mihai localhost 7844 mihai_fis1.txt mihai_fis2.txt mihai_fis3.txt mihai_gigi_fis1.txt ]
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : mihai localhost 7844 mihai_fis1.txt mihai_fis2.txt mihai_fis3.txt mihai_gigi_fis1.txt 7823
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt 7844
+[Thread-2] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7844
+[Thread-1] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7823
+[Thread-2] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-2] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[Thread-1] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-1] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :85
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt gigi_mihai_fis1.txt ]
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt gigi_mihai_fis1.txt 7844
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : mihai localhost 7844 mihai_fis1.txt mihai_fis2.txt mihai_fis3.txt mihai_gigi_fis1.txt 7823
+[Thread-4] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7823
+[Thread-4] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-4] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[Thread-3] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7844
+[Thread-3] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-3] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :9
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ mihai ]
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : mihai 7823
+[Thread-5] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7823
+[Thread-5] WARN web.WebNetwork$2.run(WebNetwork.java:187) - < WEB > Network SigKill 9
+[Thread-5] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-5] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :8
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ gigi ]
+[main] WARN web.WebMain.main(WebMain.java:20) - > Main WEB Server
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUserPort(InfoUser.java:92) - get user port = 7878
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:45) - Start Server
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :89
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ mihai localhost 7844 mihai_fis1.txt mihai_fis2.txt mihai_fis3.txt mihai_gigi_fis1.txt ]
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :85
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt gigi_mihai_fis1.txt ]
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt gigi_mihai_fis1.txt 7844
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : mihai localhost 7844 mihai_fis1.txt mihai_fis2.txt mihai_fis3.txt mihai_gigi_fis1.txt 7823
+[Thread-1] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7844
+[Thread-2] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7823
+[Thread-1] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-1] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[Thread-2] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-2] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :115
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ mihai localhost 7844 mihai_fis1.txt mihai_fis2.txt mihai_fis3.txt mihai_gigi_fis1.txt mihai_gigi_mihai_fis1.txt ]
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : mihai localhost 7844 mihai_fis1.txt mihai_fis2.txt mihai_fis3.txt mihai_gigi_fis1.txt mihai_gigi_mihai_fis1.txt 7823
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt gigi_mihai_fis1.txt 7844
+[Thread-3] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7823
+[Thread-4] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7844
+[Thread-3] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-3] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[Thread-4] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-4] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :8
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ gigi ]
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : gigi 7844
+[Thread-5] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7844
+[Thread-5] WARN web.WebNetwork$2.run(WebNetwork.java:187) - < WEB > Network SigKill 9
+[Thread-5] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-5] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :9
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ mihai ]
+[main] WARN web.WebMain.main(WebMain.java:20) - > Main WEB Server
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUserPort(InfoUser.java:92) - get user port = 7878
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:45) - Start Server
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :85
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt gigi_mihai_fis1.txt ]
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :69
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ mihai localhost 7844 mihai_fis1.txt mihai_fis2.txt mihai_fis3.txt ]
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : mihai localhost 7844 mihai_fis1.txt mihai_fis2.txt mihai_fis3.txt 7823
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt gigi_mihai_fis1.txt 7844
+[Thread-2] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7844
+[Thread-1] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7823
+[Thread-1] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-2] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-1] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[Thread-2] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :95
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ mihai localhost 7844 mihai_fis1.txt mihai_fis2.txt mihai_fis3.txt mihai_gigi_mihai_fis1.txt ]
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : mihai localhost 7844 mihai_fis1.txt mihai_fis2.txt mihai_fis3.txt mihai_gigi_mihai_fis1.txt 7823
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt gigi_mihai_fis1.txt 7844
+[Thread-3] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7823
+[Thread-4] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7844
+[Thread-4] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-3] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-3] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[Thread-4] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :9
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ mihai ]
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : mihai 7823
+[Thread-5] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7823
+[Thread-5] WARN web.WebNetwork$2.run(WebNetwork.java:187) - < WEB > Network SigKill 9
+[Thread-5] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-5] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :9
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ mihai ]
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : mihai 7823
+[Thread-6] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7823
+[Thread-6] WARN web.WebNetwork$2.run(WebNetwork.java:187) - < WEB > Network SigKill 9
+[Thread-6] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-6] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[main] WARN web.WebMain.main(WebMain.java:20) - > Main WEB Server
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUserPort(InfoUser.java:92) - get user port = 7878
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:45) - Start Server
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :95
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ mihai localhost 7844 mihai_fis1.txt mihai_fis2.txt mihai_fis3.txt mihai_gigi_mihai_fis1.txt ]
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :85
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt gigi_mihai_fis1.txt ]
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt gigi_mihai_fis1.txt 7844
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : mihai localhost 7844 mihai_fis1.txt mihai_fis2.txt mihai_fis3.txt mihai_gigi_mihai_fis1.txt 7823
+[Thread-2] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7823
+[Thread-1] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7844
+[Thread-2] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-2] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[Thread-1] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-1] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :115
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ mihai localhost 7844 mihai_fis1.txt mihai_fis2.txt mihai_fis3.txt mihai_gigi_fis2.txt mihai_gigi_mihai_fis1.txt ]
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : mihai localhost 7844 mihai_fis1.txt mihai_fis2.txt mihai_fis3.txt mihai_gigi_fis2.txt mihai_gigi_mihai_fis1.txt 7823
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt gigi_mihai_fis1.txt 7844
+[Thread-3] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7823
+[Thread-4] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7844
+[Thread-3] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-4] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-4] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[Thread-3] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :115
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ mihai localhost 7844 mihai_fis1.txt mihai_fis2.txt mihai_fis3.txt mihai_gigi_fis2.txt mihai_gigi_mihai_fis1.txt ]
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : mihai localhost 7844 mihai_fis1.txt mihai_fis2.txt mihai_fis3.txt mihai_gigi_fis2.txt mihai_gigi_mihai_fis1.txt 7823
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt gigi_mihai_fis1.txt 7844
+[Thread-5] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7823
+[Thread-6] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7844
+[Thread-5] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-6] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-5] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[Thread-6] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :135
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ mihai localhost 7844 mihai_fis1.txt mihai_fis2.txt mihai_fis3.txt mihai_gigi_fis2.txt mihai_gigi_fis3.txt mihai_gigi_mihai_fis1.txt ]
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : mihai localhost 7844 mihai_fis1.txt mihai_fis2.txt mihai_fis3.txt mihai_gigi_fis2.txt mihai_gigi_fis3.txt mihai_gigi_mihai_fis1.txt 7823
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt gigi_mihai_fis1.txt 7844
+[Thread-8] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7844
+[Thread-8] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-8] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[Thread-7] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7823
+[Thread-7] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-7] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :9
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ mihai ]
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : mihai 7823
+[Thread-9] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7823
+[Thread-9] WARN web.WebNetwork$2.run(WebNetwork.java:187) - < WEB > Network SigKill 9
+[Thread-9] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-9] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :9
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ mihai ]
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : mihai 7823
+[Thread-10] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7823
+[Thread-10] WARN web.WebNetwork$2.run(WebNetwork.java:187) - < WEB > Network SigKill 9
+[Thread-10] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-10] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[main] WARN web.WebMain.main(WebMain.java:20) - > Main WEB Server
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUserPort(InfoUser.java:92) - get user port = 7878
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:45) - Start Server
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :85
+[AWT-EventQueue-0] FATAL web.WebProcessMessage.proccesMessage(WebProcessMessage.java:39) - Process Msg type = 7
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt gigi_mihai_fis1.txt ]
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:66) - >>> Mesaj primit de WEB Server de la un client: gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt gigi_mihai_fis1.txt
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:67) - > Web a trimis raspunsul de info
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :135
+[AWT-EventQueue-0] FATAL web.WebProcessMessage.proccesMessage(WebProcessMessage.java:39) - Process Msg type = 7
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ mihai localhost 7844 mihai_fis1.txt mihai_fis2.txt mihai_fis3.txt mihai_gigi_fis2.txt mihai_gigi_fis3.txt mihai_gigi_mihai_fis1.txt ]
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : mihai localhost 7844 mihai_fis1.txt mihai_fis2.txt mihai_fis3.txt mihai_gigi_fis2.txt mihai_gigi_fis3.txt mihai_gigi_mihai_fis1.txt 7823
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt gigi_mihai_fis1.txt 7844
+[Thread-1] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7823
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:66) - >>> Mesaj primit de WEB Server de la un client: mihai localhost 7844 mihai_fis1.txt mihai_fis2.txt mihai_fis3.txt mihai_gigi_fis2.txt mihai_gigi_fis3.txt mihai_gigi_mihai_fis1.txt
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:67) - > Web a trimis raspunsul de info
+[Thread-2] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7844
+[Thread-1] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-1] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[Thread-2] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-2] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :65
+[AWT-EventQueue-0] FATAL web.WebProcessMessage.proccesMessage(WebProcessMessage.java:39) - Process Msg type = 7
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ radu 127.0.0.1 7855 radu_fis1.txt radu_fis2.txt radu_fis3.txt ]
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : radu 127.0.0.1 7855 radu_fis1.txt radu_fis2.txt radu_fis3.txt 7844
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : mihai localhost 7844 mihai_fis1.txt mihai_fis2.txt mihai_fis3.txt mihai_gigi_fis2.txt mihai_gigi_fis3.txt mihai_gigi_mihai_fis1.txt 7855
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : radu 127.0.0.1 7855 radu_fis1.txt radu_fis2.txt radu_fis3.txt 7823
+[Thread-3] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7844
+[Thread-3] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-5] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7823
+[Thread-5] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-5] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt gigi_mihai_fis1.txt 7855
+[Thread-4] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect 127.0.0.1 7855
+[Thread-4] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-4] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:66) - >>> Mesaj primit de WEB Server de la un client: radu 127.0.0.1 7855 radu_fis1.txt radu_fis2.txt radu_fis3.txt
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:67) - > Web a trimis raspunsul de info
+[Thread-3] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[Thread-6] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect 127.0.0.1 7855
+[Thread-6] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-6] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :104
+[AWT-EventQueue-0] FATAL web.WebProcessMessage.proccesMessage(WebProcessMessage.java:39) - Process Msg type = 7
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt gigi_mihai_fis1.txt gigi_radu_fis1.txt ]
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt gigi_mihai_fis1.txt gigi_radu_fis1.txt 7844
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : mihai localhost 7844 mihai_fis1.txt mihai_fis2.txt mihai_fis3.txt mihai_gigi_fis2.txt mihai_gigi_fis3.txt mihai_gigi_mihai_fis1.txt 7823
+[Thread-7] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7844
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt gigi_mihai_fis1.txt gigi_radu_fis1.txt 7855
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : radu 127.0.0.1 7855 radu_fis1.txt radu_fis2.txt radu_fis3.txt 7823
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:66) - >>> Mesaj primit de WEB Server de la un client: gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt gigi_mihai_fis1.txt gigi_radu_fis1.txt
+[Thread-7] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-7] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:67) - > Web a trimis raspunsul de info
+[Thread-10] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7823
+[Thread-10] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-9] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect 127.0.0.1 7855
+[Thread-8] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7823
+[Thread-9] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-8] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-8] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[Thread-10] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[Thread-9] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :8
+[AWT-EventQueue-0] FATAL web.WebProcessMessage.proccesMessage(WebProcessMessage.java:39) - Process Msg type = 9
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:49) - > Utilizatorul gigi a iesit din sistem!
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ gigi ]
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : gigi 7844
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : gigi 7855
+[Thread-12] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect 127.0.0.1 7855
+[Thread-11] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7844
+[Thread-11] WARN web.WebNetwork$2.run(WebNetwork.java:187) - < WEB > Network SigKill 9
+[Thread-11] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-12] WARN web.WebNetwork$2.run(WebNetwork.java:187) - < WEB > Network SigKill 9
+[Thread-12] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-12] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[Thread-11] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :8
+[AWT-EventQueue-0] FATAL web.WebProcessMessage.proccesMessage(WebProcessMessage.java:39) - Process Msg type = 9
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:49) - > Utilizatorul radu a iesit din sistem!
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ radu ]
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : radu 7844
+[Thread-13] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7844
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :8
+[AWT-EventQueue-0] FATAL web.WebProcessMessage.proccesMessage(WebProcessMessage.java:39) - Process Msg type = 9
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:49) - > Utilizatorul radu a iesit din sistem!
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ radu ]
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : radu 7844
+[Thread-14] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7844
+[Thread-13] WARN web.WebNetwork$2.run(WebNetwork.java:187) - < WEB > Network SigKill 9
+[Thread-13] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-13] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[Thread-14] WARN web.WebNetwork$2.run(WebNetwork.java:187) - < WEB > Network SigKill 9
+[Thread-14] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-14] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[main] WARN web.WebMain.main(WebMain.java:20) - > Main WEB Server
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUserPort(InfoUser.java:92) - get user port = 7878
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:45) - Start Server
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :65
+[AWT-EventQueue-0] FATAL web.WebProcessMessage.proccesMessage(WebProcessMessage.java:39) - Process Msg type = 7
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ radu 127.0.0.1 7855 radu_fis1.txt radu_fis2.txt radu_fis3.txt ]
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:66) - >>> Mesaj primit de WEB Server de la un client: radu 127.0.0.1 7855 radu_fis1.txt radu_fis2.txt radu_fis3.txt
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:67) - > Web a trimis raspunsul de info
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :104
+[AWT-EventQueue-0] FATAL web.WebProcessMessage.proccesMessage(WebProcessMessage.java:39) - Process Msg type = 7
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt gigi_mihai_fis1.txt gigi_radu_fis1.txt ]
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt gigi_mihai_fis1.txt gigi_radu_fis1.txt 7855
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : radu 127.0.0.1 7855 radu_fis1.txt radu_fis2.txt radu_fis3.txt 7823
+[Thread-1] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect 127.0.0.1 7855
+[Thread-1] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-1] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:66) - >>> Mesaj primit de WEB Server de la un client: gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt gigi_mihai_fis1.txt gigi_radu_fis1.txt
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:67) - > Web a trimis raspunsul de info
+[Thread-2] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7823
+[Thread-2] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-2] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :135
+[AWT-EventQueue-0] FATAL web.WebProcessMessage.proccesMessage(WebProcessMessage.java:39) - Process Msg type = 7
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ mihai localhost 7844 mihai_fis1.txt mihai_fis2.txt mihai_fis3.txt mihai_gigi_fis2.txt mihai_gigi_fis3.txt mihai_gigi_mihai_fis1.txt ]
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : mihai localhost 7844 mihai_fis1.txt mihai_fis2.txt mihai_fis3.txt mihai_gigi_fis2.txt mihai_gigi_fis3.txt mihai_gigi_mihai_fis1.txt 7855
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : radu 127.0.0.1 7855 radu_fis1.txt radu_fis2.txt radu_fis3.txt 7844
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : mihai localhost 7844 mihai_fis1.txt mihai_fis2.txt mihai_fis3.txt mihai_gigi_fis2.txt mihai_gigi_fis3.txt mihai_gigi_mihai_fis1.txt 7823
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt gigi_mihai_fis1.txt gigi_radu_fis1.txt 7844
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:66) - >>> Mesaj primit de WEB Server de la un client: mihai localhost 7844 mihai_fis1.txt mihai_fis2.txt mihai_fis3.txt mihai_gigi_fis2.txt mihai_gigi_fis3.txt mihai_gigi_mihai_fis1.txt
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:67) - > Web a trimis raspunsul de info
+[Thread-3] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect 127.0.0.1 7855
+[Thread-3] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-3] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[Thread-6] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7844
+[Thread-6] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-6] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[Thread-4] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7844
+[Thread-4] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-5] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7823
+[Thread-5] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-5] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[Thread-4] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :9
+[AWT-EventQueue-0] FATAL web.WebProcessMessage.proccesMessage(WebProcessMessage.java:39) - Process Msg type = 9
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:49) - > Utilizatorul mihai a iesit din sistem!
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ mihai ]
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : mihai 7855
+[Thread-7] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect 127.0.0.1 7855
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : mihai 7823
+[Thread-7] WARN web.WebNetwork$2.run(WebNetwork.java:187) - < WEB > Network SigKill 9
+[Thread-7] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-8] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7823
+[Thread-7] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[Thread-8] WARN web.WebNetwork$2.run(WebNetwork.java:187) - < WEB > Network SigKill 9
+[Thread-8] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-8] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :8
+[AWT-EventQueue-0] FATAL web.WebProcessMessage.proccesMessage(WebProcessMessage.java:39) - Process Msg type = 9
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:49) - > Utilizatorul gigi a iesit din sistem!
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ gigi ]
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : gigi 7855
+[Thread-9] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect 127.0.0.1 7855
+[Thread-9] WARN web.WebNetwork$2.run(WebNetwork.java:187) - < WEB > Network SigKill 9
+[Thread-9] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-9] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :8
+[AWT-EventQueue-0] FATAL web.WebProcessMessage.proccesMessage(WebProcessMessage.java:39) - Process Msg type = 9
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:49) - > Utilizatorul radu a iesit din sistem!
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ radu ]
+[main] WARN web.WebMain.main(WebMain.java:20) - > Main WEB Server
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUserPort(InfoUser.java:92) - get user port = 7878
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:45) - Start Server
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :135
+[AWT-EventQueue-0] FATAL web.WebProcessMessage.proccesMessage(WebProcessMessage.java:39) - Process Msg type = 7
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ mihai localhost 7844 mihai_fis1.txt mihai_fis2.txt mihai_fis3.txt mihai_gigi_fis2.txt mihai_gigi_fis3.txt mihai_gigi_mihai_fis1.txt ]
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:66) - >>> Mesaj primit de WEB Server de la un client: mihai localhost 7844 mihai_fis1.txt mihai_fis2.txt mihai_fis3.txt mihai_gigi_fis2.txt mihai_gigi_fis3.txt mihai_gigi_mihai_fis1.txt
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:67) - > Web a trimis raspunsul de info
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :104
+[AWT-EventQueue-0] FATAL web.WebProcessMessage.proccesMessage(WebProcessMessage.java:39) - Process Msg type = 7
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt gigi_mihai_fis1.txt gigi_radu_fis1.txt ]
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt gigi_mihai_fis1.txt gigi_radu_fis1.txt 7844
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : mihai localhost 7844 mihai_fis1.txt mihai_fis2.txt mihai_fis3.txt mihai_gigi_fis2.txt mihai_gigi_fis3.txt mihai_gigi_mihai_fis1.txt 7823
+[Thread-1] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7844
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:66) - >>> Mesaj primit de WEB Server de la un client: gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt gigi_mihai_fis1.txt gigi_radu_fis1.txt
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:67) - > Web a trimis raspunsul de info
+[Thread-2] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7823
+[Thread-1] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-1] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[Thread-2] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-2] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :65
+[AWT-EventQueue-0] FATAL web.WebProcessMessage.proccesMessage(WebProcessMessage.java:39) - Process Msg type = 7
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ radu 127.0.0.1 7855 radu_fis1.txt radu_fis2.txt radu_fis3.txt ]
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : radu 127.0.0.1 7855 radu_fis1.txt radu_fis2.txt radu_fis3.txt 7844
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : mihai localhost 7844 mihai_fis1.txt mihai_fis2.txt mihai_fis3.txt mihai_gigi_fis2.txt mihai_gigi_fis3.txt mihai_gigi_mihai_fis1.txt 7855
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : radu 127.0.0.1 7855 radu_fis1.txt radu_fis2.txt radu_fis3.txt 7823
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt gigi_mihai_fis1.txt gigi_radu_fis1.txt 7855
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:66) - >>> Mesaj primit de WEB Server de la un client: radu 127.0.0.1 7855 radu_fis1.txt radu_fis2.txt radu_fis3.txt
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:67) - > Web a trimis raspunsul de info
+[Thread-3] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7844
+[Thread-3] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-3] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[Thread-5] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7823
+[Thread-5] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-6] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect 127.0.0.1 7855
+[Thread-4] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect 127.0.0.1 7855
+[Thread-4] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-4] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[Thread-6] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-6] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[Thread-5] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :9
+[AWT-EventQueue-0] FATAL web.WebProcessMessage.proccesMessage(WebProcessMessage.java:39) - Process Msg type = 9
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:49) - > Utilizatorul mihai a iesit din sistem!
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ mihai ]
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : mihai 7855
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : mihai 7823
+[Thread-8] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7823
+[Thread-8] WARN web.WebNetwork$2.run(WebNetwork.java:187) - < WEB > Network SigKill 9
+[Thread-8] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-7] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect 127.0.0.1 7855
+[Thread-7] WARN web.WebNetwork$2.run(WebNetwork.java:187) - < WEB > Network SigKill 9
+[Thread-7] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-7] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[Thread-8] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :8
+[AWT-EventQueue-0] FATAL web.WebProcessMessage.proccesMessage(WebProcessMessage.java:39) - Process Msg type = 9
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:49) - > Utilizatorul radu a iesit din sistem!
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ radu ]
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : radu 7823
+[Thread-9] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7823
+[Thread-9] WARN web.WebNetwork$2.run(WebNetwork.java:187) - < WEB > Network SigKill 9
+[Thread-9] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-9] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :8
+[AWT-EventQueue-0] FATAL web.WebProcessMessage.proccesMessage(WebProcessMessage.java:39) - Process Msg type = 9
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:49) - > Utilizatorul gigi a iesit din sistem!
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ gigi ]
+[main] WARN web.WebMain.main(WebMain.java:20) - > Main WEB Server
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUserPort(InfoUser.java:92) - get user port = 7878
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:45) - Start Server
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :116
+[AWT-EventQueue-0] FATAL web.WebProcessMessage.proccesMessage(WebProcessMessage.java:39) - Process Msg type = 7
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt gigi_mihai_fis1.txt gigi_mihai_gigi_mihai_fis1.txt ]
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:66) - >>> Mesaj primit de WEB Server de la un client: gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt gigi_mihai_fis1.txt gigi_mihai_gigi_mihai_fis1.txt
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:67) - > Web a trimis raspunsul de info
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :8
+[AWT-EventQueue-0] FATAL web.WebProcessMessage.proccesMessage(WebProcessMessage.java:39) - Process Msg type = 9
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:49) - > Utilizatorul gigi a iesit din sistem!
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ gigi ]
+[main] WARN web.WebMain.main(WebMain.java:20) - > Main WEB Server
+[AWT-EventQueue-0] DEBUG common.InfoUser.getUserPort(InfoUser.java:92) - get user port = 7878
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:45) - Start Server
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :104
+[AWT-EventQueue-0] FATAL web.WebProcessMessage.proccesMessage(WebProcessMessage.java:39) - Process Msg type = 7
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt gigi_mihai_fis1.txt gigi_radu_fis1.txt ]
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:66) - >>> Mesaj primit de WEB Server de la un client: gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt gigi_mihai_fis1.txt gigi_radu_fis1.txt
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:67) - > Web a trimis raspunsul de info
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :135
+[AWT-EventQueue-0] FATAL web.WebProcessMessage.proccesMessage(WebProcessMessage.java:39) - Process Msg type = 7
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ mihai localhost 7844 mihai_fis1.txt mihai_fis2.txt mihai_fis3.txt mihai_gigi_fis2.txt mihai_gigi_fis3.txt mihai_gigi_mihai_fis1.txt ]
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : mihai localhost 7844 mihai_fis1.txt mihai_fis2.txt mihai_fis3.txt mihai_gigi_fis2.txt mihai_gigi_fis3.txt mihai_gigi_mihai_fis1.txt 7823
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt gigi_mihai_fis1.txt gigi_radu_fis1.txt 7844
+[Thread-1] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7823
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:66) - >>> Mesaj primit de WEB Server de la un client: mihai localhost 7844 mihai_fis1.txt mihai_fis2.txt mihai_fis3.txt mihai_gigi_fis2.txt mihai_gigi_fis3.txt mihai_gigi_mihai_fis1.txt
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:67) - > Web a trimis raspunsul de info
+[Thread-2] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7844
+[Thread-1] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-1] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[Thread-2] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-2] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :65
+[AWT-EventQueue-0] FATAL web.WebProcessMessage.proccesMessage(WebProcessMessage.java:39) - Process Msg type = 7
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ radu 127.0.0.1 7855 radu_fis1.txt radu_fis2.txt radu_fis3.txt ]
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : radu 127.0.0.1 7855 radu_fis1.txt radu_fis2.txt radu_fis3.txt 7844
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : mihai localhost 7844 mihai_fis1.txt mihai_fis2.txt mihai_fis3.txt mihai_gigi_fis2.txt mihai_gigi_fis3.txt mihai_gigi_mihai_fis1.txt 7855
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : radu 127.0.0.1 7855 radu_fis1.txt radu_fis2.txt radu_fis3.txt 7823
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt gigi_mihai_fis1.txt gigi_radu_fis1.txt 7855
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:66) - >>> Mesaj primit de WEB Server de la un client: radu 127.0.0.1 7855 radu_fis1.txt radu_fis2.txt radu_fis3.txt
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:67) - > Web a trimis raspunsul de info
+[Thread-3] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7844
+[Thread-3] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-5] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7823
+[Thread-5] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-5] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[Thread-6] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect 127.0.0.1 7855
+[Thread-6] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-6] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[Thread-4] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect 127.0.0.1 7855
+[Thread-4] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-4] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[Thread-3] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :8
+[AWT-EventQueue-0] FATAL web.WebProcessMessage.proccesMessage(WebProcessMessage.java:39) - Process Msg type = 9
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:49) - > Utilizatorul radu a iesit din sistem!
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ radu ]
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : radu 7844
+[Thread-7] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7844
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : radu 7823
+[Thread-7] WARN web.WebNetwork$2.run(WebNetwork.java:187) - < WEB > Network SigKill 9
+[Thread-7] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-7] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[Thread-8] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7823
+[Thread-8] WARN web.WebNetwork$2.run(WebNetwork.java:187) - < WEB > Network SigKill 9
+[Thread-8] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-8] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :9
+[AWT-EventQueue-0] FATAL web.WebProcessMessage.proccesMessage(WebProcessMessage.java:39) - Process Msg type = 9
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:49) - > Utilizatorul mihai a iesit din sistem!
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ mihai ]
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : mihai 7823
+[Thread-9] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7823
+[Thread-9] WARN web.WebNetwork$2.run(WebNetwork.java:187) - < WEB > Network SigKill 9
+[Thread-9] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-9] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :8
+[AWT-EventQueue-0] FATAL web.WebProcessMessage.proccesMessage(WebProcessMessage.java:39) - Process Msg type = 9
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:49) - > Utilizatorul gigi a iesit din sistem!
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ gigi ]
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :104
+[AWT-EventQueue-0] FATAL web.WebProcessMessage.proccesMessage(WebProcessMessage.java:39) - Process Msg type = 7
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt gigi_mihai_fis1.txt gigi_radu_fis1.txt ]
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:66) - >>> Mesaj primit de WEB Server de la un client: gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt gigi_mihai_fis1.txt gigi_radu_fis1.txt
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:67) - > Web a trimis raspunsul de info
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :135
+[AWT-EventQueue-0] FATAL web.WebProcessMessage.proccesMessage(WebProcessMessage.java:39) - Process Msg type = 7
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ mihai localhost 7844 mihai_fis1.txt mihai_fis2.txt mihai_fis3.txt mihai_gigi_fis2.txt mihai_gigi_fis3.txt mihai_gigi_mihai_fis1.txt ]
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : mihai localhost 7844 mihai_fis1.txt mihai_fis2.txt mihai_fis3.txt mihai_gigi_fis2.txt mihai_gigi_fis3.txt mihai_gigi_mihai_fis1.txt 7823
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt gigi_mihai_fis1.txt gigi_radu_fis1.txt 7844
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:66) - >>> Mesaj primit de WEB Server de la un client: mihai localhost 7844 mihai_fis1.txt mihai_fis2.txt mihai_fis3.txt mihai_gigi_fis2.txt mihai_gigi_fis3.txt mihai_gigi_mihai_fis1.txt
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:67) - > Web a trimis raspunsul de info
+[Thread-10] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7823
+[Thread-10] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-10] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[Thread-11] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7844
+[Thread-11] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-11] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :65
+[AWT-EventQueue-0] FATAL web.WebProcessMessage.proccesMessage(WebProcessMessage.java:39) - Process Msg type = 7
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ radu 127.0.0.1 7855 radu_fis1.txt radu_fis2.txt radu_fis3.txt ]
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : radu 127.0.0.1 7855 radu_fis1.txt radu_fis2.txt radu_fis3.txt 7844
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : mihai localhost 7844 mihai_fis1.txt mihai_fis2.txt mihai_fis3.txt mihai_gigi_fis2.txt mihai_gigi_fis3.txt mihai_gigi_mihai_fis1.txt 7855
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : radu 127.0.0.1 7855 radu_fis1.txt radu_fis2.txt radu_fis3.txt 7823
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt gigi_mihai_fis1.txt gigi_radu_fis1.txt 7855
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:66) - >>> Mesaj primit de WEB Server de la un client: radu 127.0.0.1 7855 radu_fis1.txt radu_fis2.txt radu_fis3.txt
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:67) - > Web a trimis raspunsul de info
+[Thread-12] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7844
+[Thread-12] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-12] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[Thread-15] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect 127.0.0.1 7855
+[Thread-15] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-13] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect 127.0.0.1 7855
+[Thread-13] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-13] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[Thread-14] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7823
+[Thread-14] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-14] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[Thread-15] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :135
+[AWT-EventQueue-0] FATAL web.WebProcessMessage.proccesMessage(WebProcessMessage.java:39) - Process Msg type = 7
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt gigi_mihai_fis1.txt gigi_mihai_gigi_mihai_fis1.txt gigi_radu_fis1.txt ]
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt gigi_mihai_fis1.txt gigi_mihai_gigi_mihai_fis1.txt gigi_radu_fis1.txt 7844
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : mihai localhost 7844 mihai_fis1.txt mihai_fis2.txt mihai_fis3.txt mihai_gigi_fis2.txt mihai_gigi_fis3.txt mihai_gigi_mihai_fis1.txt 7823
+[Thread-16] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7844
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt gigi_mihai_fis1.txt gigi_mihai_gigi_mihai_fis1.txt gigi_radu_fis1.txt 7855
+[Thread-17] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7823
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : radu 127.0.0.1 7855 radu_fis1.txt radu_fis2.txt radu_fis3.txt 7823
+[Thread-19] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7823
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:66) - >>> Mesaj primit de WEB Server de la un client: gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt gigi_mihai_fis1.txt gigi_mihai_gigi_mihai_fis1.txt gigi_radu_fis1.txt
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:67) - > Web a trimis raspunsul de info
+[Thread-16] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-19] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-16] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[Thread-18] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect 127.0.0.1 7855
+[Thread-17] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-17] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[Thread-18] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-18] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[Thread-19] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :154
+[AWT-EventQueue-0] FATAL web.WebProcessMessage.proccesMessage(WebProcessMessage.java:39) - Process Msg type = 7
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt gigi_mihai_fis1.txt gigi_mihai_gigi_mihai_fis1.txt gigi_radu_fis1.txt gigi_radu_fis3.txt ]
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt gigi_mihai_fis1.txt gigi_mihai_gigi_mihai_fis1.txt gigi_radu_fis1.txt gigi_radu_fis3.txt 7844
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : mihai localhost 7844 mihai_fis1.txt mihai_fis2.txt mihai_fis3.txt mihai_gigi_fis2.txt mihai_gigi_fis3.txt mihai_gigi_mihai_fis1.txt 7823
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt gigi_mihai_fis1.txt gigi_mihai_gigi_mihai_fis1.txt gigi_radu_fis1.txt gigi_radu_fis3.txt 7855
+[Thread-21] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7823
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : radu 127.0.0.1 7855 radu_fis1.txt radu_fis2.txt radu_fis3.txt 7823
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:66) - >>> Mesaj primit de WEB Server de la un client: gigi localhost 7823 gigi_fis1.txt gigi_fis2.txt gigi_fis3.txt gigi_mihai_fis1.txt gigi_mihai_gigi_mihai_fis1.txt gigi_radu_fis1.txt gigi_radu_fis3.txt
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:67) - > Web a trimis raspunsul de info
+[Thread-21] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-21] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[Thread-22] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect 127.0.0.1 7855
+[Thread-20] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7844
+[Thread-22] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-22] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[Thread-23] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7823
+[Thread-20] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-20] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[Thread-23] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-23] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :8
+[AWT-EventQueue-0] FATAL web.WebProcessMessage.proccesMessage(WebProcessMessage.java:39) - Process Msg type = 9
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:49) - > Utilizatorul radu a iesit din sistem!
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ radu ]
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : radu 7844
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : radu 7823
+[Thread-24] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7844
+[Thread-24] WARN web.WebNetwork$2.run(WebNetwork.java:187) - < WEB > Network SigKill 9
+[Thread-24] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-24] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[Thread-25] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7823
+[Thread-25] WARN web.WebNetwork$2.run(WebNetwork.java:187) - < WEB > Network SigKill 9
+[Thread-25] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-25] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :8
+[AWT-EventQueue-0] FATAL web.WebProcessMessage.proccesMessage(WebProcessMessage.java:39) - Process Msg type = 9
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:49) - > Utilizatorul gigi a iesit din sistem!
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ gigi ]
+[AWT-EventQueue-0] WARN web.WebNetwork.transmitInfo(WebNetwork.java:172) - Client retrieve info : gigi 7844
+[Thread-26] WARN web.WebSocketOperationAPI.<init>(WebSocketOperationAPI.java:21) - SOCKET OP : connect localhost 7844
+[Thread-26] WARN web.WebNetwork$2.run(WebNetwork.java:187) - < WEB > Network SigKill 9
+[Thread-26] WARN web.WebNetwork$2.run(WebNetwork.java:193) - send request info BEFORE
+[Thread-26] WARN web.WebNetwork$2.run(WebNetwork.java:203) - send request info DONE
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:72) - SERVER: ACCEPT client 
+[AWT-EventQueue-0] WARN web.WebNetwork.start_server(WebNetwork.java:85) - SERVER: sosesc date 
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:77) - message read
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:82) - message read bread = 4
+[AWT-EventQueue-0] WARN web.WebSocketOperationAPI.read(WebSocketOperationAPI.java:99) - message length :9
+[AWT-EventQueue-0] FATAL web.WebProcessMessage.proccesMessage(WebProcessMessage.java:39) - Process Msg type = 9
+[AWT-EventQueue-0] WARN web.WebProcessMessage.proccesMessage(WebProcessMessage.java:49) - > Utilizatorul mihai a iesit din sistem!
+[AWT-EventQueue-0] WARN web.WebNetwork.procesare_mesaj_info(WebNetwork.java:224) - > 172 [ mihai ]

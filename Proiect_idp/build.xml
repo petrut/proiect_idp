@@ -62,13 +62,13 @@
             <classpath refid="Proiect_idp.classpath"/>
         </java>
     </target>
-    <target name="run">
+     <target name="run">
         <java classname="common.Main" failonerror="true" fork="yes">
             <arg line="${args}"/>
             <classpath refid="Proiect_idp.classpath"/>
         </java>
     </target>
-     <target name="run_3_users">
+    <target name="run_3_users">
         <parallel threadCount="3">
            	 <sleep seconds="2"/>
 	        <java classname="common.Main" failonerror="true" fork="yes">
@@ -100,14 +100,6 @@
             <classpath refid="Proiect_idp.classpath"/>
         </java>
     </target>
-    <target name="TestNetwork">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="test.TestNetwork" todir="${junit.output.dir}"/>
-            <classpath refid="Proiect_idp.classpath"/>
-        </junit>
-    </target>
     <target name="TestCommon">
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
@@ -123,6 +115,19 @@
             <test name="test.TestGui" todir="${junit.output.dir}"/>
             <classpath refid="Proiect_idp.classpath"/>
         </junit>
+    </target>
+    <target name="TestNetwork">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="test.TestNetwork" todir="${junit.output.dir}"/>
+            <classpath refid="Proiect_idp.classpath"/>
+        </junit>
+    </target>
+    <target name="web">
+        <java classname="web.WebMain" failonerror="true" fork="yes">
+            <classpath refid="Proiect_idp.classpath"/>
+        </java>
     </target>
     <target name="junitreport">
         <junitreport todir="${junit.output.dir}">

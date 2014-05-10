@@ -55,7 +55,7 @@ public class GuiCore {
 
 	public static void do_on_exit() throws NumberFormatException, IOException{
 		
-		System.out.println("\n> Aplicatia se inchide!\n");
+		logger.warn("\n> Aplicatia se inchide!\n");
 		
 		InfoUser info_web = new InfoUser("web_server");
 		
@@ -75,7 +75,7 @@ public class GuiCore {
 		frame = new JFrame();
 		frame.setBounds(100, 100, 1100, 500);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.setTitle("Intense traffic ...");
+		frame.setTitle("Intense traffic ... [" + transfer_gg.infoUser.getUser() + "]");
 		
 		frame.addWindowListener(new WindowAdapter() {
 	        @Override

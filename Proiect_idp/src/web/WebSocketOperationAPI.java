@@ -4,14 +4,13 @@ import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
 import java.nio.channels.SocketChannel;
-
 import org.apache.log4j.Logger;
 
 
 // clasa ce expune un api de interfata cu socketul
 public class WebSocketOperationAPI {
 	
-	static Logger logger = Logger.getLogger(WebSocketOperationAPI.class);
+	static Logger logger = Logger.getLogger(WebMain.class);
 	SocketChannel sockChannel = null;
 	
 	
@@ -43,9 +42,7 @@ public class WebSocketOperationAPI {
 		catch(IOException e)
 		{
 			//e.printStackTrace();
-			//System.out.println(e.getMessage());
-			
-			
+			//System.out.println(e.getMessage());		
 		}
 		
 	}
@@ -57,8 +54,7 @@ public class WebSocketOperationAPI {
 	
 	// operatii de send
 	public void send(ByteBuffer byteBuffer) throws IOException
-	{
-		
+	{		
 		
 		while (byteBuffer.hasRemaining()) {
 
@@ -67,8 +63,7 @@ public class WebSocketOperationAPI {
 				throw new IOException("Write has problemes");
 		}
 	}
-	
-	
+		
 	
 	// operatia de read
 	public ByteBuffer read() throws IOException
@@ -123,8 +118,7 @@ public class WebSocketOperationAPI {
 				}
 				while(info.remaining() > 0);
 
-				//? FLIP
-				
+				//? FLIP				
 				
 				return info;
 

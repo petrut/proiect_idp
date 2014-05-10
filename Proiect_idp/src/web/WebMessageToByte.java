@@ -4,7 +4,7 @@ import java.nio.ByteBuffer;
 
 import common.ServerConstants;
 
-// clasa care transforma mesajele in ByteBuffere
+// clasa care transforma mesajele in ByteBuffere, in functie de o anumita incapsulare
 public class WebMessageToByte {
 
 	static public ByteBuffer requestChunck(int chunckID,String filename)
