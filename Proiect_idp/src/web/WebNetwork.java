@@ -221,7 +221,7 @@ public class WebNetwork implements WebINetwork {
 			Boolean exista = false;
 			String data[] = mesaj_brut.split("\\s+");
 			
-			logger.warn("> 172 [ " + mesaj_brut + " ]");
+			logger.warn("> 172 mesaj brut [ " + mesaj_brut + " ]");
 			
 			String new_nume	= data[0];
 			String new_ip = "";

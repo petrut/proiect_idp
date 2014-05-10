@@ -59,7 +59,7 @@ public class GuiCore {
 		
 		InfoUser info_web = new InfoUser("web_server");
 		
-		String name = ((Mediator)(transfer_gg.med)).guiAPI.current_user;
+		String name = ((Mediator)(transfer_gg.med)).guiAPI.infoUser.getUser();
 		
 		String ip = info_web.getUserIP();
 		int port = Integer.parseInt(info_web.getUserPort());
